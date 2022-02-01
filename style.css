@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    height: 55px;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    padding: 15px;
+    width: 150px;
+}
+
+.search{
+    display: flex;
+    background-color: rgb(243, 236, 236);
+    width: 35vw;
+    height: 36px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.search input{
+    height: 36px;
+    border-radius: 20px;
+    background-color: rgb(243, 236, 236);
+    font-size: 15px;
+    width: 100%;
+    padding: 0 16px;
+    border: 0;
+    outline: none;
+}
+
+.icons{
+    margin: 15px;
+}
+
+.btn{
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    padding: 6px 10px;
+}
+
+.btn img{
+    width: 22px;
+}
+
+#profile img{
+    width: 30px;
+}
+
+#cart img{
+    width: 40px;
+}
+
