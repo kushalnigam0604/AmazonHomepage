@@ -58,3 +58,10 @@
     border-radius: 5px;
     width: 480px;
 }
+#searchBtn img{
+    display: inline-block;
+    width: 40px;
+    float: right;
+    border-radius: 5px;
+    color: rgb(250, 182, 56);
+}
