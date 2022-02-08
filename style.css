@@ -8,23 +8,23 @@
     padding: 12px;
 }
 #firstDiv{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: inline-block;
 }
 #amazonImg{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     float: left;
     padding: 2px;
     margin-top: 3px;
     width: 170px;
 }
-/* #amazonImg:hover{
+#amazonImg:hover{
     border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
-} */
+}
 #addressHeading{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     float: left;
     margin: 3px;
     padding: 2px;
@@ -32,11 +32,11 @@
     color: antiquewhite;
     width: 170px;
 }
-/* #addressHeading:hover{
+#addressHeading:hover{
     border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
-} */
+}
 #Hello{
     font-size: 13px;
 }
@@ -55,5 +55,6 @@
 #search{
     background-color: rgb(255, 253, 219);
     padding-top: 30px;
-    width: 450px;
+    border-radius: 5px;
+    width: 480px;
 }
