@@ -3,65 +3,49 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.head-container{
-    background-color: black;
-    padding: 12px;
+.header{
+    background: rgb(203, 203, 245);
 }
-#firstDiv{
-    /* border: 1px solid white; */
-    display: inline-block;
+.firstHeadContainer{
+    background-color: rgb(247, 195, 127);
+    width: 100%;
 }
-#amazonImg{
-    /* border: 1px solid white; */
+.imgAndAddress{
+    background-color: rgb(41, 250, 250);
+    width: 30%;
     float: left;
-    padding: 2px;
-    margin-top: 3px;
-    width: 170px;
 }
-#amazonImg:hover{
-    border: 1px solid white;
-    border-radius: 4px;
-    cursor: pointer;
+.searchBar{
+    background-color: rgb(235, 20, 235);
+    width: 35%;
+    float: left; 
 }
-#addressHeading{
-    /* border: 1px solid white; */
+.flagToCart{
+    background-color: rgb(242, 212, 41);
+    width: 35%;
     float: left;
-    margin: 3px;
-    padding: 2px;
-    padding-left: 20px;
-    color: antiquewhite;
-    width: 170px;
 }
-#addressHeading:hover{
-    border: 1px solid white;
-    border-radius: 4px;
-    cursor: pointer;
+.secondHeadContainer{
+    background-color: rgb(255, 0, 0);
+    width: 100%;
 }
-#Hello{
-    font-size: 13px;
+.leftDiv{
+    background-color: rgb(34, 252, 34);
+    width: 60%;
+    float: left;
 }
-#selectAddress{
-    font-weight: 900;
+.rightDiv{
+    background-color: rgb(187, 71, 255);
+    width: 40%;
+    float: left;
 }
-#secondDiv{
-    /* border: 1px solid rgb(238, 74, 74); */
-    display: inline-block;
-    margin-left: 70px;
+.section{
+    background-color: rgb(243, 190, 124);
+    width: 100%;
+    height: 900px;
 }
-/* .search{ */
-    /* border: 2px solid green;
-    height: 30px;
-} */
-#search{
-    background-color: rgb(255, 253, 219);
-    padding-top: 30px;
-    border-radius: 5px;
-    width: 480px;
-}
-#searchBtn img{
-    display: inline-block;
-    width: 40px;
-    float: right;
-    border-radius: 5px;
-    color: rgb(250, 182, 56);
+.footer{
+    background-color: rgb(162, 159, 159);
+    width: 100%;
+    height: 100px;
 }
