@@ -4,28 +4,32 @@
     box-sizing: border-box;
 }
 .header{
-    background: rgb(126, 126, 244);
-}
-.firstHeadContainer{
-    background-color: rgb(247, 195, 127);
+    background: black;
     width: 100%;
 }
+.firstHeadContainer{
+    background-color: black;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 40px
+}
 .imgAndAddress{
-    background-color: rgb(41, 250, 250);
+    background-color: black;
     width: 30%;
     float: left;
     /* padding: 2px; */
 }
-.img img{
+.imgAmazon img{
     width: 40%;
     float: left;
 }
 .address{
     width: 60%;
     float: left;
+    color: antiquewhite;
 }
 .searchBar{
-    background-color: rgb(235, 20, 235);
+    background-color: black;
     /* width: calc(100%-740px); */
     width: 35%;
     float: left; 
@@ -33,6 +37,7 @@
 .firstSearchDiv{
     width: 9%;
     float: left;
+    color: antiquewhite;
 }
 .secondSearchDiv input{
     width: 83.5%;
@@ -43,26 +48,91 @@
     float: left;
 }
 .flagToCart{
-    background-color: rgb(242, 207, 12);
+    color: antiquewhite;
+    background-color: black;
     width: 35%;
     float: left;
 }
-.secondHeadContainer{
-    background-color: rgb(255, 0, 0);
+.imgFlag{
+    width: 10%;
+    float: left;
+}
+.imgFlag img{
     width: 100%;
+    float: left;
+}
+.signIn{
+    width: 37.7%;
+    float: left;
+}
+.signIn p{
+    width: 100%;
+    color: antiquewhite;
+    background-color: black;
+    float: left;
+}
+.orders{
+    width: 37.7%;
+    float: left;
+}
+.orders p{
+    width: 100%;
+    color: antiquewhite;
+    background-color: black;
+    float: left;
+}
+.cart{
+    width: 14.5%;
+    float: left;
+}
+.cart img{
+    width: 50%;
+    border-radius: 50%;
+    float: left;
+}
+.cart p b{
+    width: 50%;
+    float: left;
+}
+
+.secondHeadContainer{
+    background-color: rgb(10, 32, 46);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 40px
 }
 .leftDiv{
-    background-color: rgb(34, 252, 34);
+    background-color: rgb(10, 32, 46);
     width: 60%;
     float: left;
 }
+.liDiv{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    margin-left: 3px;
+}
+.liDiv ul li{
+    color: antiquewhite;
+    display: inline;
+    margin: 4px;
+    /* padding: 2px;
+    margin-left: 6px; */
+    border: 0.1px solid antiquewhite;
+    border-radius: 3px;
+    float: left;
+}
 .rightDiv{
-    background-color: rgb(187, 71, 255);
+    background-color: rgb(10, 32, 46);
     width: 40%;
     float: left;
 }
+.SecondHeaderDivImg img{
+    width: 70%;
+    float: right;
+    border: 0.1px solid antiquewhite;
+}
 .section{
-    background-color: rgb(91, 53, 7);
+    background-color: rgb(86, 165, 218);
     width: 100%;
     height: 900px;
     float: left;
