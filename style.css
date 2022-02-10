@@ -11,33 +11,51 @@
     background-color: black;
     width: 100%;
     padding-top: 12px;
-    padding-bottom: 40px
+    padding-bottom: 40px;
 }
 .imgAndAddress{
     background-color: black;
-    width: 30%;
+    width: 400px;
     float: left;
-    /* padding: 2px; */
 }
-.imgAmazon img{
+.imgAmazon {
     width: 40%;
     float: left;
+}
+.imgAmazon:hover{
+    border: 0.1px solid antiquewhite;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.imgAmazon img{
+    width: 100%;
 }
 .address{
     width: 60%;
     float: left;
     color: antiquewhite;
 }
+.address:hover{
+    border: 0.1px solid antiquewhite;
+    border-radius: 4px;
+    cursor: pointer;
+}
 .searchBar{
     background-color: black;
-    /* width: calc(100%-740px); */
-    width: 35%;
+    width: calc(100% - 850px);
     float: left; 
 }
 .firstSearchDiv{
     width: 9%;
     float: left;
-    color: antiquewhite;
+    color: rgb(79, 78, 76);
+    background-color: rgb(211, 208, 208);
+    border: 0.1px solid antiquewhite;
+    border-radius: 4px;
+}
+.firstSearchDiv:hover{
+    background-color: rgb(194, 188, 188);
+    cursor: pointer;
 }
 .secondSearchDiv input{
     width: 83.5%;
@@ -46,16 +64,23 @@
 .thirdSearchDiv img{
     width: 7.5%;
     float: left;
+    border: 0.1px solid antiquewhite;
+    border-radius: 4px;
+}
+.thirdSearchDiv:hover{
+    cursor: pointer;
 }
 .flagToCart{
     color: antiquewhite;
     background-color: black;
-    width: 35%;
+    width: 450px;
     float: left;
 }
 .imgFlag{
     width: 10%;
     float: left;
+    border: 0.1px solid antiquewhite;
+    border-radius: 4px;
 }
 .imgFlag img{
     width: 100%;
@@ -64,6 +89,8 @@
 .signIn{
     width: 37.7%;
     float: left;
+    border: 0.1px solid antiquewhite;
+    border-radius: 4px;
 }
 .signIn p{
     width: 100%;
@@ -74,6 +101,8 @@
 .orders{
     width: 37.7%;
     float: left;
+    border: 0.1px solid antiquewhite;
+    border-radius: 4px;
 }
 .orders p{
     width: 100%;
@@ -84,6 +113,8 @@
 .cart{
     width: 14.5%;
     float: left;
+    border: 0.1px solid antiquewhite;
+    border-radius: 4px;
 }
 .cart img{
     width: 50%;
@@ -115,8 +146,6 @@
     color: antiquewhite;
     display: inline;
     margin: 4px;
-    /* padding: 2px;
-    margin-left: 6px; */
     border: 0.1px solid antiquewhite;
     border-radius: 3px;
     float: left;
