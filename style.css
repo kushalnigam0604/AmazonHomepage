@@ -221,7 +221,7 @@
 .firstSubFooter{
     width: 100%;
     float: left;
-    background-color: rgb(30, 47, 58);
+    background-color: rgb(24, 35, 43);
     padding: 73px 140px;
     color: antiquewhite;
 }
@@ -257,8 +257,8 @@
 .secondSubFooter{
     width: 100%;
     float: left;
-    background-color: rgb(30, 47, 58);
-    padding: 46px 150px;
+    background-color: rgb(24, 35, 43);
+    padding: 15px 150px;
     color: antiquewhite;
 }
 .secondSubFooter span img{
@@ -269,17 +269,72 @@
 .secondSubFooter span button{
     margin-left: 120px;
     padding: 10px 35px;
-    background-color: rgb(30, 47, 58);
+    background-color: rgb(24, 35, 43);
     color: antiquewhite;
     border: 0.1px solid antiquewhite;
     border-radius: 3px;
 }
 .secondSubFooterContent{
     padding-top: 30px;
+    text-align: center;
 }
 .secondSubFooterContent ul li{
     list-style: none;
     display: inline-block;
     font-size: 13px;
     padding: 9px 9px;
+}
+.thirdSubFooter{
+    width: 100%;
+    float: left;
+    background-color: rgb(2, 16, 24);
+    color: antiquewhite;
+    padding: 30px 0px;
+}
+.footerTable{
+    margin: 0 auto;
+}
+.tabledataFooterTable{
+    padding: 0px 10px;
+    text-align: left;
+    line-height: 80%;
+}
+.tabledataFooterTable a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 13.4px;
+}
+.tabledataFooterTable p{
+    font-size: 11px;
+}
+.tabledataFooterTableBlank{
+    width: 4%;
+    font-size: 13px;
+    line-height: 120%;
+    padding: 0 18px;
+}
+.copyrightFooterDiv{
+    text-align: center;
+    width: 100%;
+    float: left;
+    background-color: rgb(2, 16, 24);
+    color: antiquewhite;
+    padding: 30px 0px;
+}
+.copyrightFooterDiv ul{
+    display: inline;
+}
+.copyrightFooterDiv ul li{
+    display: inline;
+    list-style: none;
+    padding: 0px 10px;
+}
+.copyrightFooterDiv ul li a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 13px;
+}
+.copyrightFooterDiv span{
+    font-size: 13px;
+    padding: 0px 10px;
 }
