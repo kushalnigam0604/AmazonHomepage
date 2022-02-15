@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 /* .header{
     background: black;
@@ -198,10 +199,57 @@
     float: right;
 }
 .section{
-    background-color: rgb(86, 165, 218);
+    background-color: rgb(247, 233, 170);
     width: 100%;
-    height: 900px;
+    height: 100%;
     float: left;
+}
+.bgImage{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 189, 145);
+    float: left;
+}
+.firstFourSectionDiv{
+    width: 20%;
+    float: left;
+    border: 0.1px solid rgb(238, 39, 39);
+    margin: 2.5%;
+}
+.firstFourSectionDivImg{
+    width: 40%;
+    float: left;
+    border: 0.1px solid rgb(6, 184, 255);
+    margin: 5%;
+}
+.secondSectionDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(208, 203, 203);
+    float: left;
+}
+.secondSectionDivContent{
+    width: 30%;
+    float: left;
+    border: 0.1px solid black;
+    margin: 1.66%;
+}
+.secondSectionDivContentImg{
+    width: 40%;
+    float: left;
+    border: 0.1px solid rgb(249, 68, 255);
+    margin: 5%;
+}
+.thirdSectionDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 127, 127);
+    float: left;
+}
+.thirdSectionDivContent{
+    width: 10%;
+    float: left;
+    border: 0.1px solid black;
 }
 .footer{
     background-color: rgb(48, 67, 79);
@@ -226,7 +274,7 @@
     color: antiquewhite;
 }
 .content{
-    width: auto;
+    width: 25%;
     float: left;
     text-align: justify;
 }
@@ -248,26 +296,22 @@
     text-decoration: none;
     color: antiquewhite;
 }
-.contentBlank{
-    width: 90px;
-    height: 126px;
-    float: left;
-    padding: 0px 10px;
-}
 .secondSubFooter{
     width: 100%;
     float: left;
     background-color: rgb(24, 35, 43);
-    padding: 15px 150px;
+    padding: 22px 150px;
     color: antiquewhite;
+    text-align: center;
 }
 .secondSubFooter span img{
     width: auto;
     height: 40px;
-    margin-left: 340px;
+    vertical-align: middle;
 }
 .secondSubFooter span button{
     margin-left: 120px;
+    vertical-align: middle;
     padding: 10px 35px;
     background-color: rgb(24, 35, 43);
     color: antiquewhite;
