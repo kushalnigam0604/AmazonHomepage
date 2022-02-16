@@ -206,15 +206,19 @@
 }
 .bgImage{
     width: 100%;
-    height: 100%;
+    height: 900px;
     background-color: rgb(255, 189, 145);
+    background-image: url(images/section_background.jpg);
     float: left;
 }
 .firstFourSectionDiv{
-    width: 20%;
+    width: 23%;
+    height: 330px;
     float: left;
     border: 0.1px solid rgb(238, 39, 39);
-    margin: 2.5%;
+    background-color: white;
+    margin: 1%;
+    margin-top: 570px;
 }
 .firstFourSectionDivImg{
     width: 40%;
@@ -222,16 +226,20 @@
     border: 0.1px solid rgb(6, 184, 255);
     margin: 5%;
 }
+.firstFourSectionDivImg img{
+    width: 100%;
+}
 .secondSectionDiv{
     width: 100%;
     height: 100%;
-    background-color: rgb(208, 203, 203);
+    background-color: rgb(108 196 214);
     float: left;
 }
 .secondSectionDivContent{
     width: 30%;
     float: left;
     border: 0.1px solid black;
+    background-color: white;
     margin: 1.66%;
 }
 .secondSectionDivContentImg{
@@ -240,16 +248,67 @@
     border: 0.1px solid rgb(249, 68, 255);
     margin: 5%;
 }
+.secondSectionDivContentImg img{
+    width: 100%;
+}
 .thirdSectionDiv{
     width: 100%;
     height: 100%;
-    background-color: rgb(243, 127, 127);
+    background-color: rgb(108 196 214);
     float: left;
 }
 .thirdSectionDivContent{
-    width: 10%;
+    width: 30%;
     float: left;
     border: 0.1px solid black;
+    background-color: white;
+    margin: 1.66%;
+}
+.thirdSectionDivContentImg{
+    width: 40%;
+    float: left;
+    border: 0.1px solid rgb(249, 68, 255);
+    margin: 5%;
+}
+.thirdSectionDivContentImg img{
+    width: 100%;
+}
+.fourthSectionDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(108 196 214);
+    float: left;
+}
+.fourthFourSectionDiv{
+    width: 23%;
+    height: 330px;
+    float: left;
+    border: 0.1px solid rgb(238, 39, 39);
+    background-color: white;
+    margin: 1%;
+}
+.fourthFourSectionDivImg{
+    width: 40%;
+    float: left;
+    border: 0.1px solid rgb(6, 184, 255);
+    margin: 5%;
+}
+.fourthFourSectionDivImg img{
+    width: 100%;
+}
+.sectionSignInButton{
+    width: 100%;
+    float: left;
+    margin: 66px 0px;
+    text-align: center;
+}
+.sectionSignInButton button{
+    background-color: rgb(238 162 0);
+    padding: 5px 116px;
+    border: 0.1px solid #cc880b;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .footer{
     background-color: rgb(48, 67, 79);
