@@ -184,7 +184,6 @@
     margin: 4px;
     margin-left: 6px;
     padding: 2px;
-    border: 0.1px solid antiquewhite;
     border-radius: 3px;
     float: left;
 }
@@ -199,5 +198,48 @@
     float: right;
 }
 .form{
-    background: rgb(218, 216, 216);
+    /* background: rgb(218, 216, 216); */
+    width: 572px;
+    margin: auto;
+}
+.newFormHeading{
+    width: 100%;
+}
+.newFormHeading{
+    padding: 20px 0px 10px 0px;
+    font-size: larger;
+}
+.paraHeading{
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.formTags{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.formTags label{
+    font-size: 12px;
+    font-weight: 900;
+}
+.formTags select{
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+}
+.formTags input{
+    width: 100%;
+    height: 32px;
+    border: 0.1px solid ;
+    border-radius: 3px;
+}
+.formSubmit{
+    padding: 30px 0px;
+}
+.formSubmit input{ 
+    padding: 8px 36px;
+    color: rgb(89, 89, 89);
+    background-color: rgb(255, 204, 0);
+    border: 0.1px solid rgb(255, 180, 18);
+    border-radius: 5px;
 }
