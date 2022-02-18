@@ -205,7 +205,7 @@
 .bgImage img{
     width: 100%;
     height: auto;
-    float: left;
+    /* float: left; */
 }
 .firstFourSectionDiv{
     width: 23%;
