@@ -6,11 +6,10 @@
 }
 .product{
     width: 100%;
-    height: 900px;
 }
 .firstLeftDiv{
     width: 340px;
-    height: 740px;
+    height: auto;
     float: left;
     padding: 7px;
 }
@@ -39,9 +38,8 @@
     height: 510px;
 }
 .secondMiddleDiv{
-    /* background-color: rgb(11, 77, 219); */
     width: calc(100% - 620px);
-    height: 800px;
+    height: auto;
     float: left;
     padding: 4px;
 }
@@ -72,25 +70,175 @@
     width: 100%;
     height: 130px;
     float: left;
-    background-color: rgb(0, 255, 221);
 }
 .imgWithTitle1{
     width: 20%;
     float: left;
+    padding: 20px;
+    line-height: 20px;
+    text-align: center;
 }
 .imgWithTitle2{
     width: 20%;
     float: left;
+    padding: 20px;
+    line-height: 20px;
+    text-align: center;
 }
 .imgWithTitle1 img{
-    width: 70px;
+    width: 40px;
+}
+.imgWithTitle1 p{
+    font-size: small;
+    /* display: inline; */
+    color: rgb(0, 105, 210);
 }
 .imgWithTitle2 img {
-    width: 100px;
+    width: 70px;
+    height: 45px;
+}
+.imgWithTitle2 p{
+    font-size: small;
+    /* display: inline; */
+    color: rgb(0, 105, 210);
+}
+.aboutProduct{
+    padding: 20px;
+    line-height: 26px;
+}
+.aboutProduct h4{
+    color: brown;
+}
+.aboutProduct p{
+    font-size: small;
+}
+.aboutProduct ul li{
+    font-size: 14px;
+}
+.aboutProductSecondLastPara p{
+    color: rgb(0, 105, 210);
+    line-height: 38px;
+}
+.aboutProductLastPara img{
+    width: 20px;
+}
+.aboutProductLastPara p{
+    color: rgb(0, 105, 210);
+    display: inline;
+}
+.newModelProductDiv{
+    width: 100%;
+    float: left;
+    padding: 20px;
+    line-height: 26px;
+}
+.newModelProductDiv h4{
+    color: brown;
+}
+.forNewModelImg{
+    width: 15%;
+    height: 50px;
+    float: left;
+}
+.forNewModelImg img{
+    width: 100%;
+}
+.forNewModelAbout{
+    width: 85%;
+    float: left;
+}
+.forNewModelStar{
+    width: 100%;
+
+}
+.forNewModelStar img{
+    width: 20px;
+    height: 18px;
+}
+.forNewModelStar p{
+    display: inline;
+    font-size: small;
+    color: rgb(0, 105, 210);
 }
 .thirdRightDiv{
-    background-color: rgb(0, 255, 0);
     width: 280px;
-    height: 200px;
+    height: auto;
     float: left;
+}
+.allLinks{
+    width: 100%;
+    float: left;
+    padding: 4px;
+}
+.allLinksFirstDiv{
+    width: 30%;
+    float: left;
+}
+.allLinksFirstDiv a{
+    float: right;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.allLinksSecondDiv{
+    width: 70%;
+    float: left;
+    padding-left: 4px;
+}
+.allLinksSecondDivimg{
+    width: 18%;
+    float: left;
+}
+.allLinksSecondDivimg img{
+    height: 20px;
+}
+.productAvailability{
+    width: 100%;
+    float: left;
+    border: 0.1px solid rgb(155, 154, 154);
+    padding: 15px;
+    padding-bottom: 25px;
+    text-align: center;
+    line-height: 19px;
+}
+.productAvailability h4{
+    color: brown;
+}
+.productAvailability p{
+    font-size: 13px;
+}
+.productAvailability button{
+    padding: 3px 32px;
+}
+.fourSectionProductDiv{
+    width: 100%;
+    float: left;
+    padding: 4px 40px;
+}
+.fourSectionProductSubDiv{
+    width: 25%;
+    height: 290px;
+    float: left;
+    padding: 7px;
+    text-align: center;
+    line-height: 25px;
+}
+.fourSectionProductSubDiv img{
+    width: 128px;
+    height: 135px;
+    margin: 0px 30%;
+}
+.fourSectionProductSubDiv p{
+    font-size: small;
+    color: rgb(0, 105, 210);
+    height: 85px;
+}
+.fourSectionProductSubDiv h5{
+    color: brown;
+}
+.fourSectionProductSubDiv button{
+    background-color: rgb(255, 204, 0);
+    border: 0.1px solid rgb(252, 178, 19);
+    border-radius: 2px;
+    padding: 5px 15px;
 }
