@@ -198,34 +198,44 @@
     float: right;
 }
 .section{
-    background-color: rgb(240, 203, 41);
+    /* background-color: rgb(240, 203, 41); */
     width: 100%;
     float: left;
 }
+.bgImage{
+    width: 100%;
+    float: left;
+    position: relative;
+}
 .bgImage img{
     width: 100%;
-    height: auto;
-    /* float: left; */
+    height: 685px;
+}
+.firstSectionDiv{
+    width: 100%;
+    position: absolute;
+    top: 370px;
+    float: left;
+}
+.secondSectionDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(213, 223, 225);
+    float: left;
+}
+.thirdSectionDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(213, 223, 225);
+    float: left;
 }
 .firstFourSectionDiv{
     width: 23%;
-    height: 390px;
     float: left;
     background-color: white;
     margin: 15px 14px 15px 13px;
     padding: 10px;
     padding-top: 0px;
-}
-.anchorTagForSectionDiv{
-    width: 100%;
-    float: left;
-    margin-top: 40px;
-}
-.anchorTagForSectionDiv a {
-    /* text-decoration: none; */
-    color: rgb(4, 184, 184);
-    font-size: smaller;
-    margin: 37%;
 }
 .sectionDivWriting{
     padding: 20px;
@@ -243,17 +253,16 @@
 .firstFourSectionDivImg p{
     font-size: small;
 }
-.secondSectionDiv{
+.anchorTagForSectionDiv{
     width: 100%;
-    height: 100%;
-    background-color: rgb(213, 223, 225);
     float: left;
+    margin-top: 40px;
 }
-.thirdSectionDiv{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(213, 223, 225);
-    float: left;
+.anchorTagForSectionDiv a {
+    text-decoration: none;
+    color: rgb(4, 184, 184);
+    font-size: smaller;
+    margin: 37%;
 }
 .sectionSignInButton{
     width: 100%;
