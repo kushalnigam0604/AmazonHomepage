@@ -83,7 +83,7 @@
                 point, click <a href="#">here</a>
             </p>
         </div>
-        <form action="#">
+        <form action="#" name="Myform" onsubmit="return formValidation()">
             <div class="formTags">
                 <label for="country">Country / Region</label><br>
                 <select name="country" id="country">
@@ -96,37 +96,37 @@
             <div class="formTags">
                 <label for="name">Full Name</label><br>
                 <input type="text" name="Name" id="name">
-                <div class="Error"><b> </b></div>
+                 <p class="Error"></p>
             </div>
             <div class="formTags">
                 <label for="number">Mobile number</label><br>
                 <input type="number" name="Number" id="number" placeholder="10-digit mobile number without prefixes">
-                <div class="Error"><b> </b></div>
+             <p class="Error"></p>
             </div>
             <div class="formTags">
                 <label for="pin">PIN Code</label><br>
                 <input type="number" name="PIN" id="pin" placeholder="6 digit[0-9] PIN code">
-                <div class="Error"><b> </b></div>
+             <p class="Error"></p>
             </div>
             <div class="formTags">
                 <label for="flatnumber">Flat, House no.,Building, Company, Apartment</label><br>
                 <input type="text" name="FlatNumber" id="flatnumber">
-                <div class="Error"><b> </b></div>
+             <p class="Error"></p>
             </div>
             <div class="formTags">
                 <label for="area">Area, Colony, Street, Sector, Village</label><br>
                 <input type="text" name="Area" id="area">
-                <div class="Error"><b> </b></div>
+             <p class="Error"></p>
             </div>
             <div class="formTags">
                 <label for="landmark">Landmark</label><br>
                 <input type="text" name="LandMark" id="landmark" placeholder="E.g. Near IIT Kanpur etc">
-                <div class="Error"><b> </b></div>
+             <p class="Error"></p>
             </div>
             <div class="formTags">
                 <label for="town">Town/City</label><br>
-                <input type="text" name="town" id="Town">
-                <div class="Error"><b> </b></div>
+                <input type="text" name="town" id="town">
+             <p class="Error"></p>
             </div>
             <div class="formTags">
                 <label for="country">State / Province / Region</label><br>
