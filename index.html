@@ -55,16 +55,23 @@
             <div class="leftDiv">
                 <div class="liDiv">
                     <ul>
-                        <li>All</li>
-                        <li>Best Sellers</li>
-                        <li>Mobile</li>
-                        <li>Today's Deals</li>
-                        <li>Customer Service</li>
-                        <li>Electronics</li>
-                        <li>Books</li>
-                        <li>Prime</li>
-                        <li>Fashion</li>
-                        <li>New Release</li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="#">All</a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#"> Best Sellers</a></li>
+                        <li><a href="#"> Mobile</a></li>
+                        <li><a href="#">Today's Deals</a> </li>
+                        <li><a href="#">Customer Service</a> </li>
+                        <li><a href="#">Electronics</a> </li>
+                        <li><a href="#">Books</a> </li>
+                        <li><a href="#">Prime</a> </li>
+                        <li><a href="#">Fashion</a> </li>
+                        <li><a href="#">New Release</a> </li>
                     </ul>
                 </div>
             </div>
@@ -76,7 +83,25 @@
     </header>
     <section class="section">
         <div class="bgImage">
-            <img src="images/section_background.jpg" alt="">
+            <img src="images/amazon1.jpg" alt="">
+        </div>
+        <div class="bgImage">
+            <img src="images/amazon2.jpg" alt="">
+        </div>
+        <div class="bgImage">
+            <img src="images/amazon3.jpg" alt="">
+        </div>
+        <div class="bgImage">
+            <img src="images/amazon4.jpg" alt="">
+        </div>
+        <div class="bgImage">
+            <img src="images/amazon5.jpg" alt="">
+        </div>
+        <div class="prev" onclick="plusSlides(-1)">
+            <a>&#10094;</a>
+        </div>
+        <div class="next" onclick="plusSlides(1)">
+            <a>&#10095;</a>
         </div>
         <div class="firstSectionDiv">
             <div class="firstFourSectionDiv">
@@ -626,4 +651,5 @@
     </footer>
 </body>
 <script src="index.js"></script>
+
 </html>

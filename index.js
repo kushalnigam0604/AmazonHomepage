@@ -1,5 +1,22 @@
-var a = document.links;
-console.log(a);
-for(let i = 0; i<a.length; i++){
-    console.log(a[i].text);
+var slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlideIndex(n)
+{
+    var slide=document.getElementsByClassName("bgImage");
+    if(n==slide.length){
+        slideIndex=0;
+    }
+    if(n<0){
+        slideIndex=slide.length-1;
+    }
+    for(var i=0; i<slide.length; i++)
+    {
+        slide[i].style.display="none";
+    }
+    slide[slideIndex].style.display="block";
 }
