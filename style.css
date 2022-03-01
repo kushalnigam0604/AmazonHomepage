@@ -114,10 +114,36 @@
     float: left;
     padding: 10px;
 }
-.imgFlag img{
+.imgFlag a img{
     width: 100%;
     float: left;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c5c2c2;
+    font-size: smaller;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content ul li {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}  
+.dropdown-content ul li:hover {
+    background-color: rgb(100, 93, 93);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 .signIn{
     width: calc(100% - 245px);
     float: left;
@@ -185,37 +211,12 @@
     padding: 2px;
     border-radius: 3px;
     float: left;
+    font-size: 15px;
 }
 .liDiv ul li a{
     color: antiquewhite;
     text-decoration: none;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }  
-  .dropdown-content a:hover {
-      background-color: rgb(70, 62, 62);
-    }
-  .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-
 .rightDiv{
     background-color: rgb(10, 32, 46);
     width: calc(100% - 950px);
