@@ -1,11 +1,11 @@
-var slideIndex = 0;
+var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-function showSlideIndex(n)
+function showSlides(n)
 {
     var slide=document.getElementsByClassName("bgImage");
     if(n==slide.length){
