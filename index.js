@@ -1,3 +1,17 @@
+/*  for All button side nav */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+
+
+
+/*  for section image slider       */
+
 var slideIndex = 0;
 showSlides(slideIndex);
 
