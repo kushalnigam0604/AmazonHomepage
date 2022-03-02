@@ -156,6 +156,47 @@
     font-size: 15px;
     font-weight: bold;
 }
+.dropdown-contentForSignIn{
+    display: none;
+    position: absolute;
+    background-color: #c5c2c2;
+    font-size: smaller;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: -60px;
+}
+.dropdown:hover .dropdown-contentForSignIn {
+    display: block;
+}
+.signInDiv{
+    width: 100%;
+    float: left;
+}
+.signInItemList1{
+    width: 50%;
+    float: left;
+}
+.signInItemList2{
+    width: 50%;
+    float: left;
+}
+.signInItemList1 ul li {
+    color: black;
+    padding: 4px 6px;
+    display: block;
+}  
+.signInItemList2 ul li {
+    color: black;
+    padding: 4px 6px;
+    display: block;
+}  
+.signInItemList1 ul li:hover {
+    background-color: rgb(100, 93, 93);
+}
+.signInItemList2 ul li:hover {
+    background-color: rgb(100, 93, 93);
+}
 .orders{
     width: 100px;
     float: left;
