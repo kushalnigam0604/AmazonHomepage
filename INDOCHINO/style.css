@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    width: 100%;
+}
+.firstHeader{
+    width: 100%;
+    float: left;
+}
+.leftDiv{
+    width: 50%;
+    float: left;
+    height: 20px;
+}
+.rightDiv{
+    width: 50%;
+    float: left;
+    height: 20px;
+}
+.rightDiv ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 20px;
+    word-spacing: 3px;
+}
+.rightDiv ul a{
+    text-decoration: none;
+    color: black;
+}
+.secondHeader{
+    width: 100%;
+    float: left;
+    height: 50px;
+    border-top: 0.1px solid rgb(225, 223, 223);
+    border-bottom: 0.1px solid rgb(225, 223, 223);
+}
+.leftLogoDiv{
+    width: 170px;
+    float: left;
+    padding: 5px;
+}
+.leftLogoDiv img{
+    width: 100%;
+}
+.leftLogoDiv p{
+    font-size: small;
+    text-align: center;
+}
+.centerHeaderDiv{
+    width: calc( 100% - 570px);
+    float: left;
+}
+.centerHeaderDiv ul{
+    display: inline-block;
+    list-style: none;
+}
+.centerHeaderDiv ul button{
+    display: inline;
+    height: 48px;
+    padding: 4px auto 4px auto;
+}
+.rightHeaderDiv{
+    width: 400px;
+    float: left;
+}
+.rightHeaderDiv ul{
+    display: inline-block;
+    list-style: none;
+}
+.rightHeaderDiv ul li{
+    display: inline;
+}
