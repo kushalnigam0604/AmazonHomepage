@@ -6,6 +6,7 @@
 }
 .header{
     width: 100%;
+    float: left;
 }
 .firstHeader{
     width: 100%;
@@ -52,7 +53,7 @@
     text-align: center;
 }
 .centerHeaderDiv{
-    width: calc( 100% - 570px);
+    width: calc( 100% - 620px);
     float: left;
 }
 .centerHeaderDiv ul{
@@ -65,13 +66,120 @@
     padding: 4px auto 4px auto;
 }
 .rightHeaderDiv{
-    width: 400px;
+    width: 450px;
     float: left;
 }
 .rightHeaderDiv ul{
     display: inline-block;
     list-style: none;
 }
-.rightHeaderDiv ul li{
+.rightHeaderDiv ul button{
     display: inline;
+    height: 48px;
+    padding: 4px auto 4px auto;
 }
+.section{
+    width: 100%;
+    float: left;
+}
+.labelDiv{
+    width: 100%;
+    float: left;
+    padding: 7px;
+    padding-left: 40px;
+}
+.leftLabelDiv{
+    width: 33%;
+    float: left;
+}
+.centerLabelDiv{
+    width: 33%;
+    float: left;
+}
+.rightLabelDiv{
+    width: 33%;
+    float: left;
+}
+.labelImg{
+    width: 40px;
+    float: left;
+}
+.labelImg img{
+    width: 100%;
+}
+.labelPara{
+    width: calc(100% - 50px);
+    float: left;
+    line-height: 0px;
+    padding-left: 8px;
+}
+.labelPara h5{
+    font-size: smaller;
+}
+.labelPara p{
+    font-size: 13px;
+}
+.firstSectionDiv{
+    width: 100%;
+    float: left;
+    background-color: rgb(51, 63, 72);
+}
+.firstSectionDivImg{
+    width: 50%;
+    float: left;
+    padding: 50px 15px ;
+}
+.secondSectionDivPara{
+    width: 50%;
+    float: left;
+}
+.firstSectionDivImg img{
+    width: 100%;
+}
+.secondSectionDivPara{
+    color: antiquewhite;
+    word-spacing: 5px;
+    padding: 120px 0px 0px 35px;;
+}
+.onlineOnly {
+    padding-top: 12px;
+    font-size: x-small;
+}
+.secondSectionDiv{
+    width: 100%;
+    float: left;
+    padding: 4px 0px;
+}
+.popularProductDiv{
+    width: 100%;
+    float: left;
+    padding: 10px 10px;
+    text-align: center;
+}
+.fourProductDivSection{
+    width: 100%;
+    float: left;
+}
+.fourProductDiv{
+    width: 25%;
+    float: left;
+    padding: 0px 55px;
+}
+.fourProductDivImg{
+    width: 100%;
+    float: left;
+}
+.fourProductDivImg img{
+    width: 220px;
+    height: 275px;
+}
+.fourProductDiv p{
+    font-size: small;
+    font-weight: bold;
+}
+.thirdSectionDiv{
+    width: 100%;
+    float: left;
+    background-color: rgb(2 21 40);
+}
+
