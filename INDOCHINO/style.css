@@ -60,10 +60,13 @@
     display: inline-block;
     list-style: none;
 }
-.centerHeaderDiv ul button{
+.centerHeaderDiv ul li{
     display: inline;
-    height: 48px;
-    padding: 4px auto 4px auto;
+    padding: 0px 12px;
+}
+.centerHeaderDiv ul li a{
+    text-decoration: none;
+    color: black;
 }
 .rightHeaderDiv{
     width: 450px;
@@ -73,10 +76,13 @@
     display: inline-block;
     list-style: none;
 }
-.rightHeaderDiv ul button{
+.rightHeaderDiv ul li{
     display: inline;
-    height: 48px;
-    padding: 4px auto 4px auto;
+    padding: 0px 8px;
+}
+.rightHeaderDiv ul li a{
+    text-decoration: none;
+    color: black;
 }
 .section{
     width: 100%;
@@ -185,22 +191,35 @@
 .footer{
     width: 100%;
     float: left;
+    padding: 15px 0px;
 }
 .firstFooterDiv{
     width: 100%;
     float: left;
+    padding: 10px;
 }
 .firstFooterFiveDiv{
     width: 25%;
     float: left;
+    padding: 0px 80px;
+
 }
 .firstFooterFiveDiv ul{
     display: inline;
     list-style: none;
+    line-height: 30px;
+}
+.firstFooterFiveDiv ul li{
+    font-size: smaller;
+}
+.firstFooterFiveDiv ul li h4{
+    font-size: 15px;
+    font-weight: bold;
 }
 .secondFooterDiv{
     width: 100%;
     float: left;
+    height: 40px;
     background-color: rgb(244, 244, 244);
 }
 .secondFooterFirstDiv{
@@ -209,8 +228,13 @@
 }
 .secondFooterFirstDiv img{
     width: 100%;
+    padding-left: 30px;
 }
 .secondFooterSecondDiv{
     width: calc(100% - 150px);
     float: left;
+    padding-left: 690px;
+}
+.secondFooterSecondDiv p{
+    font-size: x-small;
 }
