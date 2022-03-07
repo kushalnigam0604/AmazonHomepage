@@ -182,4 +182,35 @@
     float: left;
     background-color: rgb(2 21 40);
 }
-
+.footer{
+    width: 100%;
+    float: left;
+}
+.firstFooterDiv{
+    width: 100%;
+    float: left;
+}
+.firstFooterFiveDiv{
+    width: 25%;
+    float: left;
+}
+.firstFooterFiveDiv ul{
+    display: inline;
+    list-style: none;
+}
+.secondFooterDiv{
+    width: 100%;
+    float: left;
+    background-color: rgb(244, 244, 244);
+}
+.secondFooterFirstDiv{
+    width: 150px;
+    float: left;
+}
+.secondFooterFirstDiv img{
+    width: 100%;
+}
+.secondFooterSecondDiv{
+    width: calc(100% - 150px);
+    float: left;
+}
