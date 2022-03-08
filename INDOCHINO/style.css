@@ -6,43 +6,45 @@
 }
 .header{
     width: 100%;
-    float: left;
+    border: 3px solid;
+    display: flex;
+    flex-direction: column;
 }
 .firstHeader{
     width: 100%;
-    float: left;
+    display: flex;
 }
 .leftDiv{
-    width: 50%;
-    float: left;
+    width: 40%;
     height: 20px;
 }
 .rightDiv{
-    width: 50%;
-    float: left;
+    width: 60%;
     height: 20px;
+}
+.rightDiv ul { 
+    display: flex;
 }
 .rightDiv ul li{
     list-style: none;
     display: inline-block;
     font-size: 12px;
-    margin-left: 20px;
+    margin-left: 30px;
     word-spacing: 3px;
 }
-.rightDiv ul a{
+.rightDiv ul li a{
     text-decoration: none;
     color: black;
 }
 .secondHeader{
     width: 100%;
-    float: left;
     height: 50px;
+    display: flex;
     border-top: 0.1px solid rgb(225, 223, 223);
     border-bottom: 0.1px solid rgb(225, 223, 223);
 }
 .leftLogoDiv{
     width: 170px;
-    float: left;
     padding: 5px;
 }
 .leftLogoDiv img{
@@ -54,57 +56,67 @@
 }
 .centerHeaderDiv{
     width: calc( 100% - 620px);
-    float: left;
+    height: 48px;
 }
 .centerHeaderDiv ul{
     display: inline-block;
     list-style: none;
+    display: flex;
 }
 .centerHeaderDiv ul li{
     display: inline;
-    padding: 0px 12px;
+    padding: 11px 14px 13px 14px;
 }
 .centerHeaderDiv ul li a{
     text-decoration: none;
     color: black;
 }
+.Sale{
+    background-color: rgb(218, 26, 26);
+}
 .rightHeaderDiv{
     width: 450px;
-    float: left;
+    height: 48px;
 }
 .rightHeaderDiv ul{
     display: inline-block;
     list-style: none;
+    display: flex;
 }
 .rightHeaderDiv ul li{
     display: inline;
-    padding: 0px 8px;
+    padding: 11px 12px 13px 14px;
 }
 .rightHeaderDiv ul li a{
     text-decoration: none;
     color: black;
 }
+.rightHeaderDiv ul li a img{
+    width: 25px;
+    height: 22px;
+}
 .section{
     width: 100%;
-    float: left;
+    border: 3px solid;
 }
 .labelDiv{
     width: 100%;
-    float: left;
+    display: flex;
     padding: 7px;
     padding-left: 40px;
+    background-color: rgb(240, 239, 235);
 }
 .leftLabelDiv{
     width: 33%;
-    float: left;
+    /* float: left; */
 }
 .centerLabelDiv{
     width: 33%;
-    float: left;
+    /* float: left; */
 }
 .rightLabelDiv{
     width: 33%;
-    float: left;
+    /* float: left; */
 }
 .labelImg{
     width: 40px;
@@ -127,17 +139,15 @@
 }
 .firstSectionDiv{
     width: 100%;
-    float: left;
+    display: flex;
     background-color: rgb(51, 63, 72);
 }
 .firstSectionDivImg{
     width: 50%;
-    float: left;
     padding: 50px 15px ;
 }
 .secondSectionDivPara{
     width: 50%;
-    float: left;
 }
 .firstSectionDivImg img{
     width: 100%;
@@ -153,27 +163,24 @@
 }
 .secondSectionDiv{
     width: 100%;
-    float: left;
     padding: 4px 0px;
 }
 .popularProductDiv{
     width: 100%;
-    float: left;
     padding: 10px 10px;
     text-align: center;
 }
 .fourProductDivSection{
     width: 100%;
-    float: left;
+    display: flex;
+    border: 1px solid;
 }
 .fourProductDiv{
     width: 25%;
-    float: left;
     padding: 0px 55px;
 }
 .fourProductDivImg{
     width: 100%;
-    float: left;
 }
 .fourProductDivImg img{
     width: 220px;
@@ -185,24 +192,19 @@
 }
 .thirdSectionDiv{
     width: 100%;
-    float: left;
+    display: flex;
     background-color: rgb(2 21 40);
 }
 .footer{
     width: 100%;
-    float: left;
     padding: 15px 0px;
+    border: 3px solid;
 }
 .firstFooterDiv{
     width: 100%;
-    float: left;
+    display: flex;
     padding: 10px;
-}
-.firstFooterFiveDiv{
-    width: 25%;
-    float: left;
-    padding: 0px 80px;
-
+    justify-content: space-evenly;
 }
 .firstFooterFiveDiv ul{
     display: inline;
@@ -218,23 +220,44 @@
 }
 .secondFooterDiv{
     width: 100%;
-    float: left;
+    display: flex;
     height: 40px;
     background-color: rgb(244, 244, 244);
+    justify-content: space-around;
 }
 .secondFooterFirstDiv{
-    width: 150px;
-    float: left;
+    align-self: center;
 }
 .secondFooterFirstDiv img{
-    width: 100%;
-    padding-left: 30px;
+    width: 150px;
 }
 .secondFooterSecondDiv{
-    width: calc(100% - 150px);
-    float: left;
-    padding-left: 690px;
+    align-self: center;
 }
 .secondFooterSecondDiv p{
     font-size: x-small;
+    margin-bottom: 0px;
+}
+
+
+
+/* 320px, 420px, 768px, 1024px, 1366px */
+
+
+
+
+@media only screen and (max-width: 320px){
+
+}
+@media  (min-width: 321px) and (max-width: 420px){
+
+}
+@media  (min-width: 421px) and (max-width: 768px){
+
+}
+@media  (min-width: 769px) and (max-width: 1024px){
+
+}
+@media  (min-width: 1025px) and (max-width: 1366px){
+
 }
