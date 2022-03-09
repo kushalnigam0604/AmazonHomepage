@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    margin: auto;
+    padding: 10px 15px;
+    background-color: rgb(4, 36, 58);
+    color: antiquewhite;
+}
+.heading{
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+}
+.first{
+    width: 90%;
+    margin: 8px auto;
+    padding: 8px;
+    font-size: large;
+    text-align: center;
+    background-color: rgb(51, 201, 201);
+}
+.second{
+    width: 90%;
+    padding: 4px 5px;
+    margin: 8px auto;
+    background-color: gainsboro;
+    text-align: center;
+}
+.second input{
+    width: 100%;
+    font-size: large;
+    padding: 8px;
+    text-align: center;
+    border: none;
+}
+.range{
+    width: 90%;
+    display: block;
+    margin: 8px auto;
+}
+.third{
+    width: 90%;
+    padding: 5px 5px;
+    margin: 8px  auto;
+    display: flex;
+    background-color: white;
+}
+.term{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: black;
+    /* padding: 4px; */
+}
+.value{
+    width: 50%;
+}
+.value input{
+    width: 100%;
+    height: 50px;
+    background-color: gainsboro;
+    font-size: large;
+    /* text-align: center; */
+    border: none;
+    padding: 4px;
+}
+.fourth{
+    width: 90%;
+    margin: 12px  auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button button{
+    padding: 6px 10px;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.button button:hover{
+    background-color: rgb(51, 201, 201);
+    cursor: pointer;
+}
+.button1 button{
+    padding: 6px 10px;
+    width: 100px;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.button1 button:hover{
+    background-color: rgb(51, 201, 201);
+    cursor: pointer;
+}
+.fifth{
+    width: 90%;
+    padding: 5px 5px;
+    margin: 12px  auto;
+    display: flex;
+    border-top: 2px solid white;
+    border-left: 0.2px solid white;
+    border-right: 0.2px solid gray;
+    border-bottom: 0.2px solid gray;
+}
+.term5{
+    width: 50%;
+    display: flex;
+    padding: 1px 35px;
+    align-items: center;
+    color: antiquewhite;
+}
+.value5{
+    width: 50%;
+}
+.value5 input{
+    width: 100%;
+    height: 44px;
+    font-weight: bolder;
+    background-color: transparent;
+    color: antiquewhite;
+    font-size: large;
+    /* text-align: center; */
+    border: none;
+    padding: 4px;
+}
+.btn{
+    padding: 6px 55px;
+    display: block;
+    margin: 20px auto 5px;
+    color: antiquewhite;
+    background-color: rgb(255, 145, 0);
+    border: none;
+    border-radius: 2px;
+}
+.lastline{
+    width: 50%;
+    margin: auto;
+}
