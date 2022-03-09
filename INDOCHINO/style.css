@@ -15,25 +15,31 @@
     display: flex;
 }
 .leftDiv{
-    width: 40%;
+    width: 20%;
     height: 20px;
 }
 .rightDiv{
-    width: 60%;
+    width: 80%;
     height: 20px;
 }
 .rightDiv ul { 
     display: flex;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    justify-content: flex-end;
 }
 .rightDiv ul li{
     list-style: none;
-    display: inline-block;
     font-size: 12px;
-    margin-left: 30px;
-    word-spacing: 3px;
+    padding: 0px 10px;
+    word-spacing: 2px;
 }
 .rightDiv ul li a{
     text-decoration: none;
+    color: black;
+}
+.rightDiv ul li a:hover{
+    text-decoration: underline;
     color: black;
 }
 .secondHeader{
@@ -45,6 +51,7 @@
 }
 .leftLogoDiv{
     width: 170px;
+    height: 50px;
     padding: 5px;
 }
 .leftLogoDiv img{
@@ -56,36 +63,42 @@
 }
 .centerHeaderDiv{
     width: calc( 100% - 620px);
-    height: 48px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }
 .centerHeaderDiv ul{
-    display: inline-block;
-    list-style: none;
     display: flex;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    align-items: center;
 }
 .centerHeaderDiv ul li{
+    list-style: none;
     display: inline;
-    padding: 11px 14px 13px 14px;
+    padding: 0px 14px;
 }
 .centerHeaderDiv ul li a{
     text-decoration: none;
     color: black;
 }
-.Sale{
-    background-color: rgb(218, 26, 26);
-}
+
 .rightHeaderDiv{
     width: 450px;
-    height: 48px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }
 .rightHeaderDiv ul{
-    display: inline-block;
-    list-style: none;
     display: flex;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    align-items: center;
 }
 .rightHeaderDiv ul li{
+    list-style: none;
     display: inline;
-    padding: 11px 12px 13px 14px;
+    padding: 0px 14px;
 }
 .rightHeaderDiv ul li a{
     text-decoration: none;
@@ -102,40 +115,43 @@
 .labelDiv{
     width: 100%;
     display: flex;
-    padding: 7px;
-    padding-left: 40px;
+    padding: 5px 0px;
+    justify-content: space-evenly;
     background-color: rgb(240, 239, 235);
 }
 .leftLabelDiv{
-    width: 33%;
-    /* float: left; */
+    width: 27%;
+    display: flex;
 }
 .centerLabelDiv{
-    width: 33%;
-    /* float: left; */
+    width: 27%;
+    display: flex;
 }
 .rightLabelDiv{
-    width: 33%;
-    /* float: left; */
+    width: 27%;
+    display: flex;
 }
 .labelImg{
     width: 40px;
-    float: left;
 }
 .labelImg img{
     width: 100%;
 }
 .labelPara{
     width: calc(100% - 50px);
-    float: left;
-    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
     padding-left: 8px;
+    justify-content: center;
 }
 .labelPara h5{
     font-size: smaller;
+    margin-bottom: 0px;
 }
 .labelPara p{
     font-size: 13px;
+    margin-bottom: 0px;
 }
 .firstSectionDiv{
     width: 100%;
@@ -154,8 +170,9 @@
 }
 .secondSectionDivPara{
     color: antiquewhite;
-    word-spacing: 5px;
-    padding: 120px 0px 0px 35px;;
+    word-spacing: 5px; 
+    margin: auto;
+    padding: 0px 20px;
 }
 .onlineOnly {
     padding-top: 12px;
@@ -174,16 +191,16 @@
     width: 100%;
     display: flex;
     border: 1px solid;
+    justify-content: space-evenly;
 }
 .fourProductDiv{
-    width: 25%;
-    padding: 0px 55px;
+    width: 20%;
 }
 .fourProductDivImg{
     width: 100%;
 }
 .fourProductDivImg img{
-    width: 220px;
+    width: 100%;
     height: 275px;
 }
 .fourProductDiv p{
@@ -203,11 +220,17 @@
 .firstFooterDiv{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     justify-content: space-evenly;
 }
+.firstFooterFiveDiv{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
 .firstFooterFiveDiv ul{
-    display: inline;
+    padding-left: 0px;
     list-style: none;
     line-height: 30px;
 }
@@ -245,19 +268,260 @@
 
 
 
-
-@media only screen and (max-width: 320px){
-
+@media (min-width: 992px) and (max-width: 1205px){
+    .centerHeaderDiv{
+        visibility: hidden;
+    }
 }
-@media  (min-width: 321px) and (max-width: 420px){
 
+@media (min-width: 768px) and (max-width: 991px){
+    .centerHeaderDiv{
+        visibility: hidden;
+    }
 }
-@media  (min-width: 421px) and (max-width: 768px){
 
+@media (min-width: 541px) and (max-width: 767px){
+    .firstHeader{
+        display: none;
+    }
+    .centerHeaderDiv{
+        visibility: hidden;
+    }
+    .labelPara p{
+        display: none;
+    }
+    .firstSectionDiv{
+        flex-direction: column;
+    }
+    .thirdSectionDiv{
+        flex-direction: column;
+    }
+    .firstSectionDivImg{
+        width: 100%;
+        display: block;
+    }
+    .secondSectionDivPara{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .fourProductDivSection{
+        flex-wrap: wrap;
+    }
+    .fourProductDiv{
+        width: 36%;
+        padding: 15px 0px;
+    }
 }
-@media  (min-width: 769px) and (max-width: 1024px){
 
+@media (min-width: 481px) and (max-width: 540px){
+    .firstHeader{
+        display: none;
+    }
+    .centerHeaderDiv{
+        visibility: hidden;
+    }
+    .rightHeaderDiv{
+        display: none;
+    }
+    .labelPara p{
+        display: none;
+    }
+    .leftLabelDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .centerLabelDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightLabelDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .labelPara{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        line-height: 14px;
+        padding-top: 2px;
+        text-align: center;
+    }
+    .firstSectionDiv{
+        flex-direction: column;
+    }
+    .thirdSectionDiv{
+        flex-direction: column;
+    }
+    .firstSectionDivImg{
+        width: 100%;
+        display: block;
+    }
+    .secondSectionDivPara{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .firstFooterFiveDiv{
+        width: 40%;
+    }
+    .secondFooterDiv{
+        flex-direction: column;
+    }
+    .secondFooterFirstDiv img{
+        width: 115px;
+    }
+    .secondFooterSecondDiv{
+        text-align: center;
+    }
+    .fourProductDivSection{
+        flex-wrap: wrap;
+    }
+    .fourProductDiv{
+        width: 52%;
+        padding: 15px 0px;
+    }
 }
-@media  (min-width: 1025px) and (max-width: 1366px){
 
+
+@media (min-width: 361px) and (max-width: 480px){
+    .firstHeader{
+        display: none;
+    }
+    .centerHeaderDiv{
+        visibility: hidden;
+    }
+    .rightHeaderDiv{
+        display: none;
+    }
+    .labelPara p{
+        display: none;
+    }
+    .leftLabelDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .centerLabelDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightLabelDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .labelPara{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        line-height: 14px;
+        padding-top: 2px;
+        text-align: center;
+    }
+    .firstSectionDiv{
+        flex-direction: column;
+    }
+    .thirdSectionDiv{
+        flex-direction: column;
+    }
+    .firstSectionDivImg{
+        width: 100%;
+        display: block;
+    }
+    .secondSectionDivPara{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .firstFooterFiveDiv{
+        width: 40%;
+    }
+    .secondFooterDiv{
+        flex-direction: column;
+        height: 60px;
+    }
+    .secondFooterFirstDiv img{
+        width: 115px;
+    }
+    .secondFooterSecondDiv{
+        text-align: center;
+    }
+    .fourProductDivSection{
+        flex-wrap: wrap;
+    }
+    .fourProductDiv{
+        width: 52%;
+        padding: 15px 0px;
+    }
+}
+@media (max-width: 360px){
+    .firstHeader{
+        display: none;
+    }
+    .centerHeaderDiv{
+        visibility: hidden;
+    }
+    .rightHeaderDiv{
+        display: none;
+    }
+    .labelPara p{
+        display: none;
+    }
+    .leftLabelDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .centerLabelDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightLabelDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .labelPara{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        line-height: 14px;
+        padding-top: 2px;
+        text-align: center;
+    }
+    .firstSectionDiv{
+        flex-direction: column;
+    }
+    .thirdSectionDiv{
+        flex-direction: column;
+    }
+    .firstSectionDivImg{
+        width: 100%;
+        display: block;
+    }
+    .secondSectionDivPara{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .firstFooterFiveDiv{
+        width: 80%;
+    }
+    .firstFooterFiveDiv ul{
+        text-align: center;
+    }
+    .secondFooterDiv{
+        flex-direction: column;
+        height: 60px;
+    }
+    .secondFooterFirstDiv img{
+        width: 115px;
+    }
+    .secondFooterSecondDiv{
+        text-align: center;
+    }
+    .fourProductDivSection{
+        flex-wrap: wrap;
+    }
+    .fourProductDiv{
+        width: 52%;
+        padding: 15px 0px;
+    }
 }
