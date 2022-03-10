@@ -270,13 +270,13 @@
 
 @media (min-width: 992px) and (max-width: 1205px){
     .centerHeaderDiv{
-        visibility: hidden;
+        display: none;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
     .centerHeaderDiv{
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -285,7 +285,7 @@
         display: none;
     }
     .centerHeaderDiv{
-        visibility: hidden;
+        display: none;
     }
     .labelPara p{
         display: none;
@@ -319,7 +319,7 @@
         display: none;
     }
     .centerHeaderDiv{
-        visibility: hidden;
+        display: none;
     }
     .rightHeaderDiv{
         display: none;
@@ -389,7 +389,7 @@
         display: none;
     }
     .centerHeaderDiv{
-        visibility: hidden;
+        display: none;
     }
     .rightHeaderDiv{
         display: none;
@@ -458,7 +458,7 @@
         display: none;
     }
     .centerHeaderDiv{
-        visibility: hidden;
+        display: none;
     }
     .rightHeaderDiv{
         display: none;
