@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyserviceService } from './myservice.service';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,15 @@ export class AppComponent {
     changemonths(event:any) {
       console.log("Changed month from the Dropdown");
       console.log(event);
+   }
+   presentdate: Date | undefined;
+   componentproperty: string | undefined;
+   constructor(private myservice: MyserviceService) {}
+   ngOnInit() {
+      this.presentdate = this.myservice.showTodayDate();
+      console.log(this.myservice.serviceproperty);
+      this.myservice.serviceproperty = "component created"; // value is changed.
+      this.componentproperty = this.myservice.serviceproperty;
    }
 }
 

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RouteComponentComponent implements OnInit {
 
+  newRoute = "New Route created.";
+  
   constructor() { }
 
   ngOnInit(): void {
