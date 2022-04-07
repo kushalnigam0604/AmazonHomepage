@@ -1,0 +1,11 @@
+<p>ServerS component data of html file.</p>
+<h5>Warning!</h5>
+
+<!-- property binding on disabled  and event binding on  -->
+
+
+<!-- <p [innerText] = "allowNewServer"></p> -->
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onServerStatuscall()">Add server</button>
+<p>{{serverStatus}}</p>
+
+

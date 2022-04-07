@@ -1,7 +1,15 @@
 <div style = "text-align:center">
   <h1 appChangeText>
+
+    <!-- {{}} iske ander hi app.ts ka content dynamically change hoga. -->
      Welcome to {{title}}. [App-Component html - parent and default component]
   </h1>
+  <br>
+
+  <!-- ngModel ke through bss title me naya input lenge. -->
+
+  <input type="text" [(ngModel)]="title" >    
+  <p>{{title}}</p>
   <app-first></app-first>
 </div>
 <div style="text-align:center">
