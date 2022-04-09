@@ -12,6 +12,8 @@ export class ServersComponent implements OnInit {
   serverCreated = false;
   username = '';
   servers = ['Testserver'];
+  condition = true;
+  logArray = [1];
 
   constructor() { 
     setTimeout(()=> {
@@ -35,6 +37,15 @@ export class ServersComponent implements OnInit {
 
   deleteUsername(){
     this.username = '';
+  }
+
+  changeCondition(){
+    if(this.condition==true)
+    this.condition = false;
+    else
+    this.condition = true;
+
+    this.logArray.push(this.logArray.length + 1);
   }
 
 }

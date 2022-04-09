@@ -22,12 +22,13 @@
 <h4>{{serverName}}</h4>
 
 
-<!-- test -->
+<!-- exercise of above topics -->
 
 <label>username</label>
 <input type="text" class="form-control" [(ngModel)]="username"><br>
 <h4>{{username}}</h4>
 <button class="btn btn-primary" [disabled]="username === ''" (click)="deleteUsername()">delete</button>
+<br>
 <br>
 <br>
 
@@ -44,4 +45,18 @@
 <!-- *ngFor -->
 
 <app-server *ngFor="let server of servers"></app-server>
+
+<br>
+<br>
+<!-- Exercise of above topics -->
+
+<button class="btn btn-primary" (click)="changeCondition()"  >Display Details</button>
+<p *ngIf="condition">Hello everyone. My name is Kushal Nigam.</p>
+<div *ngFor="let log of logArray" [ngStyle]=" { backgroundColor : log > 5 ? 'red' : 'yellow' } " [ngClass]=" {'whiteClass' : log > 5 } ">{{log}}</div>
+
+<br>
+<br>
+
+
+
 
