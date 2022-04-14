@@ -71,12 +71,31 @@
 <br>
 <br>
 
+<!-- routing -->
+
 <a routerLink = "route-component">New route component</a>
 <br />
 <br/>
 <router-outlet></router-outlet>
 
+<!-- Services -->
 <br>
 <br>
-<p>Services: {{presentdate}}</p>
-<p>Services changes: {{componentproperty}}</p>
+<p>Services on app component : ----> {{presentdate}}</p>
+<p> Services changes on app component : ----> {{componentproperty}}</p>
+<br>
+<br>
+
+<!-- Forms -->
+<form #userlogin = "ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+  <input type="text" name="emailid" placeholder="emailid" ngModel>
+  <br>
+  <br>
+  <input type="password" name="password" placeholder="password" ngModel>
+  <br>
+  <br>
+  <input type="submit" value="submit">
+</form>
+
+
+

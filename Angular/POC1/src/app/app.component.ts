@@ -30,5 +30,8 @@ export class AppComponent {
       this.myservice.serviceproperty = "component created"; // value is changed.
       this.componentproperty = this.myservice.serviceproperty;
    }
+   onClickSubmit(data: { emailid: string; }){
+     alert("Entered Email id : " + data.emailid);
+   }
 }
 
