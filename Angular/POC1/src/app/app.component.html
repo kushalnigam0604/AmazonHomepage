@@ -86,7 +86,7 @@
 <br>
 <br>
 
-<!-- Forms -->
+<!-- Forms template driven  -->
 <form #userlogin = "ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
   <input type="text" name="emailid" placeholder="emailid" ngModel>
   <br>
@@ -96,6 +96,28 @@
   <br>
   <input type="submit" value="submit">
 </form>
+<br>
+<br>
 
+<!-- Forms model driven -->
+<div>
+  <form [formGroup] = "formdata" (ngSubmit) = "onClick(formdata.value)" >
+     <input type = "text" class = "fortextbox" name = "email" placeholder = "email" 
+        formControlName="email">
+     <br/>
+     <br>
 
+     
+     <input type = "password" class = "fortextbox" name="passwd" 
+        placeholder = "passwd" formControlName = "passwd">
+     <br/>
+     <br>
+     
+     <input type = "submit" [disabled] = "!formdata.valid" class = "forsubmit" value = "Log In">
+  </form>
+</div>
+<br>
+<p>
+  Email entered is : {{email}}
+</p>
 
