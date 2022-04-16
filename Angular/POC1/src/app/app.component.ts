@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { MyserviceService } from './myservice.service';
+import { ChildCompComponent } from './child-comp/child-comp.component';
+
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -17,6 +19,9 @@ export class AppComponent {
 
   formdata!: FormGroup;
   email: any;
+
+  message : string = "I am parent."
+  messageforchild : string = "I am passed from parent to child component."
 
 
   myClickfunction(event:any){
@@ -40,7 +45,7 @@ export class AppComponent {
       this.componentproperty = this.myservice.serviceproperty;
 
       this.formdata = new FormGroup ({
-        email: new FormControl("",Validators.compose([
+        emailID: new FormControl("",Validators.compose([
           Validators.required,
           Validators.pattern("[^ @]*@[^ @]*")
         ])),
@@ -51,8 +56,8 @@ export class AppComponent {
    onClickSubmit(data: { emailid: string; password: any }){
      alert("Entered Email id : " + data.emailid + " " + data.password);
    }
-   onClick(data: { email: string; }) {
-     this.email = data.email;
+   onClick(data: { emailID: string; }) {
+     this.email = data.emailID;
    }
 }
 

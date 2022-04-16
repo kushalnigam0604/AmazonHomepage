@@ -70,23 +70,28 @@
 </div>
 <br>
 <br>
+<p>----------------------------------------------------------------------</p>
 
 <!-- routing -->
-
+<h1> -- Routing --</h1>
 <a routerLink = "route-component">New route component</a>
 <br />
 <br/>
 <router-outlet></router-outlet>
+<p>----------------------------------------------------------------------</p>
+<br>
+<br>
 
 <!-- Services -->
-<br>
-<br>
+<h1>  -- Services --</h1>
 <p>Services on app component : ----> {{presentdate}}</p>
 <p> Services changes on app component : ----> {{componentproperty}}</p>
 <br>
 <br>
+<p>----------------------------------------------------------------------</p>
 
 <!-- Forms template driven  -->
+<h1> -- Template Driven Forms --</h1>
 <form #userlogin = "ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
   <input type="text" name="emailid" placeholder="emailid" ngModel>
   <br>
@@ -98,12 +103,14 @@
 </form>
 <br>
 <br>
+<p>----------------------------------------------------------------------</p>
 
 <!-- Forms model driven -->
+<h1> -- Reactive forms -- </h1>
 <div>
   <form [formGroup] = "formdata" (ngSubmit) = "onClick(formdata.value)" >
      <input type = "text" class = "fortextbox" name = "email" placeholder = "email" 
-        formControlName="email">
+        formControlName="emailID">
      <br/>
      <br>
 
@@ -120,4 +127,15 @@
 <p>
   Email entered is : {{email}}
 </p>
+<br>
+<br>
+<p>----------------------------------------------------------------------</p>
+
+<!-- Input Output Parent child component communication -->
+<h1> -- Input Output Parent child component communication --</h1>
+
+<h2>{{message}}</h2>
+<app-child-comp [greetmessage] = "messageforchild"></app-child-comp>
+
+
 

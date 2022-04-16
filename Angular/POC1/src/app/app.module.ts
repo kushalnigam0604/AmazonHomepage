@@ -11,6 +11,7 @@ import { MyserviceService } from './myservice.service';
 import { ChangeTextDirective } from './change-text.directive';
 import { SqrtPipe } from './app.sqrt';
 import { RouteComponentComponent } from './route-component/route-component.component';
+import { ChildCompComponent } from './child-comp/child-comp.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RouteComponentComponent } from './route-component/route-component.compo
     FirstComponent,
     ChangeTextDirective,
     SqrtPipe,
-    RouteComponentComponent
+    RouteComponentComponent,
+    ChildCompComponent
   ],
   imports: [
     BrowserModule,
