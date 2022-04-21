@@ -20,8 +20,8 @@ export class AppComponent {
   formdata!: FormGroup;
   email: any;
 
-  message : string = "I am parent."
-  messageforchild : string = "I am passed from parent to child component."
+  parentDataForChild = "Bitcoin (child data changes with parent data)";
+  inputArrayForParent = ['milk', 'tea', 'coffee'];
 
 
   myClickfunction(event:any){
@@ -58,6 +58,10 @@ export class AppComponent {
    }
    onClick(data: { emailID: string; }) {
      this.email = data.emailID;
+   }
+
+   addInputDataToParent(newData: string){
+     this.inputArrayForParent.push(newData);
    }
 }
 

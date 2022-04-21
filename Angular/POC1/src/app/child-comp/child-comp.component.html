@@ -1,2 +1,10 @@
-<p>child-comp works!</p>
-<h2> Hi , {{_greetmessage}}</h2>
+<div class="child">
+    <h2>Child Component</h2>
+    <p>Child Data : {{childData}}</p>
+    <label for="child_input">Add a data :</label>
+    <input type="text" id="child_input" #newData>
+    <button (click)="addNewChild(newData.value)"> Add </button>
+   
+</div>
+
+ 

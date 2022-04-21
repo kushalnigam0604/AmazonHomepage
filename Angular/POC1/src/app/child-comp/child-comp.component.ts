@@ -1,4 +1,4 @@
-import { Component , Input , OnInit } from '@angular/core';
+import { Component , Input , Output , EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-child-comp',
@@ -7,22 +7,21 @@ import { Component , Input , OnInit } from '@angular/core';
 })
 export class ChildCompComponent implements OnInit {
 
-  _greetmessage!: string;
 
-  @Input() 
-  // greetmessage: string | undefined;
+  @Input() childData = "crypto";
 
-  set greetmessage(msg : string){
-    this._greetmessage = msg + "manuplated at child component.";
-  }
-  get greetmessage(){
-    return this._greetmessage;
-  }
+  @Output() newChildEvent = new EventEmitter<string>();
+
+  
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  addNewChild(value : string){
+    this.newChildEvent.emit(value); 
+  }
 
 }

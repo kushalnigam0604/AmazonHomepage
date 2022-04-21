@@ -132,10 +132,16 @@
 <p>----------------------------------------------------------------------</p>
 
 <!-- Input Output Parent child component communication -->
-<h1> -- Input Output Parent child component communication --</h1>
+<h1> -- Data transfer between parent component to child component --</h1>
+<div class="parent">
+  <h2>Parent component</h2>
+  <ul>
+    <li *ngFor="let input of inputArrayForParent">{{input}}</li>
+  </ul>
 
-<h2>{{message}}</h2>
-<app-child-comp [greetmessage] = "messageforchild"></app-child-comp>
+  <app-child-comp [childData] = "parentDataForChild" (newChildEvent)="addInputDataToParent($event)"></app-child-comp>
+</div>
+
 
 
 
