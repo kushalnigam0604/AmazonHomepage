@@ -6,21 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
 import { MyserviceService } from './myservice.service';
 import { ChangeTextDirective } from './change-text.directive';
 import { SqrtPipe } from './app.sqrt';
 import { RouteComponentComponent } from './route-component/route-component.component';
 import { ChildCompComponent } from './child-comp/child-comp.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent,
     ChangeTextDirective,
     SqrtPipe,
     RouteComponentComponent,
-    ChildCompComponent
+    ChildCompComponent,
+    InterpolationComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+.events{
+    width: 800px;
+    border: 1px solid rgb(0, 247, 255);
+    margin: 10px auto ;
+    padding: 3px;
+}
+
+.events button{
+    color: aquamarine;
+    background: black;
+}

@@ -1,0 +1,18 @@
+<div class="interpolation">
+    <h1>Interpolation Property</h1>
+
+
+    <h3>Name : {{name}}</h3>
+    <h3>using function call : {{getName()}}</h3>
+    <h3>using object : {{obj.name}} , {{obj.age}} </h3>
+    <h3>using array : {{arr[0]}} , {{arr[2]}}</h3>
+    <h3>use arithmatic : {{first + second}} </h3>
+    <h3>use url : {{url}}</h3>
+
+    <h1>How a function call on clicking button</h1>
+    <div><b>Click me for name :</b> <button (click)="getValue()">Hit Me</button></div>
+    <div><b>Click me for name by passing value in function :</b> <button (click)="getByPassingValue('value passed by function')">Hit Me</button></div>
+
+</div>
+
+

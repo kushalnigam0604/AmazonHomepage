@@ -1,0 +1,10 @@
+.interpolation{
+    width: 800px;
+    border: 1px solid red;
+    margin: 10px auto;
+    padding: 3px;
+}
+.interpolation button{
+    color: aquamarine;
+    background: black;
+}
