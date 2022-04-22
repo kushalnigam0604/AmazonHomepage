@@ -4,3 +4,19 @@
     padding: 20px;
     width: 600px;
 }
+.sibling{
+    width: 100%;
+    border: 1px solid blue;
+    padding: 2px ;
+    display: inline-block;
+}
+.sibling1{
+    width: 48%;
+    border: 1px solid red;
+    float: left;
+}
+.sibling2{
+    width: 48%;
+    border: 1px solid red;
+    float: left;
+}

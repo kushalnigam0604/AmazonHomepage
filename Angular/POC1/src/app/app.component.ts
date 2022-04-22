@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MyserviceService } from './myservice.service';
 import { ChildCompComponent } from './child-comp/child-comp.component';
+
 
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
@@ -36,14 +36,13 @@ export class AppComponent {
 
    presentdate: Date | undefined;
    componentproperty: string | undefined;
-   constructor(private myservice: MyserviceService) {}
+
+   constructor() {
+
+   }
 
    ngOnInit() {
-      this.presentdate = this.myservice.showTodayDate();
-      console.log(this.myservice.serviceproperty);
-      this.myservice.serviceproperty = "component created"; // value is changed.
-      this.componentproperty = this.myservice.serviceproperty;
-
+      
       this.formdata = new FormGroup ({
         emailID: new FormControl("",Validators.compose([
           Validators.required,

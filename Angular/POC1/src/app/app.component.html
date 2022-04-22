@@ -85,13 +85,6 @@
 <br>
 <br>
 
-<!-- Services -->
-<h1>  -- Services --</h1>
-<p>Services on app component : ----> {{presentdate}}</p>
-<p> Services changes on app component : ----> {{componentproperty}}</p>
-<br>
-<br>
-<p>----------------------------------------------------------------------</p>
 
 <!-- Forms template driven  -->
 <h1> -- Template Driven Forms --</h1>
@@ -144,6 +137,18 @@
 
   <app-child-comp [childData] = "parentDataForChild" (newChildEvent)="addInputDataToParent($event)"></app-child-comp>
 </div>
+
+<!-- data transfer using services -->
+
+<div class="sibling">
+  <div class="sibling1">
+    <app-sibling1></app-sibling1>
+  </div>
+  <div class="sibling2">
+    <app-sibling2></app-sibling2>
+  </div>
+</div>
+
 
 
 
