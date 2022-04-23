@@ -1,11 +1,25 @@
 import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserdataService {
+  apiCall() {
+    throw new Error('Method not implemented.');
+  }
+
+  private subject = new Subject<string>();
 
   constructor() { }
+
+  sendMessage(message: string){
+    this.subject.next(message);
+  }
+
+  receivedMessage(): Observable<string>{
+    return this.subject.asObservable();
+  } 
 
   users(){
     return [

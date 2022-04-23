@@ -15,6 +15,10 @@ export class Sibling1Component implements OnInit {
     this.users = userdata.users();
    }
 
+   sendMessage(message : any){
+     this.userdata.sendMessage(message);
+   }
+
   ngOnInit(): void {
   }
 

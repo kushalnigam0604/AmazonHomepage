@@ -17,7 +17,11 @@ export class Sibling2Component implements OnInit {
    }
 
 
+  message : string | undefined;
   ngOnInit(): void {
+    this.userdata.receivedMessage().subscribe((data) => {
+      this.message = data;
+    })
   }
 
 }

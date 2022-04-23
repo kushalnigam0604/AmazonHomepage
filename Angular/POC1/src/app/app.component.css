@@ -8,7 +8,7 @@
     width: 100%;
     border: 1px solid blue;
     padding: 2px ;
-    display: inline-block;
+    display: flex;
 }
 .sibling1{
     width: 48%;

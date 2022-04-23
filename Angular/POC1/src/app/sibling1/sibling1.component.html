@@ -3,4 +3,8 @@
     <ul>
         <li *ngFor="let user of users">{{user.name}} - {{user.age}} - {{user.email}}</li>
     </ul>
+
+    <h2>uses of subject and observable</h2>
+    <input type="text" #val>
+    <button (click)="sendMessage(val.value)">send message</button>
 </div>
