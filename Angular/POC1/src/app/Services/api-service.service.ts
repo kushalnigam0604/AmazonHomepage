@@ -9,8 +9,11 @@ export class ApiServiceService {
   url = "https://jsonplaceholder.typicode.com/todos/1";
   constructor(private http: HttpClient) { }
 
-  apiCall(){
+  getapiCall(){
     return this.http.get(this.url);
+  }
+  postApiCall(data:any){
+    return this.http.post(this.url,data);
   }
 
 }

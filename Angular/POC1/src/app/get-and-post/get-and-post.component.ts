@@ -11,11 +11,18 @@ export class GetAndPostComponent implements OnInit {
   users : any;
   constructor(private userData: ApiServiceService) 
   { 
-    userData.apiCall().subscribe((data : any) => {
+    userData.getapiCall().subscribe((data : any) => {
       // console.log(data);
       
       this.users = data;
     })
+  }
+  getUserFormData(data:any){
+    console.log(data);
+    this.userData.postApiCall(data).subscribe((response)=> {
+      console.warn(response);
+    })
+    
   }
 
   ngOnInit(): void {
