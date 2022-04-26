@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-child',
-  templateUrl: './child.component.html',
-  styleUrls: ['./child.component.css']
+  selector: 'app-ui',
+  templateUrl: './ui.component.html',
+  styleUrls: ['./ui.component.css']
 })
-export class ChildComponent implements OnInit {
+export class UIComponent implements OnInit {
   Step1 = "1";
   Step2 = "2";
   Step3 = "3";
@@ -20,19 +20,7 @@ export class ChildComponent implements OnInit {
   set(step: string) {
     this.selectedBlock = step;
   }
-
   ngOnInit(): void {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
- 

@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.parent{
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    background: rgb(15, 1, 78);
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: justify;
+}
+.heading{
+    width: 380px;
+    margin: auto;
+    padding-top: 40px ;
+    line-height: 40px;
+    color: antiquewhite;
+}
+.heading p{
+    font-size: 27px;
+    font-family: sans-serif;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+.btn button{
+    border-radius: 20px;
+    padding: 6px 10px;
+    border: 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.content{
+    width: 380px;
+    padding: 20px 70px ;
+    display: flex;
+    justify-content: flex-start;
+    color: antiquewhite;
+}
+.content p{
+    font-size: 22px;
+    font-family: sans-serif;
+    padding-bottom: 25px;
+}
+.childDiv{
+    width: 380px;
+}
+.step1 input{
+    display: block;
+    background-color: rgb(90, 85, 102);
+    border: 0px;
+    border-radius: 2px;
+    padding: 10px 120px 10px 5px;
+    font-size: large;
+    color: antiquewhite;
+}
+.step1 button{
+    margin-top: 30px;
+    color: antiquewhite;
+    background-color: rgb(1, 231, 231);
+    border: 0px;
+    border-radius: 2px;
+    padding: 11px 30px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.options{
+    padding: 7px 3px;
+    border: 1.5px solid rgb(128, 127, 127);
+    border-radius: 2px;
+    margin: 3px;
+    font-size: large;
+}
+.options input{
+    margin-left: 320px;
+    cursor: pointer;
+}
+.step4 input{
+    display: block;
+    background-color: rgb(90, 85, 102);
+    border: 0px;
+    border-radius: 2px;
+    padding: 10px 120px 10px 5px;
+    font-size: large;
+    color: antiquewhite;
+}
+.step4 button{
+    margin-top: 30px;
+    color: antiquewhite;
+    background-color: aqua;
+    border: 0px;
+    border-radius: 2px;
+    padding: 11px 30px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
