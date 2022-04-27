@@ -6,14 +6,14 @@
   </div>
 
   <div class="btn">
-    <button type="button" (click)="set(Step1)">1</button>
-    <button type="button" (click)="set(Step2)">2</button>
-    <button type="button" (click)="set(Step3)">3</button>
-    <button type="button" (click)="set(Step4)">4</button>
+    <button type="button" [ngClass]=" {'color':selectedBlock=='1' || selectedBlock=='2' || selectedBlock=='3' || selectedBlock=='4'}" (click)="set(Step1)">1</button>
+    <button type="button" [ngClass]=" {'color':selectedBlock=='2' || selectedBlock=='3' || selectedBlock=='4'}" (click)="set(Step2)">2</button>
+    <button type="button" [ngClass]=" {'color':selectedBlock=='3' || selectedBlock=='4'}" (click)="set(Step3)">3</button>
+    <button type="button" [ngClass]=" {'color':selectedBlock=='4'}" (click)="set(Step4)">4</button>
   </div>
 
   <div class="content">
-    <div *ngIf="selectedBlock == Step1" class="childDiv">
+    <div *ngIf="selectedBlock == Step1" class="childDiv" >
       <div class="step1">
         <p>Your registered mobile number</p>
         <input type="text" placeholder="Enter number" />

@@ -18,6 +18,7 @@ export class UIComponent implements OnInit {
   }
 
   set(step: string) {
+    console.log(step);
     this.selectedBlock = step;
   }
   ngOnInit(): void {
