@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UIComponent } from './ui/ui.component';
+import { NgOtpInputModule } from  'ng-otp-input';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { UIComponent } from './ui/ui.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOtpInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
