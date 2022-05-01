@@ -78,8 +78,14 @@
     font-size: large;
 }
 .options input{
-    margin-left: 320px;
+    margin-left: 310px;
     cursor: pointer;
+    padding: 2px 9px;
+    border: 0px;
+    border-radius: 20px;
+}
+.options input:hover{
+    background-color: aqua;
 }
 .step4 input{
     display: block;

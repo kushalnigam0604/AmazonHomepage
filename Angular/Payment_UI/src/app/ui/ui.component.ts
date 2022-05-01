@@ -39,8 +39,6 @@ export class UIComponent implements OnInit {
     },
   };
 
- 
-
   // OTP Code
   onOtpChange(otp : any) {
     this.otp = otp;
