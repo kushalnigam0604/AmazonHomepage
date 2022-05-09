@@ -8,7 +8,9 @@
       </div>
       <ul class="list-group list-group-flush">
         <!-- results of ngFor is passed to appFilter with argument searchText -->
-        <li class="list-group-item" *ngFor="let c of characters | filter: searchText">
+        <li class="list-group-item" *ngFor="let c of characters | filter: searchText"
+        appHighlight [searchedWord]="searchText" [content]="c"  
+        [classToApply]="'font-weight-bold'" [setTitle]="true">
           {{c}}
         </li>
       </ul>

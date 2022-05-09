@@ -20,6 +20,7 @@ import { AnimationDemoComponent } from './animation-demo/animation-demo.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterPipe } from './filter.pipe';
 import { SearchFilterComponent } from './search-filter/search-filter.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { SearchFilterComponent } from './search-filter/search-filter.component';
     AnimationDemoComponent,
     FilterPipe,
     SearchFilterComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
