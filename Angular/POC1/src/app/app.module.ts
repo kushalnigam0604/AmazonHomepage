@@ -16,6 +16,10 @@ import { EventsComponent } from './events/events.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { GetAndPostComponent } from './get-and-post/get-and-post.component';
+import { AnimationDemoComponent } from './animation-demo/animation-demo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FilterPipe } from './filter.pipe';
+import { SearchFilterComponent } from './search-filter/search-filter.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +32,17 @@ import { GetAndPostComponent } from './get-and-post/get-and-post.component';
     EventsComponent,
     Sibling1Component,
     Sibling2Component,
-    GetAndPostComponent
+    GetAndPostComponent,
+    AnimationDemoComponent,
+    FilterPipe,
+    SearchFilterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     RouterModule.forRoot([
       {

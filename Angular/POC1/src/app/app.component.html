@@ -1,141 +1,156 @@
-<div style = "text-align:center">
+<div style="text-align: center">
   <h1 appChangeText>
-
     <!-- {{}} iske ander hi app.ts ka content dynamically change hoga. -->
-     Welcome to {{title}}. [App-Component html - parent and default component]
+    Welcome to {{ title }}. [App-Component html - parent and default component]
   </h1>
-  <br>
+  <br />
 
   <app-interpolation></app-interpolation>
   <app-events></app-events>
-  
 
   <!-- ngModel ke through bss title me naya input lenge. -->
 
-  <input type="text" [(ngModel)]="title" >    
-  <p>{{title}}</p>
+  <input type="text" [(ngModel)]="title" />
+  <p>{{ title }}</p>
 </div>
-<div style="text-align:center">
-  <select (change) = "changemonths($event)">
-    <option *ngFor = "let i of months">{{i}}</option>
+<div style="text-align: center">
+  <select (change)="changemonths($event)">
+    <option *ngFor="let i of months">{{ i }}</option>
   </select>
 </div>
-<div style="text-align:center">
-  <span *ngIf = "isAvailable; else Condition1">Condition is true.</span>
+<div style="text-align: center">
+  <span *ngIf="isAvailable; else Condition1">Condition is true.</span>
   <ng-template #Condition1>Condition is false.</ng-template>
 </div>
-<div style="text-align:center">
-  <span *ngIf = "istrue; then condition1 else condition2"></span>  
+<div style="text-align: center">
+  <span *ngIf="istrue; then condition1; else condition2"></span>
   <ng-template #condition1>Condition is valid</ng-template>
   <ng-template #condition2>Condition is invalid</ng-template>
 </div>
-<button (click)="myClickfunction($event)">
-  click me
-</button>
+<button (click)="myClickfunction($event)">click me</button>
 
-<div style = "text-align:center">
-  <h1>{{title | uppercase}}</h1><br>
-  <h2>{{title | lowercase}}</h2>
+<div style="text-align: center">
+  <h1>{{ title | uppercase }}</h1>
+  <br />
+  <h2>{{ title | lowercase }}</h2>
 </div>
 
-
-<div style = "width:100%;">
+<div style="width: 100%">
   <div>
-     <h1>Uppercase Pipe</h1>
-     <b>{{title | uppercase}}</b><br/>
-     <h1>Lowercase Pipe</h1>
-     <b>{{title | lowercase}}</b>
-     <h1>Currency Pipe</h1>
-     <b>{{6589.23 | currency:"USD"}}</b><br/>
-     <b>{{6589.23 | currency:"USD":true}}</b> //Boolean true is used to get the sign of the currency.
-     <h1>Date pipe</h1>
-     <b>{{todaydate | date:'d/M/y'}}</b><br/>
-     <b>{{todaydate | date:'shortTime'}}</b>
-     <h1>Decimal Pipe</h1>
-     <b>{{ 454.78787814 | number: '3.4-4' }}</b> // 3 is for main integer, 4 -4 are for integers to be displayed.
+    <h1>Uppercase Pipe</h1>
+    <b>{{ title | uppercase }}</b
+    ><br />
+    <h1>Lowercase Pipe</h1>
+    <b>{{ title | lowercase }}</b>
+    <h1>Currency Pipe</h1>
+    <b>{{ 6589.23 | currency: "USD" }}</b
+    ><br />
+    <b>{{ 6589.23 | currency: "USD":true }}</b> //Boolean true is used to get
+    the sign of the currency.
+    <h1>Date pipe</h1>
+    <b>{{ todaydate | date: "d/M/y" }}</b
+    ><br />
+    <b>{{ todaydate | date: "shortTime" }}</b>
+    <h1>Decimal Pipe</h1>
+    <b>{{ 454.78787814 | number: "3.4-4" }}</b> // 3 is for main integer, 4 -4
+    are for integers to be displayed.
   </div>
   <div>
-     <h1>Json Pipe</h1>
-     <b>{{ jsonval | json }}</b>
-     <h1>Percent Pipe</h1>
-     <b>{{00.54565 | percent}}</b>
-     <h1>Slice Pipe</h1>
-     <b>{{months | slice:2:6}}</b> 
-     // here 2 and 6 refers to the start and the end index
+    <h1>Json Pipe</h1>
+    <b>{{ jsonval | json }}</b>
+    <h1>Percent Pipe</h1>
+    <b>{{ 00.54565 | percent }}</b>
+    <h1>Slice Pipe</h1>
+    <b>{{ months | slice: 2:6 }}</b>
+    // here 2 and 6 refers to the start and the end index
   </div>
 </div>
 
 <div>
-<h1>Custom Pipe</h1>
-<b>Square root of 25 is: {{25 | sqrt}}</b>
-<br/>
-<b>Square root of 729 is: {{49 | sqrt}}</b>
+  <h1>Custom Pipe</h1>
+  <b>Square root of 25 is: {{ 25 | sqrt }}</b>
+  <br />
+  <b>Square root of 729 is: {{ 49 | sqrt }}</b>
 </div>
-<br>
-<br>
+<br />
+<br />
 <p>----------------------------------------------------------------------</p>
 
 <!-- routing -->
-<h1> -- Routing --</h1>
-<a routerLink = "route-component">New route component</a>
+<h1>-- Routing --</h1>
+<a routerLink="route-component">New route component</a>
 <br />
-<br/>
+<br />
 <router-outlet></router-outlet>
 <p>----------------------------------------------------------------------</p>
-<br>
-<br>
-
+<br />
+<br />
 
 <!-- Forms template driven  -->
-<h1> -- Template Driven Forms --</h1>
-<form #userlogin = "ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
-  <input type="text" name="emailid" placeholder="emailid" ngModel>
-  <br>
-  <br>
-  <input type="password" name="password" placeholder="password" ngModel>
-  <br>
-  <br>
-  <input type="submit" value="submit">
+<h1>-- Template Driven Forms --</h1>
+<form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+  <input type="text" name="emailid" placeholder="emailid" ngModel />
+  <br />
+  <br />
+  <input type="password" name="password" placeholder="password" ngModel />
+  <br />
+  <br />
+  <input type="submit" value="submit" />
 </form>
-<br>
-<br>
+<br />
+<br />
 <p>----------------------------------------------------------------------</p>
 
 <!-- Forms model driven -->
-<h1> -- Reactive forms -- </h1>
+<h1>-- Reactive forms --</h1>
 <div>
-  <form [formGroup] = "formdata" (ngSubmit) = "onClick(formdata.value)" >
-     <input type = "text" class = "fortextbox" name = "email" placeholder = "email" 
-        formControlName="emailID">
-     <br/>
-     <br>
+  <form [formGroup]="formdata" (ngSubmit)="onClick(formdata.value)">
+    <input
+      type="text"
+      class="fortextbox"
+      name="email"
+      placeholder="email"
+      formControlName="emailID"
+    />
+    <br />
+    <br />
 
-     
-     <input type = "password" class = "fortextbox" name="passwd" 
-        placeholder = "passwd" formControlName = "passwd">
-     <br/>
-     <br>
-     
-     <input type = "submit" [disabled] = "!formdata.valid" class = "forsubmit" value = "Log In">
+    <input
+      type="password"
+      class="fortextbox"
+      name="passwd"
+      placeholder="passwd"
+      formControlName="passwd"
+    />
+    <br />
+    <br />
+
+    <input
+      type="submit"
+      [disabled]="!formdata.valid"
+      class="forsubmit"
+      value="Log In"
+    />
   </form>
 </div>
-<br>
-<p>
-  Email entered is : {{email}}
-</p>
-<br>
-<br>
+<br />
+<p>Email entered is : {{ email }}</p>
+<br />
+<br />
 <p>----------------------------------------------------------------------</p>
 
 <!-- Input Output Parent child component communication -->
-<h1> -- Data transfer between parent component to child component --</h1>
+<h1>-- Data transfer between parent component to child component --</h1>
 <div class="parent">
   <h2>Parent component</h2>
   <ul>
-    <li *ngFor="let input of inputArrayForParent">{{input}}</li>
+    <li *ngFor="let input of inputArrayForParent">{{ input }}</li>
   </ul>
 
-  <app-child-comp [childData] = "parentDataForChild" (newChildEvent)="addInputDataToParent($event)"></app-child-comp>
+  <app-child-comp
+    [childData]="parentDataForChild"
+    (newChildEvent)="addInputDataToParent($event)"
+  ></app-child-comp>
 </div>
 
 <!-- data transfer using services -->
@@ -149,11 +164,20 @@
   </div>
 </div>
 
+<div class="getPost">
+  <app-get-and-post></app-get-and-post>
+</div>
+<br>
+<br>
+
+<div class="searchFilter">
+  <app-search-filter></app-search-filter>
+</div>
+
+<br>
+<br>
 
 
-<app-get-and-post></app-get-and-post>
-
-
-
-
-
+<div class="animationDemo">
+  <app-animation-demo></app-animation-demo>
+</div>
