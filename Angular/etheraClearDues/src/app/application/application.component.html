@@ -1,146 +1,47 @@
-<div class="wholeBody">
-
-    <div class="header">
-      <div class="forImageAndName">
-        <div class="image">
-          <img src="../assets/imageOfPerson.png" alt="">
-        </div>
-        <span>Abhishek</span>
-      </div>
+<div class="fullPage">
+  <div class="navigationMenu">
+    <div class="etheraImg allImages">
+      <button><img src="../assets/ethera.png" alt=""></button>
     </div>
-
-
-    <div class="seprator1"></div>
+    <div class="home allImages">
+      <button routerLink="/home"><img src="../assets/home_menu.png" alt=""></button>
+      <p>Home</p>
+    </div>
+    <div class="collections allImages">
+      <button routerLink="/collections"><img src="../assets/collections.png" alt=""></button>
+      <p>Collections</p>
+    </div>
+    <div class="recovery allImages">
+      <button routerLink="/recovery"><img src="../assets/recovery.png" alt=""></button>
+      <p>Recovery</p> 
+    </div>
+    <div class="campaign allImages">
+      <button routerLink="/campaign"><img src="../assets/marketing.png" alt=""></button>
+      <p>Campaign</p>
+    </div>
+    <div class="product allImages">
+      <button routerLink="/product"><img src="../assets/product.png" alt=""></button>
+      <p>Product</p>
+    </div>
+    <div class="queries allImages">
+      <button routerLink="/queries"><img src="../assets/queries.png" alt=""></button>
+      <p>Queries</p>
+    </div>
+  </div>
+  <div class="wholeBody">
   
-    <div class="portfolio">
-      <div class="portfolioHeading">Portfolio Overview</div>
-
-      <div class="portfolio_Options">
-        <div class="portfolioOptionsFirst">
-          <div class="byAmountByAccountFirst">
-            <div class="userImageDiv">
-              <button (click)="changeState()"><img [@changeDivSize]=currentState1 src="../assets/imageOfPerson.png" alt=""></button>
-            </div>
-            <div class="seprator2"></div>
-
-            <div class="rupeesImageDiv">
-              <button (click)="changeState()" [@changeDivSize]=currentState2>&#8377;</button>
-            </div>
+      <div class="header">
+        <div class="forImageAndName">
+          <div class="image">
+            <img src="../assets/imageOfPerson.png" alt="">
           </div>
-
-          <div class="seprator3"></div>
-
-          <div class="byAmountByAccountSecond">
-            {{accountOrAmount}}
-          </div>
-        </div>
-
-
-        <div class="portfolioOptionsSecond">
-          <div class="fourDifferentOptions" (click)="show()">
-            <img src="../assets/export.svg" alt="">
-            <p>Export Master Report</p>
-          </div>
-          <div class="fourDifferentOptions" >  
-            <p>Credit Card</p>
-          </div>
-          <div class="fourDifferentOptions">
-            <p>Live, Pre-NPA, NPA</p>
-          </div>
-          <div class="fourDifferentOptions">
-            <p>March' 21</p>
-          </div>
+          <span>Abhishek</span>
         </div>
       </div>
-
-      <div class="portfolioFiveSectionDiv">
-        <div class="fiveDifferentSectionDiv">
-            <div class="upperDiv">
-              <div class="upperFirstImg">
-                <img src="../assets/totalAccounts.png" alt="">
-              </div>
-              <div class="upperTextDiv">
-                <p>Total Amount</p>
-              </div>
-              <div class="upperSecondImg">
-                <img src="../assets/info-d.png" alt="">
-              </div>
-            </div>
-            <div class="lowerDiv">
-              <p>1234Cr</p>
-            </div>
-        </div>
-        <div class="fiveDifferentSectionDiv">
-          <div class="upperDiv">
-            <div class="upperFirstImg">
-              <img src="../assets/totalEngagement.png" alt="">
-            </div>
-            <div class="upperTextDiv">
-              <p>Total Engagement</p>
-            </div>
-            <div class="upperSecondImg">
-              <img src="../assets/info-d.png" alt="">
-            </div>
-          </div>
-          <div class="lowerDiv">
-            <p>1234Cr</p>
-          </div>
-        </div>
-        <div class="fiveDifferentSectionDiv">
-          <div class="upperDiv">
-            <div class="upperFirstImg">
-              <img src="../assets/totalRegistered.png" alt="">
-            </div>
-            <div class="upperTextDiv">
-              <p>Total Login</p>
-            </div>
-            <div class="upperSecondImg">
-              <img src="../assets/info-d.png" alt="">
-            </div>
-          </div>
-          <div class="lowerDiv">
-            <p>1234Cr</p>
-          </div>
-        </div>
-        <div class="fiveDifferentSectionDiv">
-          <div class="upperDiv">
-            <div class="upperFirstImg">
-              <img src="../assets/digitallyPaid.png" alt="">
-            </div>
-            <div class="upperTextDiv">
-              <p>Digitally Paid</p>
-            </div>
-            <div class="upperSecondImg">
-              <img src="../assets/info-d.png" alt="">
-            </div>
-          </div>
-          <div class="lowerDiv">
-            <p>1234Cr</p>
-          </div>
-        </div>
-        <div class="fiveDifferentSectionDiv">
-          <div class="upperDiv">
-            <div class="upperFirstImg">
-              <img src="../assets/overallResolved.png" alt="">
-            </div>
-            <div class="upperTextDiv">
-              <p>Overall Resolved</p>
-            </div>
-            <div class="upperSecondImg">
-              <img src="../assets/info-d.png" alt="">
-            </div>
-          </div>
-          <div class="lowerDiv">
-            <p>1234Cr</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  
+  
+      <div class="seprator1"></div>
+      <router-outlet></router-outlet>
   </div>
-
-  <div class="slider" [ngStyle]="{'display':showslider === false ? 'block' : 'none' }">
-    <img src="../assets/timer.svg" alt="">
-    <p>Your report is being generated.
-      Download link for the report will be mailed to you on your registered email id within 24 hours.</p>
-    <button (click)="show()">OK</button>
-  </div>
+      
+</div>
