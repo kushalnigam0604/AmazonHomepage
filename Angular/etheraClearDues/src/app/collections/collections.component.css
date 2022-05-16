@@ -20,6 +20,7 @@
 .userImageDiv button{
     border: none;
     border-radius: 20px;
+    cursor: pointer;
 }
 .userImageDiv img {
     width : 27px;
@@ -44,6 +45,7 @@
     border:  1.5px solid white;
     border-radius: 25px;
     font-size: large;
+    cursor: pointer;
 }
 .seprator3{
     width: 2px;

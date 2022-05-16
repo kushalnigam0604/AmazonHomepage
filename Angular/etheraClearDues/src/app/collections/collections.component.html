@@ -27,42 +27,45 @@
           <img src="../assets/export.svg" alt="">
           <p>Export Master Report</p>
         </div>
-        <div class="fourDifferentOptions" >  
+        <div class="fourDifferentOptions" (mouseenter)="creditCard()" (mouseleave)="leave()" >  
           <p>Credit Card</p>
         </div>
-        <div class="fourDifferentOptions">
+        <div class="fourDifferentOptions" (mouseenter)="liveFunc()" (mouseleave)="leave()">
           <p>Live, Pre-NPA, NPA</p>
         </div>
-        <div class="fourDifferentOptions">
+        <div class="fourDifferentOptions" (mouseenter)="showDate()" (mouseleave)="leave()">
           <p>March' 21</p>
         </div>
       </div>
     </div>
 
     <div class="portfolioFiveSectionDiv">
-      <div class="fiveDifferentSectionDiv">
+      <div class="fiveDifferentSectionDiv" *ngFor="let l of this.cardDetails">
           <div class="upperDiv">
             <div class="upperFirstImg">
               <img src="../assets/totalAccounts.png" alt="">
             </div>
             <div class="upperTextDiv">
-              <p>Total Amount</p>
+              <p>{{l.heading}}</p>
             </div>
             <div class="upperSecondImg">
               <img src="../assets/info-d.png" alt="">
             </div>
           </div>
-          <div class="lowerDiv">
-            <p>1234Cr</p>
+          <div class="lowerDiv" *ngIf="account">
+            <p>{{l.lac}}</p>
+          </div>
+          <div class="lowerDiv" *ngIf="amount">
+            <p>{{l.crore}}</p>
           </div>
       </div>
-      <div class="fiveDifferentSectionDiv">
+      <!-- <div class="fiveDifferentSectionDiv">
         <div class="upperDiv">
           <div class="upperFirstImg">
             <img src="../assets/totalEngagement.png" alt="">
           </div>
           <div class="upperTextDiv">
-            <p>Total Engagement</p>
+            <p>{{l.heading}}</p>
           </div>
           <div class="upperSecondImg">
             <img src="../assets/info-d.png" alt="">
@@ -119,7 +122,7 @@
         <div class="lowerDiv">
           <p>1234Cr</p>
         </div>
-      </div>
+      </div> -->
     </div>
 </div>
 
