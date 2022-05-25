@@ -6,6 +6,7 @@ import { RecoveryComponent } from './recovery/recovery.component';
 import { CampaignComponent } from './campaign/campaign.component';
 import { ProductComponent } from './product/product.component';
 import { QueriesComponent } from './queries/queries.component';
+import { SettlementComponent } from './settlement/settlement.component';
 
 
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:"recovery" , component: RecoveryComponent},
   {path:"campaign" , component: CampaignComponent},
   {path:"product" , component: ProductComponent},
-  {path:"queries" , component: QueriesComponent}
+  {path:"queries" , component: QueriesComponent},
+  {path:"settlement" , component: SettlementComponent}
 ];
 
 @NgModule({
@@ -24,4 +26,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const RoutingComponent = [HomeComponent,CollectionsComponent,RecoveryComponent,CampaignComponent,ProductComponent,QueriesComponent];
+export const RoutingComponent = [HomeComponent,CollectionsComponent,RecoveryComponent,CampaignComponent,ProductComponent,QueriesComponent,SettlementComponent];

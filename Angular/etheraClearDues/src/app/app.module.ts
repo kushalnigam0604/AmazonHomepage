@@ -13,6 +13,7 @@ import { CampaignComponent } from './campaign/campaign.component';
 import { ProductComponent } from './product/product.component';
 import { QueriesComponent } from './queries/queries.component';
 import { SettlementOffersComponent } from './collections/settlement-offers/settlement-offers.component';
+import { SettlementComponent } from './settlement/settlement.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SettlementOffersComponent } from './collections/settlement-offers/settl
     ProductComponent,
     QueriesComponent,
     RoutingComponent,
-    SettlementOffersComponent
+    SettlementOffersComponent,
+    SettlementComponent
   ],
   imports: [
     BrowserModule,
