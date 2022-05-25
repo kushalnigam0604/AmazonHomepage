@@ -1,0 +1,63 @@
+.settlementOffers{
+    width: 450px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-left: 45px;
+}
+.headingOfSettlement{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.headingOfSettlement img{
+    width: 4.9%;
+}
+.btn_view_details{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 10px;
+}
+.btn_view_details button{
+    background-color: black;
+    border: none;
+    color: orange;
+    cursor: pointer;
+}
+.firstPartition{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+}
+.secondPartition{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+}
+.threeSettlementOffersDiv{
+    width: 26%;
+    height: 170px;
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgForAllPartition{
+    padding-top: 15px;
+}
+.buttonForPartition{
+    width: 100%;
+}
+.buttonForPartition button{
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(230, 151, 4);
+    border: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: white;
+}

@@ -28,9 +28,6 @@ export class CollectionsComponent implements OnInit {
 
   }
 
-  currentState1 = 'initial';
-  currentState2 = 'final';
-  accountOrAmount = 'By Accounts';
   cardDetails=
   [
     {
@@ -78,6 +75,10 @@ export class CollectionsComponent implements OnInit {
     },
   ]
 
+  currentState1 = 'initial';
+  currentState2 = 'final';
+  accountOrAmount = 'By Accounts';
+
   account : boolean = true;
   amount : boolean = false;
 
@@ -107,38 +108,48 @@ show(){
   
 }
 
-credit : string [] = ['creditCard','loan'];
+
+selectedCredit : boolean = false;
+selectedLive : boolean = false;
+selectedDates : boolean = false;
+
+CreditValue : string  = "CreditCard"
+credit : string [] = ['CreditCard','loan'];
 
 creditCard(){
-  console.log('credit');
-  for(let i of this.credit)
-  {
-    console.log(i);
-  }
-  
+  this.selectedCredit = true;
 }
 
-live : string[] = ['live','Pre-NPA','NPA'];
+creditChange(data : any){
+  this.CreditValue =  data ;
+}
+
+LiveValue : string = "Live";
+live : string[] = ['Live','Pre-NPA','NPA'];
 
 liveFunc(){
-  console.log('live');
-  for(let i of this.live){
-    console.log(i);
-  }
+  this.selectedLive = true;
 }
 
+liveFuncChange(data : any){
+  this.LiveValue = data;
+}
+
+DateValue : string = "March";
 dates : string[] = ['March','April','May'];
 
 showDate(){
-  console.log('date');
-  for(let i of this.dates){
-    console.log(i);
-  }
+  this.selectedDates = true;
+}
+
+showDateChange(data : any){
+  this.DateValue = data;
 }
 
 leave(){
-  console.log('left');
-  
+  this.selectedCredit = false;
+  this.selectedLive = false;
+  this.selectedDates = false;
 }
 
 }

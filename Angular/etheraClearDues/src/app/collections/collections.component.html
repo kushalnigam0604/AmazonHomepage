@@ -23,18 +23,34 @@
 
 
       <div class="portfolioOptionsSecond">
-        <div class="fourDifferentOptions" (click)="show()">
+        <div class="fourDifferentOptionsExport" (click)="show()">
           <img src="../assets/export.svg" alt="">
           <p>Export Master Report</p>
         </div>
-        <div class="fourDifferentOptions" (mouseenter)="creditCard()" (mouseleave)="leave()" >  
-          <p>Credit Card</p>
+        <div class="outer" (mouseleave)="leave()">
+          <div class="fourDifferentOptions" (mouseenter)="creditCard()" >  
+            <p>{{CreditValue}}</p>
+          </div>
+          <div class="outerLayer" *ngIf="selectedCredit" >
+            <div class="listForCredit" *ngFor="let c of credit" (click)="creditChange(c)">{{c}}</div>
+          </div>
         </div>
-        <div class="fourDifferentOptions" (mouseenter)="liveFunc()" (mouseleave)="leave()">
-          <p>Live, Pre-NPA, NPA</p>
+
+        <div class="outer" (mouseleave)="leave()">
+          <div class="fourDifferentOptions" (mouseenter)="liveFunc()" >  
+            <p>{{LiveValue}}</p>
+          </div>
+          <div class="outerLayer" *ngIf="selectedLive" >
+            <div class="listForCredit" *ngFor="let l of live" (click)="liveFuncChange(l)">{{l}}</div>
+          </div>
         </div>
-        <div class="fourDifferentOptions" (mouseenter)="showDate()" (mouseleave)="leave()">
-          <p>March' 21</p>
+        <div class="outer" (mouseleave)="leave()">
+          <div class="fourDifferentOptions" (mouseenter)="showDate()" >  
+            <p>{{DateValue}}</p>
+          </div>
+          <div class="outerLayer" *ngIf="selectedDates" >
+            <div class="listForCredit" *ngFor="let d of dates" (click)="showDateChange(d)">{{d}}</div>
+          </div>
         </div>
       </div>
     </div>
@@ -59,70 +75,6 @@
             <p>{{l.crore}}</p>
           </div>
       </div>
-      <!-- <div class="fiveDifferentSectionDiv">
-        <div class="upperDiv">
-          <div class="upperFirstImg">
-            <img src="../assets/totalEngagement.png" alt="">
-          </div>
-          <div class="upperTextDiv">
-            <p>{{l.heading}}</p>
-          </div>
-          <div class="upperSecondImg">
-            <img src="../assets/info-d.png" alt="">
-          </div>
-        </div>
-        <div class="lowerDiv">
-          <p>1234Cr</p>
-        </div>
-      </div>
-      <div class="fiveDifferentSectionDiv">
-        <div class="upperDiv">
-          <div class="upperFirstImg">
-            <img src="../assets/totalRegistered.png" alt="">
-          </div>
-          <div class="upperTextDiv">
-            <p>Total Login</p>
-          </div>
-          <div class="upperSecondImg">
-            <img src="../assets/info-d.png" alt="">
-          </div>
-        </div>
-        <div class="lowerDiv">
-          <p>1234Cr</p>
-        </div>
-      </div>
-      <div class="fiveDifferentSectionDiv">
-        <div class="upperDiv">
-          <div class="upperFirstImg">
-            <img src="../assets/digitallyPaid.png" alt="">
-          </div>
-          <div class="upperTextDiv">
-            <p>Digitally Paid</p>
-          </div>
-          <div class="upperSecondImg">
-            <img src="../assets/info-d.png" alt="">
-          </div>
-        </div>
-        <div class="lowerDiv">
-          <p>1234Cr</p>
-        </div>
-      </div>
-      <div class="fiveDifferentSectionDiv">
-        <div class="upperDiv">
-          <div class="upperFirstImg">
-            <img src="../assets/overallResolved.png" alt="">
-          </div>
-          <div class="upperTextDiv">
-            <p>Overall Resolved</p>
-          </div>
-          <div class="upperSecondImg">
-            <img src="../assets/info-d.png" alt="">
-          </div>
-        </div>
-        <div class="lowerDiv">
-          <p>1234Cr</p>
-        </div>
-      </div> -->
     </div>
 </div>
 
@@ -133,3 +85,6 @@
     Download link for the report will be mailed to you on your registered email id within 24 hours.</p>
   <button (click)="show()">OK</button>
 </div>
+
+
+<app-settlement-offers></app-settlement-offers>
