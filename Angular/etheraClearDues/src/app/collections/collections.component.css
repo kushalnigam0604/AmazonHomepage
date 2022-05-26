@@ -96,9 +96,8 @@
     position: absolute;
     top: 40px;
     z-index: 2;
-    padding: 5px 5px;
     border-radius: 3px;
-    background-color: rgb(31, 28, 28);
+    background-color: rgb(70, 67, 67);
     color: white;
     cursor: pointer;
     display: flex;
@@ -106,7 +105,9 @@
     justify-content: center;
 }
 .listForCredit{
-    padding: 2px 0px;
+    padding: 2px 2px;
+    margin-bottom: 1px;
+    background-color: rgb(31, 28, 28);
 }
 .portfolioFiveSectionDiv{
     padding: 20px 2px;

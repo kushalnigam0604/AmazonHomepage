@@ -1,1 +1,91 @@
-<p>settlement works!</p>
+<div class="settlementheading">
+  <div class="headingOfSettlement">
+    <p>Settlement Offers</p>
+  </div>
+  <div class="goBack">
+    <button routerLink="/collections">Go Back</button>
+  </div>
+</div>
+
+<div class="portfolio_Options">
+  <div class="portfolioOptionsFirst">
+    <div class="byAmountByAccountFirst">
+      <div class="userImageDiv">
+        <button (click)="changeState()">
+          <img
+            [@changeDivSize]="currentState1"
+            src="../assets/files.png"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="seprator2"></div>
+
+      <div class="rupeesImageDiv">
+        <button (click)="changeState()">
+          <img
+            [@changeDivSize]="currentState2"
+            src="../assets/files.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+
+    <div class="seprator3"></div>
+
+    <div class="byAmountByAccountSecond">
+      {{ accountOrAmount }}
+    </div>
+  </div>
+
+  <div class="portfolioOptionsSecond">
+    <div class="outer" (mouseleave)="leave()">
+      <div class="fourDifferentOptions" (mouseenter)="DCPfunc()">
+        <p>{{ DCPValue }}</p>
+      </div>
+      <div class="outerLayer" *ngIf="selectedDCP">
+        <div
+          class="listForCredit"
+          *ngFor="let l of DCP"
+          (click)="DCPFuncChange(l)"
+        >
+          {{ l }}
+        </div>
+      </div>
+    </div>
+    <div class="outer" (mouseleave)="leave()">
+      <div class="fourDifferentOptions" (mouseenter)="showDate()">
+        <p>{{ DateValue }}</p>
+      </div>
+      <div class="outerLayer" *ngIf="selectedDates">
+        <div
+          class="listForCredit"
+          *ngFor="let d of dates"
+          (click)="showDateChange(d)"
+        >
+          {{ d }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tableDiv">
+    <div class="headDiv">
+        <div class="headings" *ngFor="let element of headElements"><p>{{element}}</p></div>
+    </div>
+    <div class="bodyDiv" *ngFor="let obj of settlement">
+        <div class="rows">{{obj.SNo}}</div>
+        <div class="rows">{{obj.ToS}}</div>
+        <div class="rows">{{obj.preApproved}}</div>
+        <div class="rows">{{obj.payStartDate}}</div>
+        <div class="rows">{{obj.offerAmount}}</div>
+        <div class="rows">{{obj.noOfEmi}}</div>
+        <div class="rows">{{obj.ctsStartDate}}</div>
+        <div class="rows">{{obj.ctsAmount}}</div>
+        <div class="rows">{{obj.ctsNoOfEmi}}</div>
+        <div class="rows">{{obj.actionDate}}</div>
+        <div class="rows">{{obj.actionUser}}</div>
+    </div>
+</div>
