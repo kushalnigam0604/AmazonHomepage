@@ -39,8 +39,8 @@ export class SettlementComponent implements OnInit {
   currentState2 = 'final';
   accountOrAmount = 'Pending Offers';
 
-  account: boolean = true;
-  amount: boolean = false;
+  pending: boolean = true;
+  actioned: boolean = false;
 
   changeState() {
     this.currentState1 = this.currentState1 === 'initial' ? 'final' : 'initial';
@@ -50,14 +50,14 @@ export class SettlementComponent implements OnInit {
         ? 'Actioned Offers'
         : 'Pending Offers';
     if (this.accountOrAmount === 'Pending Offers') {
-      this.account = true;
+      this.pending = true;
     } else {
-      this.account = false;
+      this.pending = false;
     }
     if (this.accountOrAmount === 'Actioned Offers') {
-      this.amount = true;
+      this.actioned = true;
     } else {
-      this.amount = false;
+      this.actioned = false;
     }
   }
 
@@ -523,6 +523,49 @@ export class SettlementComponent implements OnInit {
     offerOpen: !1
 }];
 
+settlement2 = [{
+  SNo: "1",
+  ToS: "4,84,088",
+  preApproved: "1,99,719",
+  payStartDate: "Jan,1,2021",
+  offerAmount: "1,50,000",
+  noOfEmi: "1",
+  ctsStartDate: "-",
+  ctsAmount: "-",
+  ctsNoOfEmi: "-",
+  status: !0,
+  actionDate: "5 days",
+  actionUser: "Abhishek",
+  offerOpen: !1
+}, {
+  SNo: "2",
+  ToS: "3,31,451",
+  preApproved: "1,15,164",
+  payStartDate: "Jan,3,2021",
+  offerAmount: "1,50,,000",
+  noOfEmi: "1",
+  ctsStartDate: "-",
+  ctsAmount: "-",
+  ctsNoOfEmi: "-",
+  status: !0,
+  actionDate: "5 days",
+  actionUser: "Shravan",
+  offerOpen: !1
+}, {
+  SNo: "3",
+  ToS: "2,03,934",
+  preApproved: "39,088",
+  payStartDate: "Jan,4,2021",
+  offerAmount: "10,000",
+  noOfEmi: "1",
+  ctsStartDate: "-",
+  ctsAmount: "-",
+  ctsNoOfEmi: "-",
+  status: !0,
+  actionDate: "5 days",
+  actionUser: "Shivani",
+  offerOpen: !1
+}];
 
 
 

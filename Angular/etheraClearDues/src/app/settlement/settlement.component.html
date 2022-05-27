@@ -71,21 +71,41 @@
   </div>
 </div>
 
-<div class="tableDiv">
+<div class="tableDiv" *ngIf="pending">
     <div class="headDiv">
         <div class="headings" *ngFor="let element of headElements"><p>{{element}}</p></div>
     </div>
     <div class="bodyDiv" *ngFor="let obj of settlement">
-        <div class="rows">{{obj.SNo}}</div>
-        <div class="rows">{{obj.ToS}}</div>
-        <div class="rows">{{obj.preApproved}}</div>
-        <div class="rows">{{obj.payStartDate}}</div>
-        <div class="rows">{{obj.offerAmount}}</div>
-        <div class="rows">{{obj.noOfEmi}}</div>
-        <div class="rows">{{obj.ctsStartDate}}</div>
-        <div class="rows">{{obj.ctsAmount}}</div>
-        <div class="rows">{{obj.ctsNoOfEmi}}</div>
-        <div class="rows">{{obj.actionDate}}</div>
-        <div class="rows">{{obj.actionUser}}</div>
+        <div class="row1">{{obj.SNo}}</div>
+        <div class="row2">{{obj.ToS}}</div>
+        <div class="row3">{{obj.preApproved}}</div>
+        <div class="row4">{{obj.payStartDate}}</div>
+        <div class="row5">{{obj.offerAmount}}</div>
+        <div class="row6">{{obj.noOfEmi}}</div>
+        <div class="row7">{{obj.ctsStartDate}}</div>
+        <div class="row8">{{obj.ctsAmount}}</div>
+        <div class="row9">{{obj.ctsNoOfEmi}}</div>
+        <div class="row10">{{obj.status}}</div>
+        <div class="row11">{{obj.actionDate}}</div>
+        <div class="row12">{{obj.actionUser}}</div>
     </div>
+</div>
+<div class="tableDiv" *ngIf="actioned">
+  <div class="headDiv">
+      <div class="headings" *ngFor="let element of headElements"><p>{{element}}</p></div>
+  </div>
+  <div class="bodyDiv" *ngFor="let obj of settlement2">
+      <div class="Row1">{{obj.SNo}}</div>
+      <div class="Row2">{{obj.ToS}}</div>
+      <div class="Row3">{{obj.preApproved}}</div>
+      <div class="Row4">{{obj.payStartDate}}</div>
+      <div class="Row5">{{obj.offerAmount}}</div>
+      <div class="Row6">{{obj.noOfEmi}}</div>
+      <div class="Row7">{{obj.ctsStartDate}}</div>
+      <div class="Row7">{{obj.ctsAmount}}</div>
+      <div class="Row7">{{obj.ctsNoOfEmi}}</div>
+      <div class="Row7">{{obj.status}}</div>
+      <div class="Row7">{{obj.actionDate}}</div>
+      <div class="Row7">{{obj.actionUser}}</div>
+  </div>
 </div>

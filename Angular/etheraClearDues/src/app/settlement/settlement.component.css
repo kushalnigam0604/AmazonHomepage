@@ -123,11 +123,11 @@
 .tableDiv{
     display: flex;
     flex-direction: column;
+    background-color: rgb(37, 36, 36);
 }
 .headDiv{
     display: flex;
     justify-content: space-around;
-    border: 1px solid rgb(167, 166, 166);
 }
 .headings{
     padding: 10px 25px;
@@ -139,5 +139,151 @@
 }
 .bodyDiv{
     display: flex;
-    justify-content: space-around;
+    padding: 20px 2px;
+    color: rgb(167, 166, 166);
+    font-size: smaller;
+    background-color: black;
+    margin: 4px 4px;
+    border-radius: 2px;
+}
+.row1{
+    width: 70px;
+    text-align: center;
+    margin-right: 12px;
+}
+.row2{
+    width: 80px;
+    text-align: start;
+    margin-right: 20px;
+}
+.row3{
+    width: 80px;
+    text-align: start;
+    margin-right: 75px;
+}
+.row4{
+    width: 80px;
+    text-align: center;
+    margin-right: 55px;
+}
+.row5{
+    width: 80px;
+    text-align: start;
+    margin-right: 30px;
+}
+.row6{
+    width: 40px;
+    text-align: center;
+    margin-right: 80px;
+}
+.row7{
+    width: 20px;
+    text-align: center;
+    margin-right: 95px;
+}
+.row8{
+    width: 20px;
+    text-align: center;
+    margin-right: 85px;
+}
+.row9{
+    width: 20px;
+    text-align: center;
+    margin-right: 40px;
+}
+.row10{
+    width: 120px;
+    text-align: center;
+    margin-right: 20px;
+}
+.row11{
+    width: 20px;
+    text-align: center;
+    margin-right: 75px;
+}
+.row12{
+    width: 20px;
+    text-align: center;
+}
+.Row1{
+    width: 70px;
+    text-align: center;
+    margin-right: 12px;
+    border: 0.1px solid wheat;
+}
+.Row2{
+    width: 80px;
+    text-align: start;
+    margin-right: 20px;
+    border: 0.1px solid wheat;
+
+}
+.Row3{
+    width: 80px;
+    text-align: start;
+    margin-right: 75px;
+    border: 0.1px solid wheat;
+
+}
+.Row4{
+    width: 80px;
+    text-align: center;
+    margin-right: 55px;
+    border: 0.1px solid wheat;
+
+}
+.Row5{
+    width: 80px;
+    text-align: start;
+    margin-right: 30px;
+    border: 0.1px solid wheat;
+
+}
+.Row6{
+    width: 40px;
+    text-align: center;
+    margin-right: 80px;
+    border: 0.1px solid wheat;
+
+}
+.Row7{
+    width: 20px;
+    text-align: center;
+    margin-right: 95px;
+    border: 0.1px solid wheat;
+
+}
+.Row8{
+    width: 20px;
+    text-align: center;
+    margin-right: 85px;
+    border: 0.1px solid wheat;
+
+}
+.Row9{
+    width: 20px;
+    text-align: center;
+    margin-right: 40px;
+    border: 0.1px solid wheat;
+
+}
+.Row10{
+    width: 120px;
+    text-align: center;
+    margin-right: 20px;
+    border: 0.1px solid wheat;
+
+}
+.Row11{
+    width: 20px;
+    text-align: center;
+    margin-right: 75px;
+    border: 0.1px solid wheat;
+
+}
+.Row12{
+    width: 20px;
+    text-align: center;
+    border: 0.1px solid wheat;
+
 }
