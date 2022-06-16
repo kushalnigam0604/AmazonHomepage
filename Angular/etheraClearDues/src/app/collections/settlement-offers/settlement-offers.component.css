@@ -1,5 +1,5 @@
 .settlementOffers{
-    width: 450px;
+    width: 400px;
     height: 500px;
     background-color: black;
     display: flex;
@@ -37,7 +37,7 @@
     padding: 20px 10px;
 }
 .threeSettlementOffersDiv{
-    width: 26%;
+    width: 108px;
     height: 170px;
     background-color: rgb(39, 38, 38);
     display: flex;
@@ -47,7 +47,10 @@
     justify-content: space-between;
 }
 .imgForAllPartition{
-    padding-top: 15px;
+    padding-top: 25px;
+}
+.imgForAllPartition img{
+    width: 25px;
 }
 .buttonForPartition{
     width: 100%;

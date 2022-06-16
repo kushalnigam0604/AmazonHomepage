@@ -119,11 +119,11 @@
 }
 .fiveDifferentSectionDiv{
     background: black;
-    width: 200px;
+    width: 240px;
     border-radius: 7px;
 }
 .upperDiv{
-    padding: 0px 5px 2px 0px;
+    padding: 4px 4px 4px 3px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -141,6 +141,7 @@
     color: rgb(0, 195, 255);
     display: flex;
     justify-content: center;
+    padding: 5px 0px 5px 6px;
 }
 .slider{
     width: 600px;
