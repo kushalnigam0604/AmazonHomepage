@@ -21,8 +21,15 @@
     font-family: sans-serif;
 }
 .allImages{
+    width: 100%;
     padding: 20px 0px;
     text-align: center;
+}
+.cssAdd{
+    float: left;
+    background-color: rgb(209, 136, 0);
+    width: 6px;
+    height: 100%;
 }
 .allImages button{
     padding: 0px;
