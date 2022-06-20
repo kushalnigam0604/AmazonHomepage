@@ -1,5 +1,5 @@
 .settlementOffers{
-    width: 400px;
+    width: 430px;
     height: 500px;
     background-color: black;
     display: flex;
@@ -10,7 +10,10 @@
 .headingOfSettlement{
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px;
+    background: #252323;
+    padding: 6px 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 .headingOfSettlement img{
     width: 4.9%;

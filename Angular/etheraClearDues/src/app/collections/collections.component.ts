@@ -75,8 +75,8 @@ export class CollectionsComponent implements OnInit {
     },
   ]
 
-  currentState1 = 'initial';
-  currentState2 = 'final';
+  currentState1 = 'final';
+  currentState2 = 'initial';
   accountOrAmount = 'By Accounts';
 
   account : boolean = true;
