@@ -25,11 +25,9 @@
     padding: 20px 0px;
     text-align: center;
 }
-.cssAdd{
-    float: left;
-    background-color: rgb(209, 136, 0);
-    width: 6px;
-    height: 100%;
+.active{
+    border-left: 5px solid rgb(223, 152, 0);
+    padding: 2px 0px;
 }
 .allImages button{
     padding: 0px;
@@ -43,7 +41,7 @@
     background-color: black;
 }
 .wholeBody{
-    background-color: rgb(48, 47, 47);
+    background-color: #292929;
     color: rgb(253, 251, 249);
     font-family: sans-serif;
     width: calc(100% - 68px);

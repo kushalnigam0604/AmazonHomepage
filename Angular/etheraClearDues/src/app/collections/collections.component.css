@@ -66,7 +66,9 @@
 }
 .portfolioOptionsSecond{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 25px;
     width: calc(100% - 270px);
 }
 .fourDifferentOptions{
@@ -77,6 +79,7 @@
     display: flex;
     width: 200px;
     height: 36px;
+    margin-right: 10px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -95,6 +98,7 @@
     display: flex;
     width: 200px;
     height: 36px;
+    margin-right: 10px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -124,32 +128,48 @@
     justify-content: space-evenly;
 }
 .fiveDifferentSectionDiv{
-    background: black;
+    background: #1e1e1e;
     width: 230px;
     border-radius: 7px;
 }
 .upperDiv{
-    padding: 4px 4px 4px 3px;
+    padding: 4px 4px 1px 4px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    height: 55px;
 }
 .upperFirstImg img{
     width: 60px;
 }
 .upperTextDiv{
-    font-size: 14px;
-    padding: 0px 28px 17px 0px;
+    font-size: 13px;
+    width: 140px;
+    padding: 0px 30px 25px 0px;
+}
+.upperSecondImg{
+    align-self: flex-start;
+    padding-top: 10px;
 }
 .upperSecondImg img{
-    width: 22px;
+    width: 18px;
 }
 .lowerDiv{
-    color: rgb(0, 195, 255);
     display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.lowerPart{
+    color: #3cb4de;
     font-size: 20px;
-    justify-content: center;
-    padding-left: 6px;
+    float: left;
+    width: 172px;
+    padding-left: 65px;
+}
+.lowerPartPer{
+    color: #fe877a;
+    font-size: 10px;
+    float: left;
+    padding-left: 23px;
 }
 .slider{
     width: 600px;

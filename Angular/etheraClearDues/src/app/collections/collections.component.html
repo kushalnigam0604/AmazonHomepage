@@ -68,11 +68,16 @@
               <img src="../assets/info-d.png" alt="">
             </div>
           </div>
-          <div class="lowerDiv" *ngIf="account">
+          <div class="lowerDiv">
+          <div class="lowerPart" *ngIf="account">
             <p>{{l.lac}}</p>
           </div>
-          <div class="lowerDiv" *ngIf="amount">
-            <p>{{l.crore}}</p>
+            <div class="lowerPart" *ngIf="amount">
+              <p>{{l.crore}}</p>
+            </div>
+            <div class="lowerPartPer">
+              <p>{{l.per}}</p>
+            </div>
           </div>
       </div>
     </div>

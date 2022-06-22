@@ -140,128 +140,189 @@
 }
 .bodyDiv{
     display: flex;
-    padding: 20px 2px;
+    padding: 10px 2px;
     color: rgb(167, 166, 166);
     font-size: smaller;
     background-color: black;
-    margin: 4px 4px;
+    margin: 2px 4px;
     border-radius: 2px;
 }
 .row1{
     width: 70px;
     text-align: center;
     margin-right: 12px;
+    align-self: center;
 }
 .row2{
     width: 80px;
     text-align: start;
     margin-right: 20px;
+    align-self: center;
 }
 .row3{
     width: 80px;
     text-align: start;
     margin-right: 75px;
+    align-self: center;
 }
 .row4{
     width: 80px;
     text-align: center;
     margin-right: 55px;
+    align-self: center;
 }
 .row5{
     width: 80px;
     text-align: start;
     margin-right: 30px;
+    align-self: center;
 }
 .row6{
     width: 40px;
     text-align: center;
     margin-right: 80px;
+    align-self: center;
 }
 .row7{
     width: 20px;
     text-align: center;
     margin-right: 95px;
+    align-self: center;
 }
 .row8{
     width: 20px;
     text-align: center;
-    margin-right: 85px;
+    margin-right: 65px;
+    align-self: center;
 }
 .row9{
     width: 20px;
     text-align: center;
-    margin-right: 40px;
+    margin-right: 27px;
+    align-self: center;
 }
 .row10{
-    width: 120px;
+    width: 160px;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 0px;
+    float: left;
+    align-self: center;
+}
+.firstBtn10{
+    background-color: #087b65;
+    color: antiquewhite;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.firstBtn10 i{
+    display: block;
+}
+.secondBtn10{
+    background-color: #740ea7;
+    color: antiquewhite;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.secondBtn10 i{
+    display: block;
 }
 .row11{
     width: 20px;
     text-align: center;
-    margin-right: 75px;
+    margin-right: 70px;
+    align-self: center;
 }
 .row12{
     width: 20px;
     text-align: center;
+    align-self: center;
 }
 .Row1{
     width: 70px;
     text-align: center;
     margin-right: 12px;
+    align-self: center;
 }
 .Row2{
     width: 70px;
     text-align: center;
     margin-right: 22px;
+    align-self: center;
 }
 .Row3{
     width: 70px;
     text-align: center;
     margin-right: 100px;
+    align-self: center;
 }
 .Row4{
     width: 70px;
     text-align: center;
     margin-right: 60px;
+    align-self: center;
 }
 .Row5{
     width: 70px;
     text-align: center;
     margin-right: 50px;
+    align-self: center;
 }
 .Row6{
     width: 20px;
     text-align: center;
     margin-right: 80px;
+    align-self: center;
 }
 .Row7{
     width: 20px;
     text-align: center;
     margin-right: 110px;
+    align-self: center;
 }
 .Row8{
     width: 20px;
     text-align: center;
     margin-right: 80px;
+    align-self: center;
 }
 .Row9{
     width: 20px;
     text-align: center;
-    margin-right: 85px;
+    margin-right: 10px;
+    align-self: center;
 }
 .Row10{
-    width: 40px;
+    width: 160px;
     text-align: center;
-    margin-right: 35px;
+    padding-left: 18px;
+    align-self: center;
+}
+.Btn10{
+    padding: 5px 30px;
+    background-color: #17ac44;
+    color: antiquewhite;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.Btn10 i{
+    display: block;
 }
 .Row11{
     width: 70px;
     text-align: center;
-    margin-right: 25px;
+    margin-right: 38px;
+    align-self: center;
 }
 .Row12{
     width: 80px;
     text-align: center;
+    align-self: center;
 }

@@ -4,34 +4,28 @@
     <div class="etheraImg allImages">
       <button><img src="../assets/ethera.png" alt=""></button>
     </div>
-    <div class="home allImages">
-      <div *ngIf="cssHome === true" class="cssAdd"></div>
-      <button (click)="addCss('Home')" routerLink="/home"><img src="../assets/home_menu.png" alt=""></button>
+    <div class="home allImages" routerLink="/home" routerLinkActive="active">
+      <button routerLink="/home"><img src="../assets/home_menu.png" alt=""></button>
       <p>Home</p>
     </div>
-    <div class="collections allImages">
-      <div *ngIf="cssCollection === true" class="cssAdd"></div>
-      <button (click)="addCss('Collection')" routerLink="/collections"><img src="../assets/collections.png" alt=""></button>
+    <div class="collections allImages" routerLink="/collections" routerLinkActive="active">
+      <button routerLink="/collections"><img src="../assets/collections.png" alt=""></button>
       <p>Collections</p>
     </div>
-    <div class="recovery allImages">
-      <div *ngIf="cssRecovery === true" class="cssAdd"></div>
-      <button (click)="addCss('Recovery')" routerLink="/recovery"><img src="../assets/recovery.png" alt=""></button>
+    <div class="recovery allImages" routerLink="/recovery" routerLinkActive="active">
+      <button routerLink="/recovery"><img src="../assets/recovery.png" alt=""></button>
       <p>Recovery</p> 
     </div>
-    <div class="campaign allImages">
-      <div *ngIf="cssCampaign === true" class="cssAdd"></div>
-      <button (click)="addCss('Campaign')" routerLink="/campaign"><img src="../assets/marketing.png" alt=""></button>
+    <div class="campaign allImages" routerLink="/campaign" routerLinkActive="active">
+      <button routerLink="/campaign" ><img src="../assets/marketing.png" alt=""></button>
       <p>Campaign</p>
     </div>
-    <div class="product allImages">
-      <div *ngIf="cssProduct === true" class="cssAdd"></div>
-      <button (click)="addCss('Product')" routerLink="/product"><img src="../assets/product.png" alt=""></button>
+    <div class="product allImages" routerLink="/product" routerLinkActive="active">
+      <button routerLink="/product"><img src="../assets/product.png" alt=""></button>
       <p>Product</p>
     </div>
-    <div class="queries allImages">
-      <div *ngIf="cssQueries === true" class="cssAdd"></div>
-      <button (click)="addCss('Queries')" routerLink="/queries"><img src="../assets/queries.png" alt=""></button>
+    <div class="queries allImages" routerLink="/queries" routerLinkActive="active">
+    <button routerLink="/queries" ><img src="../assets/queries.png" alt=""></button>
       <p>Queries</p>
     </div>
   </div>
