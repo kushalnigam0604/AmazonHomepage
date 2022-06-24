@@ -1,111 +1,159 @@
-<div class="settlementheading">
-  <div class="headingOfSettlement">
-    <p>Settlement Offers</p>
-  </div>
-  <div class="goBack">
-    <button routerLink="/collections">Go Back</button>
-  </div>
-</div>
-
-<div class="portfolio_Options">
-  <div class="portfolioOptionsFirst">
-    <div class="byAmountByAccountFirst">
-      <div class="userImageDiv">
-        <button (click)="changeState()">
-          <img
-            [@changeDivSize]="currentState1"
-            src="../assets/files.png"
-            alt=""
-          />
-        </button>
-      </div>
-      <div class="seprator2"></div>
-
-      <div class="rupeesImageDiv">
-        <button (click)="changeState()">
-          <img
-            [@changeDivSize]="currentState2"
-            src="../assets/files.png"
-            alt=""
-          />
-        </button>
-      </div>
+<div class="structure">
+  <div class="settlementheading">
+    <div class="headingOfSettlement">
+      <p>Settlement Offers</p>
     </div>
-
-    <div class="seprator3"></div>
-
-    <div class="byAmountByAccountSecond">
-      {{ accountOrAmount }}
+    <div class="goBack">
+      <button routerLink="/collections">Go Back</button>
     </div>
   </div>
-
-  <div class="portfolioOptionsSecond">
-    <div class="outer" (mouseleave)="leave()">
-      <div class="fourDifferentOptions" (mouseenter)="DCPfunc()">
-        <p>{{ DCPValue }}</p>
+  
+  <div class="portfolio_Options">
+    <div class="portfolioOptionsFirst">
+      <div class="byAmountByAccountFirst">
+        <div class="userImageDiv">
+          <button (click)="changeState()">
+            <img
+              [@changeDivSize]="currentState1"
+              src="../assets/files.png"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="seprator2"></div>
+  
+        <div class="rupeesImageDiv">
+          <button (click)="changeState()">
+            <img
+              [@changeDivSize]="currentState2"
+              src="../assets/files.png"
+              alt=""
+            />
+          </button>
+        </div>
       </div>
-      <div class="outerLayer" *ngIf="selectedDCP">
-        <div
-          class="listForCredit"
-          *ngFor="let l of DCP"
-          (click)="DCPFuncChange(l)"
-        >
-          {{ l }}
+  
+      <div class="seprator3"></div>
+  
+      <div class="byAmountByAccountSecond">
+        {{ accountOrAmount }}
+      </div>
+    </div>
+  
+    <div class="portfolioOptionsSecond">
+      <div class="outer" (mouseleave)="leave()">
+        <div class="fourDifferentOptions" (mouseenter)="DCPfunc()">
+          <p>{{ DCPValue }}</p>
+        </div>
+        <div class="outerLayer" *ngIf="selectedDCP">
+          <div
+            class="listForCredit"
+            *ngFor="let l of DCP"
+            (click)="DCPFuncChange(l)"
+          >
+            {{ l }}
+          </div>
+        </div>
+      </div>
+      <div class="outer" (mouseleave)="leave()">
+        <div class="fourDifferentOptions" (mouseenter)="showDate()">
+          <p>{{ DateValue }}</p>
+        </div>
+        <div class="outerLayer" *ngIf="selectedDates">
+          <div
+            class="listForCredit"
+            *ngFor="let d of dates"
+            (click)="showDateChange(d)"
+          >
+            {{ d }}
+          </div>
         </div>
       </div>
     </div>
-    <div class="outer" (mouseleave)="leave()">
-      <div class="fourDifferentOptions" (mouseenter)="showDate()">
-        <p>{{ DateValue }}</p>
-      </div>
-      <div class="outerLayer" *ngIf="selectedDates">
-        <div
-          class="listForCredit"
-          *ngFor="let d of dates"
-          (click)="showDateChange(d)"
-        >
-          {{ d }}
-        </div>
-      </div>
-    </div>
   </div>
-</div>
-
-<div class="tableDiv" *ngIf="pending">
+  
+  <div class="tableDiv" *ngIf="pending">
+      <div class="headDiv">
+          <div class="headings" *ngFor="let element of headElements"><p>{{element}}</p></div>
+      </div>
+      <div class="bodyDiv" *ngFor="let obj of settlement">
+          <div class="row1">{{obj.SNo}}</div>
+          <div class="row2">{{obj.ToS}}</div>
+          <div class="row3">{{obj.preApproved}}</div>
+          <div class="row4">{{obj.payStartDate}}</div>
+          <div class="row5">{{obj.offerAmount}}</div>
+          <div class="row6">{{obj.noOfEmi}}</div>
+          <div class="row7">{{obj.ctsStartDate}}</div>
+          <div class="row8">{{obj.ctsAmount}}</div>
+          <div class="row9">{{obj.ctsNoOfEmi}}</div>
+          <div class="row10"><button class="firstBtn10"><i class="fa-solid fa-check"></i>Approve</button><button class="secondBtn10" (click)="show()"><i class="fa-solid fa-rotate-left"></i>Counter</button></div>
+          <div class="row11">{{obj.actionDate}}</div>
+          <div class="row12">{{obj.actionUser}}</div>
+      </div>
+  </div>
+  <div class="tableDiv" *ngIf="actioned">
     <div class="headDiv">
         <div class="headings" *ngFor="let element of headElements"><p>{{element}}</p></div>
     </div>
-    <div class="bodyDiv" *ngFor="let obj of settlement">
-        <div class="row1">{{obj.SNo}}</div>
-        <div class="row2">{{obj.ToS}}</div>
-        <div class="row3">{{obj.preApproved}}</div>
-        <div class="row4">{{obj.payStartDate}}</div>
-        <div class="row5">{{obj.offerAmount}}</div>
-        <div class="row6">{{obj.noOfEmi}}</div>
-        <div class="row7">{{obj.ctsStartDate}}</div>
-        <div class="row8">{{obj.ctsAmount}}</div>
-        <div class="row9">{{obj.ctsNoOfEmi}}</div>
-        <div class="row10"><button class="firstBtn10"><i class="fa-solid fa-check"></i>Approve</button><button class="secondBtn10"><i class="fa-solid fa-rotate-left"></i>Counter</button></div>
-        <div class="row11">{{obj.actionDate}}</div>
-        <div class="row12">{{obj.actionUser}}</div>
+    <div class="bodyDiv" *ngFor="let obj of settlement2">
+        <div class="Row1">{{obj.SNo}}</div>
+        <div class="Row2">{{obj.ToS}}</div>
+        <div class="Row3">{{obj.preApproved}}</div>
+        <div class="Row4">{{obj.payStartDate}}</div>
+        <div class="Row5">{{obj.offerAmount}}</div>
+        <div class="Row6">{{obj.noOfEmi}}</div>
+        <div class="Row7">{{obj.ctsStartDate}}</div>
+        <div class="Row8">{{obj.ctsAmount}}</div>
+        <div class="Row9">{{obj.ctsNoOfEmi}}</div>
+        <div class="Row10"><button class="Btn10"><i class="fa-solid fa-check"></i>Offer Closed</button></div>
+        <div class="Row11">{{obj.actionDate}}</div>
+        <div class="Row12">{{obj.actionUser}}</div>
     </div>
-</div>
-<div class="tableDiv" *ngIf="actioned">
-  <div class="headDiv">
-      <div class="headings" *ngFor="let element of headElements"><p>{{element}}</p></div>
   </div>
-  <div class="bodyDiv" *ngFor="let obj of settlement2">
-      <div class="Row1">{{obj.SNo}}</div>
-      <div class="Row2">{{obj.ToS}}</div>
-      <div class="Row3">{{obj.preApproved}}</div>
-      <div class="Row4">{{obj.payStartDate}}</div>
-      <div class="Row5">{{obj.offerAmount}}</div>
-      <div class="Row6">{{obj.noOfEmi}}</div>
-      <div class="Row7">{{obj.ctsStartDate}}</div>
-      <div class="Row8">{{obj.ctsAmount}}</div>
-      <div class="Row9">{{obj.ctsNoOfEmi}}</div>
-      <div class="Row10"><button class="Btn10"><i class="fa-solid fa-check"></i>Offer Closed</button></div>
-      <div class="Row11">{{obj.actionDate}}</div>
-      <div class="Row12">{{obj.actionUser}}</div>
-  </div>
+  
+  
+  <div class="slider" [ngStyle]="{'display':showslider === false ? 'none' : 'block' }">
+    <div class="firstDivInSlider">
+      <i class="fa-solid fa-rotate-left"></i>
+      <label> Counter Offer</label>
+    </div>
+    <div class="secondPart">
+      <div class="secondDivInSlider">
+        <div class="secondDivPart1">
+          <label>Total OutStanding</label>
+          <div class="input">
+            <input type="text" value="1,00,000">
+          </div>
+        </div>
+        <div class="secondDivPart2">
+          <label>Counter Offer Amount</label> 
+          <div class="input">
+            <input type="text" placeholder="Enter The Amount">
+          </div>
+        </div>
+      </div>
+      <div class="thirdDivInSlider">
+        <div class="thirdDivPart1">
+          <label>Number Of EMI</label>
+          <div class="input">
+            <input type="text" placeholder="Select Duration">
+          </div>
+        </div>
+        <div class="thirdDivPart2">
+          <label>EMI Start Date</label>
+          <div class="input">
+            <input type="text" placeholder="dd/mm/yyyy">
+          </div>
+        </div>
+      </div>
+      <div class="fourthDivInSlider">
+        <div class="fourthDivPart1">
+          <button (click)="show()">Cancel</button>
+        </div>
+        <div class="fourthDivPart2">
+          <button (click)="show()">Submit Offer</button>
+        </div>
+      </div>
+    </div>
+  </div>  
 </div>

@@ -61,7 +61,7 @@ export class SettlementComponent implements OnInit {
     }
   }
 
-  showslider: boolean = false;
+  showslider: boolean = true;
 
   show() {
     this.showslider = this.showslider === false ? true : false;

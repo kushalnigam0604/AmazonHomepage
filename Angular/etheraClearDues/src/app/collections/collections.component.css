@@ -1,8 +1,8 @@
 .portfolio{
-    padding-top: 30px;
+    padding: 20px 30px;
 }
 .portfolioHeading{
-    padding: 20px 20px;
+    padding: 20px 0px;
     font-size: larger;
 }
 .portfolio_Options{
@@ -11,7 +11,7 @@
 .portfolioOptionsFirst{
     display: flex;
     width: 270px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
 }
 .byAmountByAccountFirst{
@@ -68,7 +68,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 25px;
     width: calc(100% - 270px);
 }
 .fourDifferentOptions{
@@ -122,14 +121,13 @@
     background-color: rgb(31, 28, 28);
 }
 .portfolioFiveSectionDiv{
-    padding: 20px 8px;
-    padding-left: 20px;
+    padding: 20px 0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .fiveDifferentSectionDiv{
     background: #1e1e1e;
-    width: 230px;
+    width: 19%;
     border-radius: 7px;
 }
 .upperDiv{
