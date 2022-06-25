@@ -118,7 +118,7 @@
     justify-content: center;
 }
 .listForCredit{
-    padding: 2px 2px;
+    padding: 7px 10px;
     margin-bottom: 1px;
     background-color: rgb(31, 28, 28);
 }
@@ -174,7 +174,7 @@
     align-self: center;
 }
 .row5{
-    width: 80px;
+    width: 70px;
     text-align: start;
     margin-right: 30px;
     align-self: center;
@@ -192,7 +192,7 @@
     align-self: center;
 }
 .row8{
-    width: 20px;
+    width: 30px;
     text-align: center;
     margin-right: 65px;
     align-self: center;
@@ -247,19 +247,19 @@
     align-self: center;
 }
 .Row1{
-    width: 70px;
+    width: 85px;
     text-align: center;
     margin-right: 12px;
     align-self: center;
 }
 .Row2{
-    width: 70px;
+    width: 80px;
     text-align: center;
     margin-right: 22px;
     align-self: center;
 }
 .Row3{
-    width: 70px;
+    width: 65px;
     text-align: center;
     margin-right: 100px;
     align-self: center;
@@ -271,7 +271,7 @@
     align-self: center;
 }
 .Row5{
-    width: 70px;
+    width: 60px;
     text-align: center;
     margin-right: 50px;
     align-self: center;
@@ -301,13 +301,13 @@
     align-self: center;
 }
 .Row10{
-    width: 160px;
+    width: 165px;
     text-align: center;
     padding-left: 18px;
     align-self: center;
 }
 .Btn10{
-    padding: 5px 30px;
+    padding: 5px 25px;
     background-color: #17ac44;
     color: antiquewhite;
     border: none;
@@ -325,7 +325,7 @@
 }
 .Row12{
     width: 80px;
-    text-align: center;
+    text-align: justify;
     align-self: center;
 }
 
@@ -333,8 +333,8 @@
     width: 800px;
     height: 460px;
     position: fixed;
-    top: 10px;
-    left: 330px;
+    top: calc(100% - 500px);
+    left: calc(100% - 1050px);
     z-index: 2;
     background-color: #1e1e1e;
     color: #fff;

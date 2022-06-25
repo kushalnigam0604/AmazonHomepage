@@ -105,10 +105,10 @@
 .outerLayer{
     width: 88%;
     position: absolute;
-    top: 40px;
+    top: 37px;
     z-index: 2;
     border-radius: 3px;
-    background-color: rgb(70, 67, 67);
+    background-color: rgb(46, 45, 45);
     color: white;
     cursor: pointer;
     display: flex;
@@ -116,9 +116,10 @@
     justify-content: center;
 }
 .listForCredit{
-    padding: 2px 2px;
+    padding: 7px 20px;
+    text-align: justify;
     margin-bottom: 1px;
-    background-color: rgb(31, 28, 28);
+    background-color: black;
 }
 .portfolioFiveSectionDiv{
     padding: 20px 0px;
@@ -136,20 +137,24 @@
     align-items: center;
     height: 55px;
 }
-.upperFirstImg img{
+.upperFirstImg{
     width: 60px;
+}
+.upperFirstImg img{
+    width: 100%;
 }
 .upperTextDiv{
     font-size: 13px;
-    width: 140px;
-    padding: 0px 30px 25px 0px;
+    width: calc(100% - 80px);
+    padding-bottom: 20px; 
 }
 .upperSecondImg{
     align-self: flex-start;
     padding-top: 10px;
+    width: 20px;
 }
 .upperSecondImg img{
-    width: 18px;
+    width: 100%;
 }
 .lowerDiv{
     display: flex;
@@ -170,18 +175,18 @@
     padding-left: 23px;
 }
 .slider{
-    width: 600px;
-    height: 300px;
-    position: relative;
-    bottom: 200px;
-    left: 350px;
+    width: 700px;
+    height: 400px;
+    position: fixed;
+    top: calc(100% - 450px);
+    left: calc(100% - 1000px);
     z-index: 1;
     background-color: black;
     line-height: 24px;
     color: white;
     border-radius: 5px;
     text-align: center;
-    padding: 0px 100px;
+    padding: 50px 100px;
 }
 .slider button{
     margin-top: 18px;
