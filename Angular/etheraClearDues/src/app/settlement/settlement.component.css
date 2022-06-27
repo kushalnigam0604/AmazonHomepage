@@ -334,7 +334,7 @@
     height: 460px;
     position: fixed;
     top: calc(100% - 500px);
-    left: calc(100% - 1050px);
+    left: calc(50% - 400px);
     z-index: 2;
     background-color: #1e1e1e;
     color: #fff;

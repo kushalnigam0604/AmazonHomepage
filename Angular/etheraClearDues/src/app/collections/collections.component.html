@@ -29,7 +29,8 @@
         </div>
         <div class="outer" (mouseleave)="leave()">
           <div class="fourDifferentOptions" (mouseenter)="creditCard()" >  
-            <p>{{CreditValue}}</p>
+            <p>{{CreditValue}}</p> 
+            
           </div>
           <div class="outerLayer" *ngIf="selectedCredit" >
             <div class="listForCredit" *ngFor="let c of credit" (click)="creditChange(c)">{{c}}</div>

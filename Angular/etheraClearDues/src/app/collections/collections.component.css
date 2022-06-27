@@ -175,18 +175,18 @@
     padding-left: 23px;
 }
 .slider{
-    width: 700px;
+    width: 500px;
     height: 400px;
     position: fixed;
     top: calc(100% - 450px);
-    left: calc(100% - 1000px);
+    left: calc(50% - 250px);
     z-index: 1;
     background-color: black;
     line-height: 24px;
     color: white;
     border-radius: 5px;
     text-align: center;
-    padding: 50px 100px;
+    padding: 50px 60px;
 }
 .slider button{
     margin-top: 18px;
