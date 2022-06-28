@@ -37,14 +37,27 @@
           </div>
         </div>
 
-        <div class="outer" (mouseleave)="leave()">
+        <!-- <div class="outer" (mouseleave)="leave()">
           <div class="fourDifferentOptions" (mouseenter)="liveFunc()" >  
             <p>{{LiveValue}}</p>
           </div>
           <div class="outerLayer" *ngIf="selectedLive" >
-            <div class="listForCredit" *ngFor="let l of live" (click)="liveFuncChange(l)">{{l}}</div>
+            <div class="listForCredit" *ngFor="let l of liveNpaArray" (click)="liveFuncChange(l)">{{l}}</div>
           </div>
-        </div>
+        </div> -->
+        <div class="outer" (mouseover)="liveFunc()" (mouseleave)="leave()">
+          <div class="fourDifferentOptions">
+              <span  *ngFor="let list of liveNpaArray | filter:true:selectedTime">{{list.value+"/"}}</span>
+          </div>
+                  <!---->
+          <div class="outerLayer" *ngIf="selectedLive" >
+              <span *ngFor="let list of liveNpaArray" class="listForCredit">
+                  <input type="checkbox" name="card{{list.id}}" [(ngModel)]="list.checked" (change)="changeValue()">
+                  <label for="card{{list.id}}">{{list.value}}</label>
+              </span>
+          </div>
+
+      </div>
         <div class="outer" (mouseleave)="leave()">
           <div class="fourDifferentOptions" (mouseenter)="showDate()" >  
             <p>{{DateValue}}</p>

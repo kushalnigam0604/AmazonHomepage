@@ -4,6 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule , RoutingComponent} from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FilterPipe } from './filter.pipe';
+
 import { ApplicationComponent } from './application/application.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
@@ -19,6 +21,7 @@ import { SettlementComponent } from './settlement/settlement.component';
   declarations: [
     AppComponent,
     ApplicationComponent,
+    FilterPipe,
     HomeComponent,
     CollectionsComponent,
     RecoveryComponent,

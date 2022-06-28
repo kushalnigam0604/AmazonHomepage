@@ -124,7 +124,7 @@ creditChange(data : any){
   this.CreditValue =  data ;
 }
 
-LiveValue : string = "Live";
+LiveValue : string = "";
 live : string[] = ['Live','Pre-NPA','NPA'];
 
 liveFunc(){
@@ -152,4 +152,28 @@ leave(){
   this.selectedDates = false;
 }
 
+selectedTime:string="";
+
+liveNpaArray = [
+  {
+    id: 1,
+  value: "Live", 
+  checked: true
+ }, 
+  {
+    id: 2,
+    value: "Pre-NPA", 
+    checked: false 
+  }, 
+  {
+    id: 3, 
+    value: "NPA", 
+    checked: false
+  }
+]
+
+changeValue(){
+  let date=new Date();
+  this.selectedTime=date.toString();
+ }
 }
