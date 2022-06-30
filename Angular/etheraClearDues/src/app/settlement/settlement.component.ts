@@ -22,6 +22,7 @@ import {
       state(
         'final',
         style({
+          color: 'rgb(223, 152, 0)',
           transform: 'scale(1.3)',
         })
       ),
@@ -35,8 +36,8 @@ export class SettlementComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  currentState1 = 'initial';
-  currentState2 = 'final';
+  currentState1 = 'final';
+  currentState2 = 'initial';
   accountOrAmount = 'Pending Offers';
 
   pending: boolean = true;
@@ -69,6 +70,7 @@ export class SettlementComponent implements OnInit {
 
   selectedDCP: boolean = false;
   selectedDates: boolean = false;
+  selectedNumber: boolean = false;
 
   DCPValue: string = 'DCP Sole';
   DCP: string[] = ['DCP Sole', 'DCP Sole 1', 'DCP Sole 2', 'DCP Sole 3'];
@@ -92,10 +94,22 @@ export class SettlementComponent implements OnInit {
     this.DateValue = data;
   }
 
+  NumberValue: number = 10;
+  numberArr: number[] = [10 , 20 , 30];
+
+  numFunc(){
+    this.selectedNumber = true;
+  }
+
+  numFuncChange(data:any){
+    this.NumberValue = data;
+  }
+
   leave() {
 
     this.selectedDCP = false;
     this.selectedDates = false;
+    this.selectedNumber = false;
   }
 
   headElements : string[] = ["S.No.", "TOS", "Pre-Approved Offer Amount", "Payment Start Date", "Offer Amount", "No. Of EMI", "Ctr Offer Start Date", "Ctr Amount", "Ctr No. Of EMI", "Status", "Action Date", "Action User"];

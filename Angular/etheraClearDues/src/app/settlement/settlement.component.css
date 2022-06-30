@@ -33,12 +33,12 @@
 }
 .userImageDiv button{
     border: none;
-    border-radius: 20px;
     cursor: pointer;
+    background-color: transparent;
 }
-.userImageDiv img {
-    width : 27px;
-    border-radius: 60px;
+.userImageDiv button i {
+    font-size: 28px;
+    color: antiquewhite;
 }
 .seprator2{
     width: 40px;
@@ -52,12 +52,16 @@
 }
 .rupeesImageDiv button{
     border: none;
-    border-radius: 20px;
     cursor: pointer;
+    background-color: transparent;
 }
-.rupeesImageDiv img{
-    width : 27px;
-    border-radius: 60px;
+.rupeesImageDiv button i{
+    font-size: 28px;
+    color: antiquewhite;
+}
+#firstI{
+    font-size: 16px;
+    color: antiquewhite;
 }
 .seprator3{
     width: 2px;
@@ -79,7 +83,7 @@
     border: 1px solid rgb(253, 176, 8);
     color: rgb(253, 176, 8);
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     display: flex;
     width: 220px;
     justify-content: center;
@@ -120,13 +124,81 @@
 .listForCredit{
     padding: 7px 10px;
     margin-bottom: 1px;
-    background-color: rgb(31, 28, 28);
+    background-color: rgb(24, 24, 24);
 }
 
 .tableDiv{
     display: flex;
     flex-direction: column;
     background-color: rgb(37, 36, 36);
+}
+.header{
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 12px 2px;
+    background-color: rgb(24, 24, 24);
+}
+.leftHeader{
+    display: flex;
+    width: 40%;
+    padding-left: 10px;
+}
+.rightHeader{
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.showEntry{
+    align-self: center;
+}
+.fourDifferentOptions2{
+    border: 1px solid rgb(253, 176, 8);
+    color: rgb(253, 176, 8);
+    border-radius: 20px;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.outer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-left: 22px;
+}
+.outerLayer2{
+    width: 88%;
+    position: absolute;
+    top: 36px;
+    z-index: 2;
+    border-radius: 3px;
+    background-color: rgb(70, 67, 67);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.listForCredit2{
+    padding: 7px 10px;
+    margin-bottom: 1px;
+    background-color: rgb(24, 24, 24);
+}
+.fourDifferentOptions2 input{
+    background-color: transparent;
+    border: none;
+    width: 170px;
+    font-family: sans-serif;
+    font-size: medium;
+    margin-right: 1px;
+}
+.lastLine{
+    padding: 22px 10px;
+
 }
 .headDiv{
     display: flex;
@@ -145,7 +217,7 @@
     padding: 10px 2px;
     color: rgb(167, 166, 166);
     font-size: smaller;
-    background-color: black;
+    background-color: rgb(24, 24, 24);
     margin: 2px 4px;
     border-radius: 2px;
 }
@@ -301,7 +373,7 @@
     align-self: center;
 }
 .Row10{
-    width: 165px;
+    width: 175px;
     text-align: center;
     padding-left: 18px;
     align-self: center;
