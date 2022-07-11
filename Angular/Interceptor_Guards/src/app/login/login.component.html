@@ -1,0 +1,21 @@
+<div class="outerDiv">
+    <div class="heading">
+        <h2>Login form</h2>
+    </div>
+    <form #formValue = "ngForm" (ngSubmit)="Login(formValue.value)">
+        <div class="inner">
+            <label for="email">Email :</label>
+            <input type = "email" id="email" name = "Email" placeholder = "email" ngModel>
+        </div>
+        <div class="inner">
+            <label for="pass">Password :</label>
+            <input type="password" id="pass" name="Password" placeholder="password" ngModel>
+        </div>
+        <div class="inner">
+            <input class="submit" type="submit">
+        </div>
+    </form>
+    <div class="token">
+        <button>Get Token</button>
+    </div>
+</div>
