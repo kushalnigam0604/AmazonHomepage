@@ -5,18 +5,19 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class APIService {
+  static getToken: any;
 
   constructor(private http: HttpClient) { }
 
   loginUrl = "https://reqres.in/api/login";
 
-  loginUser(user: any){
-    return this.http.post<any>(this.loginUrl, user)
+  getapiCall(){
+    return this.http.get(this.loginUrl);
   }
-  loggedIn() {
-    return localStorage.getItem('token')    
+  postApiCall(data:any){
+    return this.http.post(this.loginUrl,data);
   }
-  getToken() {
-    return localStorage.getItem('token')
+  getToken(){
+    return localStorage.getItem("token");
   }
 }

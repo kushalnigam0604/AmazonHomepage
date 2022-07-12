@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { APIService } from '../api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,20 +10,22 @@ import { APIService } from '../api.service';
 export class LoginComponent implements OnInit {
   auth: any;
 
-  constructor(private api:APIService) { }
+  constructor(private api:APIService , private _router:Router) {
+    api.getapiCall().subscribe((data:any) => {
+      console.log(data);
+    })
+   }
 
   ngOnInit(): void {
   }
-  Login(data:any){
-      this.api.loginUser(this.data).subscribe(
-        (        res: { token: string; }) => {
-          localStorage.setItem('token', res.token)
-          // this.route.navigate(['/login'])
-        },
-        (        err: any) => console.log(err)
-      )
-    }
-  data(data: any) {
-    throw new Error('Method not implemented.');
+  login(data : any){
+    this.api.postApiCall(data).subscribe((res : any) => {
+      this._router.navigate(['/user']);
+      console.log(res.token);
+      localStorage.setItem("token" , res.token);
+    },
+    err => {
+      console.log(err);
+    });
   }
 }
