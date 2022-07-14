@@ -39,10 +39,11 @@ export class IntercepterService implements HttpInterceptor {
     return next.handle(request).pipe(
       catchError((error:any) => {
         // Checking if it is an Authentication Error (401)
+        console.log(error.status);
         if (error.status === 401) {
           alert('Access Denied');
           // <Log the user out of your application code>
-          this._router.navigate([ 'login-page-route' ]);
+          this._router.navigate([ '/login' ]);
           return throwError(error);
         }
         // If it is not an authentication error, just throw it
