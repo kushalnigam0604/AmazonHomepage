@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { APIService } from '../api.service';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -10,15 +11,18 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   auth: any;
 
-  constructor(private api:APIService , private _router:Router) {
-    api.getapiCall().subscribe((data:any) => {
-      console.log(data);
-    })
-   }
+  constructor(private api:APIService , private _router:Router) {}
 
   ngOnInit(): void {
   }
-  login(data : any){
+  callGetFunc()
+    {
+      this.api.getapiCall().subscribe((data:any) => {
+        console.log(data);
+      })
+    }
+  login(data : NgForm){
+    this.callGetFunc();
     this.api.postApiCall(data).subscribe((res : any) => {
       this._router.navigate(['/user']);
       console.log(res.token);
@@ -29,3 +33,5 @@ export class LoginComponent implements OnInit {
     });
   }
 }
+
+

@@ -2,17 +2,17 @@
     <div class="heading">
         <h2>Login form</h2>
     </div>
-    <form #formValue = "ngForm" (ngSubmit)="login(formValue.value)">
+    <form #formValue="ngForm" (ngSubmit)="login(formValue.value)">
         <div class="inner">
             <label for="email">Email :</label>
-            <input type = "email" id="email" name = "email" placeholder = "email" ngModel>
+            <input type = "email" id="email" name = "email" placeholder = "email" ngModel email required>
         </div>
         <div class="inner">
             <label for="pass">Password :</label>
-            <input type="password" id="pass" name="password" placeholder="password" ngModel>
+            <input type="password" id="pass" name="password" placeholder="password" ngModel required>
         </div>
         <div class="inner">
-            <input class="submit" type="submit">
+            <input class="submit" type="submit" [disabled]="!formValue.valid">
         </div>
     </form>
 </div>
