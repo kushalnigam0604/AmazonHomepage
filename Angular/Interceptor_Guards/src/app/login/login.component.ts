@@ -15,14 +15,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  callGetFunc()
-    {
-      this.api.getapiCall().subscribe((data:any) => {
-        console.log(data);
-      })
-    }
+  
   login(data : NgForm){
-    this.callGetFunc();
     this.api.postApiCall(data).subscribe((res : any) => {
       this._router.navigate(['/user']);
       console.log(res.token);

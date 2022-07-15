@@ -40,7 +40,7 @@ export class IntercepterService implements HttpInterceptor {
       catchError((error:any) => {
         // Checking if it is an Authentication Error (401)
         console.log(error.status);
-        if (error.status === 401) {
+        if (error.status === 400) {
           alert('Access Denied');
           // <Log the user out of your application code>
           this._router.navigate([ '/login' ]);

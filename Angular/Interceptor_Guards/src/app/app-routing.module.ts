@@ -6,7 +6,8 @@ import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {component: LoginComponent,path : 'login'},
-  {component: UserComponent, path:'user', canActivate:[ApiGuard]}
+  {component: UserComponent, path:'user', canActivate:[ApiGuard]},
+  {path:'**', redirectTo:'login'}
 ];
 
 @NgModule({

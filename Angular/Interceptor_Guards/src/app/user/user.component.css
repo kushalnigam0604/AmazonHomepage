@@ -1,0 +1,9 @@
+.userListHeader{
+    display: inline;
+    width: 20%;
+    float: left;
+}
+.userList{
+    display: block;
+    width: 100%;
+}

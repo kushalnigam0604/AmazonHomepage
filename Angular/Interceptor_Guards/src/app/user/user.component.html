@@ -1,1 +1,17 @@
-<p>user works!</p>
+<h3>Users Route</h3>
+<div class="userListHeader">
+    <h3>ID</h3>
+    <div class="userList" *ngFor="let item of userList">{{item.id}}</div>
+</div>
+<div class="userListHeader">
+    <h3>Email</h3>
+    <div class="userList" *ngFor="let item of userList">{{item.email}}</div>
+</div>
+<div class="userListHeader">
+    <h3>FirstName</h3>
+    <div class="userList" *ngFor="let item of userList">{{item.first_name}}</div>
+</div>
+<div class="userListHeader">
+    <h3>LastName</h3>
+    <div class="userList" *ngFor="let item of userList">{{item.last_name}}</div>
+</div>
