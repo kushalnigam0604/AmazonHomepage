@@ -1,0 +1,13 @@
+.form{
+    width: 500px;
+    margin: auto;
+    margin-top: 70px;
+    border: 2px solid grey;
+    padding: 3px;
+}
+.example-full-width{
+    display: block;
+}
+.btn{
+    margin: 5px;
+}
