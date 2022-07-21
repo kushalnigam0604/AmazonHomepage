@@ -1,5 +1,5 @@
-
-<table mat-table [dataSource]="userList" class="mat-elevation-z8">
+<div class="table">
+  <table mat-table [dataSource]="userList" class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
@@ -30,13 +30,21 @@
 
     <ng-container matColumnDef="Avatar">
         <th mat-header-cell *matHeaderCellDef> Avatar </th>
-        <td mat-cell *matCellDef="let element"> {{element.avatar}} </td>
+        <td mat-cell *matCellDef="let element"><button mat-raised-button color="primary" class="btn" (click)="clicked(element.avatar)"> Profile</button>
+          </td>
+
       </ng-container>
 
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+</div>
+
+
+  <div class="image">
+    <img src="{{imageUrl}}" alt="">
+  </div>
 
 
   
