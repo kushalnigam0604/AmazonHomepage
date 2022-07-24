@@ -9,7 +9,6 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  auth: any;
 
   constructor(private api:APIService , private _router:Router) {}
 

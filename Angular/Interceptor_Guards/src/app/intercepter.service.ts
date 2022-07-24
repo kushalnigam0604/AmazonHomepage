@@ -1,22 +1,8 @@
 import { Injectable , Injector } from '@angular/core';
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from '@angular/common/http';
-import { APIService } from './api.service';
 import { Router } from '@angular/router';
 import { catchError, Observable, throwError } from 'rxjs';
 
-// @Injectable()
-// export class IntercepterService implements HttpInterceptor{
-
-//   constructor(private _injector:Injector) { }
-
-//   intercept(req : any, next : any){
-//     let apiToken = this._injector.get(APIService);
-//     let tokenReq = req.clone({setHeaders:{
-//       Authorization:`Bearer ${apiToken.getToken()}`
-//     }})
-//     return next.handle(tokenReq);
-//   }
-// }
 @Injectable()
 export class IntercepterService implements HttpInterceptor {
   constructor(
