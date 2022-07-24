@@ -25,10 +25,10 @@ export class UserComponent implements OnInit {
 
   displayedColumns: string[] = ['ID', 'Email', 'FirstName', 'LastName', 'Avatar'];
 
-  imageUrl:any;
+  image:any;
 
   clicked(data:any){
-    this.imageUrl = data;
+    this.image = data;
   }
 
 

@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { UserComponent } from './user/user.component';
 import { APIService } from './api.service';
+import { UserChildComponent } from './user-child/user-child.component';
 
 
 
@@ -17,7 +18,8 @@ import { APIService } from './api.service';
   declarations: [
     AppComponent,
     LoginPageComponent,
-    UserComponent
+    UserComponent,
+    UserChildComponent
   ],
   imports: [
     BrowserModule,
