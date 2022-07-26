@@ -5,31 +5,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MaterialModule } from './material/material.module';
-import { UserComponent } from './user/user.component';
-import { APIService } from './api.service';
-import { UserChildComponent } from './user-child/user-child.component';
+import { MaterialModuleModule } from './material-module/material-module.module';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginPageComponent,
-    UserComponent,
-    UserChildComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModuleModule
     ],
-  providers: [APIService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

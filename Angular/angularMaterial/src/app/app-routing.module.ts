@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { UserComponent } from './user/user.component';
+import { LoginPageComponent } from './material-module/login-page/login-page.component';
 
 const routes: Routes = [
-  {component: LoginPageComponent,path : 'login'},
-  {component: UserComponent, path:'user'},
-  {path:'**', redirectTo:'login'}
+
+  { path: 'material', loadChildren: () => import('./material-module/material-module.module').then(m => m.MaterialModuleModule) },
+
+  {component: LoginPageComponent,path : 'login-page'},
+
+  {path: '**', redirectTo: 'login-page' }
 ];
 
 @NgModule({

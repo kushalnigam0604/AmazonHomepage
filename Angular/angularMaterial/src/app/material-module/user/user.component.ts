@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { APIService } from '../api.service';
+import { APIService } from 'src/app/api.service';
 
 
 @Component({
@@ -19,7 +19,7 @@ export class UserComponent implements OnInit {
   callGetFunc()
   {
     this.api.getapiCall().subscribe((data:any) => {
-      this.userList = data.data;
+      this.userList = data.data;      
     })
   }
 
