@@ -49,7 +49,7 @@
           <div class="fourDifferentOptions">
               <span  *ngFor="let list of liveNpaArray | filter:true:selectedTime">{{list.value+"/"}}</span>
           </div>
-                  <!---->
+
           <div class="outerLayer" *ngIf="selectedLive" >
               <span *ngFor="let list of liveNpaArray" class="listForCredit">
                   <input type="checkbox" name="card{{list.id}}" [(ngModel)]="list.checked" (change)="changeValue()">

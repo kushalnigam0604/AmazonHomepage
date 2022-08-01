@@ -16,20 +16,26 @@ import { Router } from '@angular/router';
 
 export class LoginPageComponent implements OnInit {
 
-  constructor(private api:APIService , private _router:Router) { 
+  constructor(private api:APIService , private _router:Router ,
+    private fb: FormBuilder,
+    ) { 
 
   }
+  loginForm!: FormGroup;
+
 
   ngOnInit(): void {
+    this.loginForm = this.fb.group({
+      email : new FormControl('',[Validators.required, Validators.email]),
+      password : new FormControl('',[Validators.required])
+    })
+  
   }
 
-  loginForm = new FormGroup({
-    email : new FormControl('',[Validators.required, Validators.email]),
-    password : new FormControl('',[Validators.required])
-  })
 
-  // email = new FormControl('', );
-  // password = new FormControl('', );
+  get loginFormControl() {
+    return this.loginForm.controls;
+  }
   
 
   submit(){
