@@ -4,10 +4,12 @@ import { MaterialModuleComponent } from './material-module.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { UserComponent } from './user/user.component';
 const routes: Routes = [
-  
+
+  { path: 'material', component: MaterialModuleComponent },
   {component: LoginPageComponent,path : 'login-page'},
   {component: UserComponent, path:'user'},
-  { path: '', component: MaterialModuleComponent }
+  {path: '**', redirectTo: 'login-page' }
+
 ];
 
 @NgModule({

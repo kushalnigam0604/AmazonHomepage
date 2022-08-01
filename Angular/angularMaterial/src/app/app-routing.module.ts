@@ -6,9 +6,9 @@ const routes: Routes = [
 
   { path: 'material', loadChildren: () => import('./material-module/material-module.module').then(m => m.MaterialModuleModule) },
 
-  {component: LoginPageComponent,path : 'login-page'},
+  // {component: LoginPageComponent,path : 'login-page'},
 
-  {path: '**', redirectTo: 'login-page' }
+  // {path: '**', redirectTo: 'login-page' }
 ];
 
 @NgModule({

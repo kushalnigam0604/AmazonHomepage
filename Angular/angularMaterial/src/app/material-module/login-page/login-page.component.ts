@@ -5,12 +5,7 @@ import {ErrorStateMatcher} from '@angular/material/core';
 import { APIService } from 'src/app/api.service';
 import { Router } from '@angular/router';
 
-export class MyErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-    const isSubmitted = form && form.submitted;
-    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
-  }
-}
+
 
 @Component({
   selector: 'app-login-page',
@@ -29,12 +24,12 @@ export class LoginPageComponent implements OnInit {
   }
 
   loginForm = new FormGroup({
-    email : new FormControl(''),
-    password : new FormControl('')
+    email : new FormControl('',[Validators.required, Validators.email]),
+    password : new FormControl('',[Validators.required])
   })
 
-  email = new FormControl('', [Validators.required, Validators.email]);
-  password = new FormControl('', [Validators.required]);
+  // email = new FormControl('', );
+  // password = new FormControl('', );
   
 
   submit(){
@@ -49,4 +44,12 @@ export class LoginPageComponent implements OnInit {
   
 
   matcher = new MyErrorStateMatcher();
+  
+}
+
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
 }
