@@ -4,6 +4,8 @@ import {ErrorStateMatcher} from '@angular/material/core';
 
 import { APIService } from 'src/app/api.service';
 import { Router } from '@angular/router';
+import {MatSnackBar} from '@angular/material/snack-bar';
+
 
 
 
@@ -17,11 +19,12 @@ import { Router } from '@angular/router';
 export class LoginPageComponent implements OnInit {
 
   constructor(private api:APIService , private _router:Router ,
-    private fb: FormBuilder,
+    private fb: FormBuilder,private _snackBar: MatSnackBar
     ) { 
 
   }
   loginForm!: FormGroup;
+  loading = false;
 
 
   ngOnInit(): void {
@@ -39,13 +42,22 @@ export class LoginPageComponent implements OnInit {
   
 
   submit(){
+    this.loading = true;
     console.log(this.loginForm.value);
     this.api.postApiCall(this.loginForm.value).subscribe((res : any) => {
       this._router.navigate(['user']);
+      this.loading = false;
+      this.openSnackBar('Login Successful','Ok');
     },
     err => {
       console.log(err.status);
+      this.loading = false;   
+      this.openSnackBar('Login Unsuccessful','Ok');
     });
+  }
+
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action);
   }
   
 

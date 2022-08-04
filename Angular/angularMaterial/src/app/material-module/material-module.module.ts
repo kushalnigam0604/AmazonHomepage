@@ -3,7 +3,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule} from '@angular/material/button';
 import { MatTableModule} from '@angular/material/table';
-// import { MatError } from '@angular/material/form-field';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserComponent } from '../material-module/user/user.component';
 import { LoginPageComponent } from '../material-module/login-page/login-page.component';
@@ -13,7 +16,7 @@ import { MaterialModuleRoutingModule } from './material-module-routing.module';
 
 
 
-const materialelements = [MatFormFieldModule , MatInputModule , MatButtonModule , MatTableModule ]
+const materialelements = [MatFormFieldModule , MatInputModule , MatButtonModule , MatTableModule , MatProgressSpinnerModule , MatSnackBarModule]
 
 @NgModule({
   declarations: [
@@ -22,6 +25,7 @@ const materialelements = [MatFormFieldModule , MatInputModule , MatButtonModule 
     UserChildComponent
   ],
   imports: [
+    CommonModule,
     materialelements,
     ReactiveFormsModule,
     MaterialModuleRoutingModule
