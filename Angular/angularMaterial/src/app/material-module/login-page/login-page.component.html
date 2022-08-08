@@ -20,14 +20,9 @@
         <mat-error *ngIf="(loginFormControl['password'].touched) && loginFormControl['password'].errors?.['required']">
           Password is <strong>required</strong>
         </mat-error>
-        <mat-error *ngIf="loginFormControl['password'].touched && loginFormControl['password'].errors?.['invalidPassword']">
-          Please enter a valid password
-        </mat-error>
-        <mat-error *ngIf="loginFormControl['password'].touched && loginFormControl['password'].errors?.['minLength']">
-          Please enter atleast 8 char.
-        </mat-error>
-        <mat-error *ngIf="loginFormControl['password'].touched && loginFormControl['password'].errors?.['maxLength']">
-          Enter maximum 10 char only.
+      
+        <mat-error *ngIf="loginFormControl['password'].touched && loginFormControl['password'].errors?.['pattern']">
+          Please enter Valid Pattern.
         </mat-error>
       </mat-form-field>
 

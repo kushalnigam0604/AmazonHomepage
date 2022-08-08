@@ -26,11 +26,10 @@ export class LoginPageComponent implements OnInit {
   loginForm!: FormGroup;
   loading = false;
 
-
   ngOnInit(): void {
     this.loginForm = this.fb.group({
       email : new FormControl('',[Validators.required, Validators.email]),
-      password : new FormControl('',[Validators.required ,Validators.minLength(8), Validators.maxLength(10)])
+      password : new FormControl('',[Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')] )
     })
   
   }
