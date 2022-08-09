@@ -29,7 +29,7 @@ export class LoginPageComponent implements OnInit {
   ngOnInit(): void {
     this.loginForm = this.fb.group({
       email : new FormControl('',[Validators.required, Validators.email]),
-      password : new FormControl('',[Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')] )
+      password : new FormControl('',[Validators.required, Validators.pattern('^[a-zA-Z0-9!@#$%^&*]{6,16}$')] )
     })
   
   }
@@ -41,9 +41,10 @@ export class LoginPageComponent implements OnInit {
   
 
   submit(){
-    this.loading = true;
-    console.log(this.loginForm.value);
-    this.api.postApiCall(this.loginForm.value).subscribe((res : any) => {
+    if(this.loginForm.valid){
+      this.loading = true;
+      console.log(this.loginForm.value);
+      this.api.postApiCall(this.loginForm.value).subscribe((res : any) => {
       this._router.navigate(['user']);
       this.loading = false;
       this.openSnackBar('Login Successful','Ok');
@@ -53,6 +54,7 @@ export class LoginPageComponent implements OnInit {
       this.loading = false;   
       this.openSnackBar('Login Unsuccessful','Ok');
     });
+    }
   }
 
   openSnackBar(message: string, action: string) {
