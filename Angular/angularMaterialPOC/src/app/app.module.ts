@@ -40,10 +40,6 @@ import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { CheckBoxComponent } from './check-box/check-box.component';
 import { ChipsComponent } from './chips/chips.component';
 import { DialogComponent , DialogExample } from './dialog/dialog.component';
-import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
-import { MenuComponent } from './menu/menu.component';
-import { TreeChecklistExample } from './tree/tree.component';
-import { StepperComponent } from './stepper/stepper.component';
 const materialElement = [
   MatAutocompleteModule,
   MatBottomSheetModule,
@@ -75,11 +71,7 @@ const materialElement = [
     CheckBoxComponent,
     ChipsComponent,
     DialogComponent,
-    DialogExample,
-    ExpansionPanelComponent,
-    MenuComponent,
-    TreeChecklistExample,
-    StepperComponent
+    DialogExample
   ],
   imports: [
     BrowserModule,

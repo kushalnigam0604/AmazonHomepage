@@ -26,5 +26,8 @@ export class AutoCompleteComponent implements OnInit {
 
     return this.options.filter(option => option.toLowerCase().includes(filterValue));    
   }
+  sub(){
+    console.log(this.myControl.value);
+  }
 
 }
