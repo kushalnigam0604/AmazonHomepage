@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
   }
-/*   
+  
   .example-toolbar {
     z-index: 2;
   }
@@ -21,7 +21,7 @@
     border-radius: 3px;
     padding: 10px 12px;
   }
-   */
+  
   
   .example-sidenav-container {
     /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
