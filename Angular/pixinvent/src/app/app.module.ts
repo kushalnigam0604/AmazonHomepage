@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
+
 import { AppRoutingModule , RoutingComponent } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
@@ -12,6 +13,7 @@ import { MatNativeDateModule} from '@angular/material/core';
 import { MatIconModule} from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
 import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -68,7 +70,8 @@ import { MiscComponent } from './left-menubar/misc/misc.component';
     ReactiveFormsModule,
     MatIconModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

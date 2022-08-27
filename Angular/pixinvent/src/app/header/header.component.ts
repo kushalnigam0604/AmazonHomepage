@@ -11,5 +11,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  flag = 'gb';
+  flags = [ 'English','French','Portuguese','German'];
 
+  changeValue(i:string){
+    this.flag = i.slice(0,2);
+  }
 }
