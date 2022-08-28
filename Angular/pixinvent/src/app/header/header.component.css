@@ -35,8 +35,11 @@
 ::placeholder{
     color: white;
 }
-.iconDiv{
+.iconsDiv{
     display: flex;
     width: 300px;
     border: 2px solid yellow;
+}
+.icon{
+    color: white;
 }
