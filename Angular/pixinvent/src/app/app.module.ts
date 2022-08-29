@@ -16,8 +16,6 @@ import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatMenuModule} from '@angular/material/menu';
 
 
-
-
 import { AppComponent } from './app.component';
 import { LeftMenubarComponent } from './left-menubar/left-menubar.component';
 import { HeaderComponent } from './header/header.component';
@@ -36,6 +34,8 @@ import { PagesComponent } from './left-menubar/pages/pages.component';
 import { MediasComponent } from './left-menubar/medias/medias.component';
 import { AuthenticationComponent } from './left-menubar/authentication/authentication.component';
 import { MiscComponent } from './left-menubar/misc/misc.component';
+import { ContactMenuComponent } from './left-menubar/contact/contact-menu/contact-menu.component';
+import { ContactListComponent } from './left-menubar/contact/contact-list/contact-list.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +57,10 @@ import { MiscComponent } from './left-menubar/misc/misc.component';
     MediasComponent,
     AuthenticationComponent,
     MiscComponent,
-    RoutingComponent
+    RoutingComponent,
+    ContactMenuComponent,
+    ContactListComponent,
+
   ],
   imports: [
     BrowserModule,

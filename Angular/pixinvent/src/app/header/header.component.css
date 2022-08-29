@@ -38,8 +38,10 @@
 .iconsDiv{
     display: flex;
     width: 300px;
-    border: 2px solid yellow;
+    justify-content: space-around;
+    align-items: center;
 }
-.icon{
+.icons{
     color: white;
+    cursor: pointer;
 }
