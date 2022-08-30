@@ -1,19 +1,16 @@
-<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
+<div class="example-container" >
     
   
-    <mat-sidenav-container class="example-sidenav-container"
-                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-      <mat-sidenav class="kk" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+    <mat-sidenav-container class="example-sidenav-container">
+      <mat-sidenav class="kk" mode="side" opened="true">
         <mat-nav-list>
           <mat-toolbar color="primary" class="example-toolbar">
-            <button mat-icon-button (click)="snav.toggle()" >MATERIALIZE</button>
+            <button mat-icon-button  >MATERIALIZE</button>
           </mat-toolbar>
           <a mat-list-item routerLink="{{nav}}" routerLinkActive="active"  *ngFor="let nav of fillerNav">{{nav}}</a>
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content >
-        <button (click)="snav.toggle()">SideNavBar</button>
         <app-header></app-header>
         <router-outlet></router-outlet>
     </mat-sidenav-content>

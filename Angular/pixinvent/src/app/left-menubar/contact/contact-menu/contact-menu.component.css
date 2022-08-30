@@ -1,0 +1,19 @@
+.example-viewport {
+  width: 250px;
+  height: 320px;
+  }
+  
+  .example-item {
+    height: 50px;
+    width: 100%;
+  }
+  .example-item button{
+    border: none;
+    width: 100%;
+    padding: 12px 40px;
+    text-align: center;
+    border-bottom-right-radius: 27px;
+    border-top-right-radius: 27px;
+    cursor: pointer;
+  }
+  

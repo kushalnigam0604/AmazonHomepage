@@ -14,6 +14,7 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatMenuModule} from '@angular/material/menu';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 
 import { AppComponent } from './app.component';
@@ -74,7 +75,8 @@ import { ContactListComponent } from './left-menubar/contact/contact-list/contac
     MatIconModule,
     MatListModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
