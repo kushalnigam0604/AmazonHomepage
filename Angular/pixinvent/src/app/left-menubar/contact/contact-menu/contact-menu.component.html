@@ -1,3 +1,3 @@
 <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
-    <div *cdkVirtualFor="let item of fillerNav" class="example-item"><button [ngStyle]="{'background-color': value === item ? ' #2196f3' : '' }" (click)="setValue(item)">{{item}}</button></div>
+    <div *cdkVirtualFor="let item of fillerNav" class="example-item"><button [ngStyle]="{'background-color': value === item ? ' #2196f3' : '#fafafa' }" (click)="setValue(item)">{{item}}</button></div>
   </cdk-virtual-scroll-viewport>

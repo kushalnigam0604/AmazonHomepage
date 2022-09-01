@@ -76,6 +76,97 @@ export class ContactListComponent implements AfterViewInit {
      Phone: 8634758734,
      Favorite: false
    },
+   {
+    User : 'yash',
+    Full_Name:'Aman',
+    Email:'yash@gamil.com',
+    Phone: 9957455667,
+    Favorite : false
+  },
+  {
+    User : 'naman',
+    Full_Name:'Rohan',
+    Email:'Rohan@gamil.com',
+    Phone: 9957359923,
+    Favorite: false
+  },
+  {
+    User : 'kush',
+    Full_Name:'Kushal',
+    Email:'Kushal@gamil.com',
+    Phone: 7466397884,
+    Favorite: true
+  },
+  {
+    User : 'anjul',
+    Full_Name:'Harry',
+    Email:'Harry@gamil.com',
+    Phone: 8849576638,
+    Favorite: false
+  },
+  {
+    User : 'anurag',
+    Full_Name:'Animesh',
+    Email:'Animesh@gamil.com',
+    Phone: 6483674577,
+    Favorite: false
+  },
+  {
+    User : 'kapil',
+    Full_Name:'Harshit',
+    Email:'Harshit@gamil.com',
+    Phone: 8634758734,
+    Favorite: false
+  },
+  {
+    User : 'yash',
+    Full_Name:'Aman',
+    Email:'yash@gamil.com',
+    Phone: 9957455667,
+    Favorite : false
+  },
+  {
+    User : 'naman',
+    Full_Name:'Rohan',
+    Email:'Rohan@gamil.com',
+    Phone: 9957359923,
+    Favorite: false
+  },
+  {
+    User : 'kush',
+    Full_Name:'Kushal',
+    Email:'Kushal@gamil.com',
+    Phone: 7466397884,
+    Favorite: true
+  },
+  {
+    User : 'anjul',
+    Full_Name:'Harry',
+    Email:'Harry@gamil.com',
+    Phone: 8849576638,
+    Favorite: false
+  },
+  {
+    User : 'anurag',
+    Full_Name:'Animesh',
+    Email:'Animesh@gamil.com',
+    Phone: 6483674577,
+    Favorite: false
+  },
+  {
+    User : 'kapil',
+    Full_Name:'Harshit',
+    Email:'Harshit@gamil.com',
+    Phone: 8634758734,
+    Favorite: false
+  },
+  {
+    User : 'kapil',
+    Full_Name:'Harshit',
+    Email:'Harshit@gamil.com',
+    Phone: 8634758734,
+    Favorite: false
+  }
    ]
   constructor() {
      
@@ -86,6 +177,14 @@ export class ContactListComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+  }
+  changeValue(value:boolean){
+    if(value === true)
+    value = false;
+    else
+    value = true;
+    return value;
+    console.log(value);
   }
 
   applyFilter(event: Event) {

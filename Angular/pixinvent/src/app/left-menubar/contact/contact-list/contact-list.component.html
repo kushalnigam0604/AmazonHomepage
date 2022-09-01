@@ -1,7 +1,7 @@
-  
-  <div class="searchDiv">
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex." #input>
-  </div>
+    <div class="searchDiv">
+      <button type="submit"><mat-icon>search</mat-icon></button>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search Contacts" #input>
+    </div>
     <div class="example-container mat-elevation-z8">
           <table mat-table [dataSource]="dataSource" matSort>
       
@@ -31,7 +31,7 @@
 
           <ng-container matColumnDef="Favorite">
             <th class="heading" mat-header-cell *matHeaderCellDef mat-sort-header> Favorite </th>
-            <td mat-cell *matCellDef="let row"> {{row.Favorite}} </td>
+            <td mat-cell *matCellDef="let row"><mat-icon (click)="changeValue(row.Favorite)" [ngStyle]="{'color': row.Favorite === true ? '#f1f16f' : '#504e4e' }">star</mat-icon> </td>
           </ng-container>
       
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -44,7 +44,8 @@
          </table>
       </div>
   
-      <div class="paginator">
-        <mat-paginator [pageSizeOptions]="[5, 10]" aria-label="Select page of users"></mat-paginator>
+      <div class="paginator " >
+        <mat-paginator  [pageSizeOptions]="[10, 15]" aria-label="Select page of users"></mat-paginator>
       </div>
+  
     

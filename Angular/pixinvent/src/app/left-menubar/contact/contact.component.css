@@ -6,17 +6,28 @@
     color: white;
     background: linear-gradient(45deg,#303f9f,#7b1fa2)!important;
     padding: 35px 0px;
-    height: 25vh;
+    height: 22vh;
 }
+
 .contactUpperDiv p{
     font-size: small;
     font-family: sans-serif;
+}
+.content{
+    padding-left: 30px;
 }
 .heading{
     font-size: 27px;
     font-weight: 700;
     font-family: sans-serif;
     display: inline;
+}
+.content p{
+    line-height: 22px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(223, 223, 223);
 }
 .contactMidDiv{
     float: left;
@@ -34,16 +45,24 @@
     height: 100%;
 }
 .footer{
-    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     background: linear-gradient(45deg,#303f9f,#7b1fa2)!important;
-    height: 6vh;
+    height: 9vh;
+    color: white;
+    padding-top: 10px;
+    font-family: sans-serif;
 }
 .firstFooterDiv{
-    float: left;
     width: 40%;
 }
 .secondFooterDiv{
-    float: right;
     width: 40%;
+    text-align: end;
+}
+.secondFooterDiv a{
+    text-decoration: none;
+    color: wheat;
 }

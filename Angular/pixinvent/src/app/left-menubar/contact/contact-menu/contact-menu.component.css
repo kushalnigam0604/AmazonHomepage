@@ -11,7 +11,10 @@
     border: none;
     width: 100%;
     padding: 12px 40px;
-    text-align: center;
+    text-align: start;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(122, 121, 121);
     border-bottom-right-radius: 27px;
     border-top-right-radius: 27px;
     cursor: pointer;
