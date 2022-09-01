@@ -7,6 +7,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule , RoutingComponent } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatNativeDateModule} from '@angular/material/core';
@@ -15,6 +16,13 @@ import { MatListModule} from '@angular/material/list';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatMenuModule} from '@angular/material/menu';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {MatSortModule} from '@angular/material/sort';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
+
 
 
 import { AppComponent } from './app.component';
@@ -76,7 +84,13 @@ import { ContactListComponent } from './left-menubar/contact/contact-list/contac
     MatListModule,
     MatToolbarModule,
     MatMenuModule,
-    ScrollingModule
+    ScrollingModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
+    CommonModule,
+    MatSortModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
