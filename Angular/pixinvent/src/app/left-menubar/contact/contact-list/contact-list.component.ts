@@ -1,7 +1,8 @@
-import {AfterViewInit, Component, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ViewChild , OnInit} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import { FormControl , FormGroup} from '@angular/forms';
 
 export interface UserData {
   User: string;
@@ -17,7 +18,7 @@ export interface UserData {
   templateUrl: './contact-list.component.html',
   styleUrls: ['./contact-list.component.css']
 })
-export class ContactListComponent implements AfterViewInit {
+export class ContactListComponent implements AfterViewInit ,OnInit {
 
   displayedColumns: string[] = ['User', 'Full_Name', 'Email', 'Phone' , 'Favorite'];
   dataSource: MatTableDataSource<UserData>;
@@ -171,6 +172,7 @@ export class ContactListComponent implements AfterViewInit {
   constructor() {
      
     // Assign the data to the data source for the table to render
+    
     this.dataSource = new MatTableDataSource(this.users);
   }
 
@@ -178,14 +180,9 @@ export class ContactListComponent implements AfterViewInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
-  changeValue(value:boolean){
-    if(value === true)
-    value = false;
-    else
-    value = true;
-    return value;
-    console.log(value);
-  }
+
+  pagingValue_1 : number = 10;
+  pagingValue_2 : number = 15;
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
@@ -195,6 +192,29 @@ export class ContactListComponent implements AfterViewInit {
       this.dataSource.paginator.firstPage();
     }
   }
+
+  value:any;
+  openNav() {
+    this.value = true;
+  }
+  
+  closeNav() {
+    this.value = false;
+  }
+  public contactForm!: FormGroup;
+  ngOnInit(): void {
+    this.contactForm = new FormGroup({
+      'User' : new FormControl(null),
+      'Full_Name' : new FormControl(null ),
+      'Email' : new FormControl(null),
+      'Phone' : new FormControl(null),
+      'Address' : new FormControl(null),
+      'Company' : new FormControl(null),
+      'JobTitle' : new FormControl(null)
+      })
+  }
+  onSubmit(){
+    console.log(this.contactForm.value);
+  }
+  
 }
-
-
