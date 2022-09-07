@@ -4,7 +4,6 @@ import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { FormControl , FormGroup} from '@angular/forms';
 import { DataTransferService } from 'src/app/data-transfer.service';
-import { convertUpdateArguments } from '@angular/compiler/src/compiler_util/expression_converter';
 
 export interface UserData {
   User: string;
@@ -256,6 +255,8 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
   update(){
     if(this.AllContactVariable === true){
       this.dataSource = new MatTableDataSource(this.users);
+      this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
       console.log('all');
 
     }
@@ -267,6 +268,8 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
       }
       this.starredUsers.splice(0,1);
       this.dataSource = new MatTableDataSource(this.starredUsers);
+      this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
       console.log('starred');
 
     }
