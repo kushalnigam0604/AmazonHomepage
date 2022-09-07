@@ -31,7 +31,7 @@
 
           <ng-container matColumnDef="Favorite">
             <th class="heading" mat-header-cell *matHeaderCellDef mat-sort-header> Favorite </th>
-            <td mat-cell *matCellDef="let row"><mat-icon [ngStyle]="{'color': row.Favorite === true ? '#f1f16f' : '#504e4e' }">star</mat-icon> </td>
+            <td mat-cell *matCellDef="let row"><mat-icon (click)="changeValue(row)" [ngStyle]="{'color': row.Favorite === true ? '#f1f16f' : '#504e4e' }">star</mat-icon> </td>
           </ng-container>
       
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -47,7 +47,7 @@
       <div class="paginator " >
         <mat-paginator  [pageSizeOptions]="[pagingValue_1, pagingValue_2]" aria-label="Select page of users"></mat-paginator>
       </div>
-<button class="contactForm" (click)="openNav()">Form</button>
+<button class="contactForm" (click)="openNav()"><mat-icon>person_add</mat-icon></button>
 
 
 
@@ -71,7 +71,7 @@
   <input id="Company" type="text" formControlName="Company">
   <label for="JobTitle">JobTitle: </label>
   <input id="JobTitle" type="text" formControlName="JobTitle">
-  <button type="submit">submit</button>
+  <button type="submit">Add Contact</button>
 </form>
 
 </div>

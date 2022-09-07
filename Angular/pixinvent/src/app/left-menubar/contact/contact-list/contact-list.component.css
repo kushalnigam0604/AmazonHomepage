@@ -50,6 +50,11 @@
   table {
     width: 100%;
   }
+  table td{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #818080;
+  }
   .heading{
     position: sticky;
     top: 0;
@@ -69,9 +74,9 @@
   }
 
   .contactForm{
-    padding: 10px;
+    padding: 10px 12px;
     font-size: larger;
-    border-radius: 100%;
+    border-radius: 50%;
     border: none;
     cursor: pointer;
     background-color: rgb(255, 77, 136);
@@ -79,6 +84,7 @@
     bottom: 10%;
     right: 5%;
     z-index: 2;
+    color: white;
   }
 
   .sidenav {
@@ -91,16 +97,23 @@
     background-color: white; 
     overflow-x: hidden;
     padding-top: 60px; 
+    padding-left: 10px;
     transition: 0.5s; 
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 20px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
-    display: block;
+    display: inline;
     transition: 0.3s;
+  }
+  .sidenav p{
+    display: inline;
+    color: #5e5e5e;
+    font-size: large;
+    font-family: sans-serif;
   }
   
   .sidenav a:hover {
@@ -122,10 +135,20 @@
 
   .sidenav label{
     display: block;
+    color: #818080;
+    line-height: 30px;
   }
   .sidenav input{
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #818080;
     outline: 0;
+    line-height: normal;
   }
-  
+  .sidenav button{
+    padding: 10px 16px;
+    background-color: rgb(86, 198, 243);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+  }

@@ -1,4 +1,5 @@
 import { Component ,ChangeDetectionStrategy} from '@angular/core';
+import { DataTransferService } from 'src/app/data-transfer.service';
 
 @Component({
   selector: 'app-contact-menu',
@@ -8,11 +9,18 @@ import { Component ,ChangeDetectionStrategy} from '@angular/core';
 
 })
 export class ContactMenuComponent  {
+  constructor(private changeValue: DataTransferService){}
 
-  fillerNav = ['Filters' , 'All Contatcts' , 'Frequent' , 'Starred Contacts' , 'Options' , 'Exports' , 'Imports' , 'Print' , 'Departments' , 'Engineering'];
+  fillerNav = ['Filters' , 'All Contacts' , 'Frequent' , 'Starred Contacts' , 'Options' , 'Exports' , 'Imports' , 'Print' , 'Departments' , 'Engineering'];
   
   value:string | undefined;
   setValue(st : string){
     this.value  = st;
+    if(st == 'All Contacts'){
+      this.changeValue.sendValue('All Contacts');
+    }
+    if(st == 'Starred Contacts'){
+      this.changeValue.sendValue('Starred Contacts');
+    }
   }
 }

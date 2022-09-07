@@ -3,6 +3,8 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { FormControl , FormGroup} from '@angular/forms';
+import { DataTransferService } from 'src/app/data-transfer.service';
+import { convertUpdateArguments } from '@angular/compiler/src/compiler_util/expression_converter';
 
 export interface UserData {
   User: string;
@@ -27,6 +29,7 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
   paginator!: MatPaginator;
   @ViewChild(MatSort)
   sort: MatSort = new MatSort;
+
    users = [
     {
       User : 'abhi',
@@ -169,11 +172,26 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
     Favorite: false
   }
    ]
-  constructor() {
+
+   AllContactVariable:boolean = false;
+   StarredContactVariable:boolean = false;
+  constructor(private changeValueOfTable: DataTransferService) {
+    
      
     // Assign the data to the data source for the table to render
+   
+      this.dataSource = new MatTableDataSource(this.users);
     
-    this.dataSource = new MatTableDataSource(this.users);
+  }
+
+  changeValue(val : any){
+    if(val.Favorite == true){
+      val.Favorite = false;
+    }
+    else{
+      val.Favorite = true;
+    }
+    console.log(val);
   }
 
   ngAfterViewInit() {
@@ -202,6 +220,7 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
     this.value = false;
   }
   public contactForm!: FormGroup;
+
   ngOnInit(): void {
     this.contactForm = new FormGroup({
       'User' : new FormControl(null),
@@ -212,9 +231,45 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
       'Company' : new FormControl(null),
       'JobTitle' : new FormControl(null)
       })
+
+      this.changeValueOfTable.getValue().subscribe(changeValueOfTable => {
+        if(changeValueOfTable == 'All Contacts'){
+          this.AllContactVariable = true;
+          this.StarredContactVariable = false;
+          this.update();
+        }
+        else{
+                this.StarredContactVariable = true;
+                this.AllContactVariable = false;
+                this.update();
+        }
+      })
   }
   onSubmit(){
     console.log(this.contactForm.value);
+  }
+  starredUsers = [{User: '',
+    Full_Name: '',
+    Email : '',
+    Phone : 0,
+    Favorite: false }]
+  update(){
+    if(this.AllContactVariable === true){
+      this.dataSource = new MatTableDataSource(this.users);
+      console.log('all');
+
+    }
+    if(this.StarredContactVariable === true){
+      for(let i=0 ; i<this.users.length ; i++){
+        if(this.users[i].Favorite === true){
+          this.starredUsers.push(this.users[i]);
+        }
+      }
+      this.starredUsers.splice(0,1);
+      this.dataSource = new MatTableDataSource(this.starredUsers);
+      console.log('starred');
+
+    }
   }
   
 }
