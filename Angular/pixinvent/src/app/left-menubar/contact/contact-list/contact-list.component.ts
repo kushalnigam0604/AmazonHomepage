@@ -6,6 +6,7 @@ import { FormControl , FormGroup} from '@angular/forms';
 import { DataTransferService } from 'src/app/data-transfer.service';
 
 export interface UserData {
+  id: number;
   User: string;
   Full_Name: string;
   Email: string;
@@ -31,142 +32,162 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
 
    users = [
     {
+      id : 1,
       User : 'abhi',
-      Full_Name:'Abhishek',
+      Full_Name:'Abhishek Verma',
       Email:'abhi@gamil.com',
       Phone: 9957354645,
       Favorite: true
     },
     {
+      id : 2,
      User : 'yash',
-     Full_Name:'Aman',
+     Full_Name:'Yash Mishra',
      Email:'yash@gamil.com',
      Phone: 9957455667,
      Favorite : false
    },
    {
-     User : 'naman',
-     Full_Name:'Rohan',
-     Email:'Rohan@gamil.com',
+     id : 3,
+     User : 'rohan',
+     Full_Name:'Rohan Gupta',
+     Email:'rohan@gamil.com',
      Phone: 9957359923,
      Favorite: false
    },
    {
-     User : 'kush',
-     Full_Name:'Kushal',
-     Email:'Kushal@gamil.com',
+     id : 4,
+     User : 'kushal',
+     Full_Name:'Kushal Nigam',
+     Email:'kushal@gamil.com',
      Phone: 7466397884,
      Favorite: true
    },
    {
+     id : 5,
      User : 'anjul',
-     Full_Name:'Harry',
-     Email:'Harry@gamil.com',
+     Full_Name:'Anjul Chaturvedi',
+     Email:'anjul@gamil.com',
      Phone: 8849576638,
      Favorite: false
    },
    {
+     id : 6,
      User : 'anurag',
-     Full_Name:'Animesh',
-     Email:'Animesh@gamil.com',
+     Full_Name:'Anurag Singh',
+     Email:'anurag@gamil.com',
      Phone: 6483674577,
      Favorite: false
    },
    {
+     id : 7,
      User : 'kapil',
-     Full_Name:'Harshit',
-     Email:'Harshit@gamil.com',
+     Full_Name:'Kapil Sharma',
+     Email:'kapil@gamil.com',
      Phone: 8634758734,
      Favorite: false
    },
    {
-    User : 'yash',
-    Full_Name:'Aman',
-    Email:'yash@gamil.com',
+    id : 8,
+    User : 'aman',
+    Full_Name:'Aman Sinha',
+    Email:'aman@gamil.com',
     Phone: 9957455667,
     Favorite : false
   },
   {
+    id : 9,
     User : 'naman',
-    Full_Name:'Rohan',
-    Email:'Rohan@gamil.com',
+    Full_Name:'Naman Gupta',
+    Email:'naman@gamil.com',
     Phone: 9957359923,
     Favorite: false
   },
   {
-    User : 'kush',
-    Full_Name:'Kushal',
-    Email:'Kushal@gamil.com',
+    id : 10,
+    User : 'kushagra',
+    Full_Name:'Kushagra Singh',
+    Email:'kushagra@gamil.com',
     Phone: 7466397884,
     Favorite: true
   },
   {
-    User : 'anjul',
-    Full_Name:'Harry',
+    id : 11 ,
+    User : 'harry',
+    Full_Name:'Harry Singh',
     Email:'Harry@gamil.com',
     Phone: 8849576638,
     Favorite: false
   },
   {
-    User : 'anurag',
-    Full_Name:'Animesh',
-    Email:'Animesh@gamil.com',
+    id : 12,
+    User : 'animesh',
+    Full_Name:'Animesh Shukla',
+    Email:'animesh@gamil.com',
     Phone: 6483674577,
     Favorite: false
   },
   {
-    User : 'kapil',
-    Full_Name:'Harshit',
-    Email:'Harshit@gamil.com',
+    id : 13,
+    User : 'sankalp',
+    Full_Name:'Sankalp Tiwari',
+    Email:'sankalp@gamil.com',
     Phone: 8634758734,
     Favorite: false
   },
   {
-    User : 'yash',
-    Full_Name:'Aman',
-    Email:'yash@gamil.com',
+    id : 14,
+    User : 'anant',
+    Full_Name:'Anant Mishra',
+    Email:'anant@gamil.com',
     Phone: 9957455667,
     Favorite : false
   },
   {
-    User : 'naman',
-    Full_Name:'Rohan',
-    Email:'Rohan@gamil.com',
+    id : 15,
+    User : 'hardik',
+    Full_Name:'Hardik Panday',
+    Email:'hardik@gamil.com',
     Phone: 9957359923,
     Favorite: false
   },
   {
-    User : 'kush',
-    Full_Name:'Kushal',
-    Email:'Kushal@gamil.com',
+    id : 16,
+    User : 'paul',
+    Full_Name:'Paul Hammer',
+    Email:'paul@gamil.com',
     Phone: 7466397884,
     Favorite: true
   },
-  {
-    User : 'anjul',
-    Full_Name:'Harry',
-    Email:'Harry@gamil.com',
+  { 
+    id : 17,
+    User : 'james',
+    Full_Name:'James Bond',
+    Email:'james@gamil.com',
     Phone: 8849576638,
     Favorite: false
   },
   {
-    User : 'anurag',
-    Full_Name:'Animesh',
-    Email:'Animesh@gamil.com',
+    id : 18,
+    User : 'tony',
+    Full_Name:'Tony Stark',
+    Email:'tony@gamil.com',
     Phone: 6483674577,
     Favorite: false
   },
   {
-    User : 'kapil',
-    Full_Name:'Harshit',
-    Email:'Harshit@gamil.com',
+    id : 19,
+    User : 'heath',
+    Full_Name:'Heath Adams',
+    Email:'heath@gamil.com',
     Phone: 8634758734,
     Favorite: false
   },
   {
-    User : 'kapil',
-    Full_Name:'Harshit',
-    Email:'Harshit@gamil.com',
+    id : 20,
+    User : 'walter',
+    Full_Name:'Walter White',
+    Email:'walter@gamil.com',
     Phone: 8634758734,
     Favorite: false
   }
@@ -247,7 +268,9 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
   onSubmit(){
     console.log(this.contactForm.value);
   }
-  starredUsers = [{User: '',
+  starredUsers = [{
+    id :0,
+    User: '',
     Full_Name: '',
     Email : '',
     Phone : 0,
@@ -258,6 +281,7 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
       this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
       console.log('all');
+      this.starredUsers = [];
 
     }
     if(this.StarredContactVariable === true){
@@ -266,6 +290,7 @@ export class ContactListComponent implements AfterViewInit ,OnInit {
           this.starredUsers.push(this.users[i]);
         }
       }
+      if(this.starredUsers[0].Full_Name == '')
       this.starredUsers.splice(0,1);
       this.dataSource = new MatTableDataSource(this.starredUsers);
       this.dataSource.paginator = this.paginator;

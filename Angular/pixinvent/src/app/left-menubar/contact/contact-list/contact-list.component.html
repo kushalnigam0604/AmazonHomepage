@@ -8,25 +8,25 @@
           <!-- ID Column -->
           <ng-container matColumnDef="User">
             <th class="heading" mat-header-cell *matHeaderCellDef mat-sort-header> User </th>
-            <td mat-cell *matCellDef="let row"> {{row.User}} </td>
+            <td mat-cell *matCellDef="let row" (click)="openNav()"> {{row.User}} </td>
           </ng-container>
       
           <!-- Progress Column -->
           <ng-container matColumnDef="Full_Name">
             <th class="heading" mat-header-cell *matHeaderCellDef mat-sort-header> Full_Name </th>
-            <td mat-cell *matCellDef="let row"> {{row.Full_Name}} </td>
+            <td mat-cell *matCellDef="let row" (click)="openNav()"> {{row.Full_Name}} </td>
           </ng-container>
       
           <!-- Name Column -->
           <ng-container matColumnDef="Email">
             <th class="heading" mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
-            <td mat-cell *matCellDef="let row"> {{row.Email}} </td>
+            <td mat-cell *matCellDef="let row" (click)="openNav()"> {{row.Email}} </td>
           </ng-container>
       
           <!-- Fruit Column -->
           <ng-container matColumnDef="Phone">
             <th class="heading" mat-header-cell *matHeaderCellDef mat-sort-header> Phone </th>
-            <td mat-cell *matCellDef="let row"> {{row.Phone}} </td>
+            <td mat-cell *matCellDef="let row" (click)="openNav()"> {{row.Phone}} </td>
           </ng-container>
 
           <ng-container matColumnDef="Favorite">
