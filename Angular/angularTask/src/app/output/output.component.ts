@@ -7,11 +7,17 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./output.component.css']
 })
 export class OutputComponent implements OnInit {
-  msg : string = "";
-  constructor(private service : ServiceService) { }
+  users : any;
+  constructor(private service : ServiceService) { 
+    this.users = service.users();
 
-  ngOnInit(): void {
-    this.msg = this.service.getMessage();
   }
 
+  message : string | undefined;
+
+  ngOnInit(): void {
+    this.service.receivedMessage().subscribe((data) => {
+      this.message = data;
+    })
+  }
 }

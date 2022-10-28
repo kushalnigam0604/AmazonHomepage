@@ -8,16 +8,17 @@ import { ServiceService } from '../service.service';
 })
 export class InputComponent implements OnInit {
 
-  constructor(private service : ServiceService) { }
+  users : any;
 
-  msg = "hello";
-  
-  ngOnInit(): void {
-    this.service.setMessage(this.msg);
+  constructor(private service : ServiceService) { 
+    this.users = service.users();
+
   }
 
-  changeCountry(_country: any){
-console.log(_country);
+  sendMessage(message : any){
+    this.service.sendMessage(message);
   }
 
+ ngOnInit(): void {
+ }
 }
